@@ -1,0 +1,1666 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+
+<!-- Mirrored from jpjc.moe.edu.sg/jpjc-experience/curriculum/mathematics-n-sciences/chemistry/syllabus-n-assessment by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 Nov 2020 15:48:33 GMT -->
+<head>
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+<title>Syllabus &amp; Assessment</title>
+
+<link rel="shortcut icon" href="../../../../qql/slot/u152/nstyle/favicon1.png"/>
+
+ 
+ 
+
+<link rel="stylesheet" type="text/css" href="../../../../skin/qql/base.css">
+<link rel="stylesheet" type="text/css" href="../../../../rs/css/ct-factor.css">
+
+<link rel="stylesheet" type="text/css" id="main_css" href="../../../../qql/style/152_002/main.css?1597405381"> 
+
+<script type="text/javascript" src="../../../../site/ctx/js/menu.js"></script>
+<script type="text/javascript" src="../../../../site/ctx/jquery/jquery.js"></script>
+<script type="text/javascript" src="../../../../site/ctx/jquery/easing.js"></script>
+<script type="text/javascript" src="../../../../site/ctx/jquery/ctjq.js"></script>
+<link rel="stylesheet" type="text/css" href="../../../../site/ctx/jquery/ctjq.css">
+
+
+<script type="text/javascript">
+function get_idnum(a){ return parseInt(a.substr(a.lastIndexOf("_")+1,20)); }
+</script>
+
+
+<link rel="stylesheet" type="text/css" href="../../../../skin/qql/menu.css">
+
+
+<script>
+// non-admin vars
+if (typeof ive_settings=='undefined') {
+  ive_settings={};
+  ive_settings.ptid=2403;
+  ive_settings.url={
+    _head: '/cos/o.x?c=/qql/',
+    skin_path:'/skin/qql/' 
+  };
+  ive_settings.user={ fname: '', _id: '' , email:''};
+}
+</script>
+
+<!-- server extra head -->
+
+<!-- site extra head -->
+<meta name="viewport" content="width=device-width" />
+<script src="../../../../../assets.wogaa.sg/scripts/wogaa.js"></script>
+<script type="text/javascript">
+$(function(){		
+  $(".sidebar_area").insertAfter($(".content_area .mid:first"));
+	
+	if ($(".subpages_box UL UL.mysubpages_").length>0) {
+		var prev = $(".subpages_box UL UL.mysubpages_").prev();
+		$(prev).append($(".subpages_box UL UL.mysubpages_"));
+	}
+	
+  if ((!$("BODY").hasClass("pagelevel-1")) && ($(".path_box").length>0)) {
+		var pb = $(".path_box").html().split("&gt;");    
+    if (pb.length>0) {
+      var newpb = "<span>"+pb[0]+"</span>";
+      for (var i=1; i<pb.length; i++) {
+        newpb = newpb + "> <span>"+pb[i]+"</span>";          
+      }
+			$(".path_box").html(newpb);
+    }
+		$(".content_area > .top").append($(".path_box"));
+		
+		var par = pb[1];
+		if (pb.length>2) {
+			par = pb[pb.length-2];				
+		}
+			
+		$(".masthead2_area").html('<span class="subtitle">'+par+'</span><span class="leftt"></span><span class="rightt"></span>');
+		$(".masthead2_area .subtitle").html($(".subtitle").text());		
+		
+		if ($(".pagecontent_box H1").length>0) {
+			$(".content_area > .top").append("<h1>"+$(".pagecontent_box H1:first").text()+"</h1>");
+		}
+	} else {
+		$(".sidebar_area").remove();		
+	}
+	
+  $("#menu").click(function(){
+    $("#netcontent").toggleClass("show");
+    return false;
+  });  
+	
+	$("#search").click(function(){
+    $("#netcontent").toggleClass("showsearch");
+    return false;
+  });  
+	
+  $(".sitemenu_area a.sitemenu").each(function(){
+		if ($(this).closest("LI").find("table.dropmenu").length>0) {
+			$(this).closest("LI").addClass("hasdm");
+		}
+  });
+  	
+  $(".sitemenu_area a.sitemenu").on("click", function(){
+    var par = $(this).closest("LI");
+    if ($(par).find("table.dropmenu").length>0) {
+      if ((!$(par).hasClass("active")) && ($("#netcontent").hasClass("show"))) {
+        $(".sitemenu_area LI").removeClass("active");
+				$(par).addClass("active");
+				
+				$(".main_area").addClass("showdropmenu");
+        return false;
+      }
+    }
+  });
+	
+});
+
+$.fn.is_on_screen = function(){
+  var win = $(window);
+  var viewport = {
+    top : win.scrollTop()-100,
+	  left : win.scrollLeft()
+  };
+  viewport.right = viewport.left + win.width();
+	viewport.bottom = viewport.top + win.height();
+
+	var bounds = this.offset();
+	bounds.right = bounds.left + this.outerWidth();
+	bounds.bottom = bounds.top + this.outerHeight();
+
+	return (!(viewport.right < bounds.left || viewport.left > bounds.right || viewport.bottom < bounds.top || viewport.top > bounds.bottom));
+};
+</script>
+<!-- page extra head -->
+ 
+<!-- END all extra head -->
+
+<script>
+
+if (typeof(coto)=='undefined') coto={ ive: { } };
+if (!coto.ive.Controller) coto.ive.Controller = function() { };
+
+coto.ive.Controller.prototype.build=function(dom,opts){
+  if (typeof(dom)=='function') return this.build_func=dom;
+  this.dom=dom;
+  if (!(this.options=$(this.dom).data('widget_options'))) this.options={ };
+  if (!(this.idata=$(this.dom).data('idata'))) this.idata={ };
+  this.idata.controller=this;
+  this.build_func.call(this,opts);
+  $(dom).data('widget_options',this.options);
+  $(dom).data('idata',this.idata);
+};
+coto.controllers={ }; // controllers list
+function ive_controller(wtype) {
+  return coto.controllers[wtype]||(coto.controllers[wtype]=new coto.ive.Controller());
+}
+
+ive_tunings={ };
+function ive_tuning(cat) { return ive_tunings[cat]||(ive_tunings[cat]={ }); }
+
+// ----- DROPMENU -----
+$(function() {
+
+
+
+
+
+
+
+  // old menu.js
+  $('.sitemenu_area ul.sitemenu li, .dropmenu a').bind('mouseover mouseleave',function(ev) {
+    var menuid='dropmenu_'+get_idnum(this.id),$menu=$('#'+menuid);
+    var isenter=(ev.type=='mouseover'||ev.type=='mouseenter');
+    ctmenu[isenter?'show':'hide'](menuid,this,$menu.hasClass('drop_right_')?'right':'bottom');
+  });
+});
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="PTP499 PTP3988 PTP4019 PTP2230 PTP2234 pagelevel-6" >
+
+<div id="netcontent"><div id="lo_whole" class="layout-default">
+  <div id="lo_panel">
+    <div id="lo_main"><div class="main_area">
+
+  <div class="masthead_area"><header>
+  <a id="logo" href="../../../../index.html">Jurong Pioneer Junior College
+  </a>
+  <div id="search">Search
+  </div>	
+  <div id="menu">
+    <button type="button" class="hamburger">
+      <span class="hamb-top">
+      </span>
+      <span class="hamb-middle">
+      </span>
+      <span class="hamb-bottom">
+      </span>
+    </button>	
+  </div>
+</header>
+<div class="searchbox">
+  <form method="post" action="https://jpjc.moe.edu.sg/others/search&amp;func=search">
+    <input type="text" id="search_str" name="search_str" value="" placeholder="Search...">			
+  </form>
+</div> 	
+</div>
+<div class="sitemenu_area"><ul class="sitemenu">
+    <li id="PTID_499" class="PTSN_home first-item   "><a 
+    href="../../../../index.html" 
+
+
+    class="sitemenu"        >Home</a></li>
+    <li id="PTID_595" class="PTSN_about-jpjc    "><a 
+    href="../../../../about-jpjc.html" 
+
+
+    class="sitemenu"        >About&nbsp;JPJC</a><table role="presentation" id="dropmenu_595" class="dropmenu ">
+   
+        <tr class="lineEven ">
+      <td class="dmtrig" id="dmtrig_638">
+	<a id="subitem_638"
+	  href="../../../../about-jpjc/principals-message.html"
+
+	  	
+	    ><span id="_ptmt_638">Principal&#039;s Message</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineOdd ">
+      <td class="dmtrig" id="dmtrig_2698">
+	<a id="subitem_2698"
+	  href="../../../../about-jpjc/college-identity.html"
+
+	  	
+	    ><span id="_ptmt_2698">College Identity</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineEven ">
+      <td class="dmtrig" id="dmtrig_639">
+	<a id="subitem_639"
+	  href="../../../../about-jpjc/organisation-chart.html"
+
+	  	
+	    ><span id="_ptmt_639">Organisation Chart</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineOdd ">
+      <td class="dmtrig" id="dmtrig_640">
+	<a id="subitem_640"
+	  href="../../../../about-jpjc/college-calendar.html"
+
+	  	
+	    ><span id="_ptmt_640">College Calendar</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineEven ">
+      <td class="dmtrig" id="dmtrig_6203">
+	<a id="subitem_6203"
+	  href="../../../../about-jpjc/subject-combination.html"
+
+	  	
+	    ><span id="_ptmt_6203">Subject Combination</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineOdd ">
+      <td class="dmtrig" id="dmtrig_1904">
+	<a id="subitem_1904"
+	  href="../../../../about-jpjc/admission-matters.html"
+
+	  	
+	    ><span id="_ptmt_1904">Admission Matters</span></a>      	 
+	  </td>
+    </tr>
+   
+   
+        <tr class="lineEven ">
+      <td class="dmtrig" id="dmtrig_2486">
+	<a id="subitem_2486"
+	  href="../../../../about-jpjc/financial-assistance-scheme.html"
+
+	  	
+	    ><span id="_ptmt_2486">Financial Assistance Scheme</span></a>      	 
+	  </td>
+    </tr>
+   
+   
+  </table>
+</li>
+    <li id="PTID_3988" class="PTSN_jpjc-experience  focus  "><a 
+    href="../../../total-curriculum-framework.html" 
+
+
+    class="sitemenu sitemenulit"        >JPJC&nbsp;Experience</a><table role="presentation" id="dropmenu_3988" class="dropmenu ">
+   
+        <tr class="lineOdd ">
+      <td class="dmtrig" id="dmtrig_3989">
+	<a id="subitem_3989"
+	  href="../../../total-curriculum-framework.html"
+
+	  	
+	    ><span id="_ptmt_3989">Total Curriculum Framework</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineEven ">
+      <td class="dmtrig" id="dmtrig_4019">
+	<a id="subitem_4019"
+	  href="../../humanities-n-the-arts.html"
+
+	  	
+	    ><span id="_ptmt_4019">Curriculum</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineOdd ">
+      <td class="dmtrig" id="dmtrig_3991">
+	<a id="subitem_3991"
+	  href="../../../co-curriculum.html"
+
+	  	
+	    ><span id="_ptmt_3991">Co-Curriculum</span></a>      	 
+	  </td>
+    </tr>
+  </table>
+</li>
+    <li id="PTID_2545" class="PTSN_life-@-jpjc    "><a 
+    href="../../../../life-at-jpjc-1.html" 
+
+
+    class="sitemenu"        >Life&nbsp;@&nbsp;JPJC</a><table role="presentation" id="dropmenu_2545" class="dropmenu ">
+   
+        <tr class="lineEven ">
+      <td class="dmtrig" id="dmtrig_2546">
+	<a id="subitem_2546"
+	  href="../../../../life-at-jpjc-1/2019-events.html"
+
+	  	
+	    ><span id="_ptmt_2546">2019 Events</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineOdd ">
+      <td class="dmtrig" id="dmtrig_4103">
+	<a id="subitem_4103"
+	  href="../../../../life-at-jpjc-1/2020-events.html"
+
+	  	
+	    ><span id="_ptmt_4103">2020 Events</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineEven ">
+      <td class="dmtrig" id="dmtrig_6269">
+	<a id="subitem_6269"
+	  href="../../../../life-at-jpjc-1/publications.html"
+
+	  	
+	    ><span id="_ptmt_6269">Publications</span></a>      	 
+	  </td>
+    </tr>
+  </table>
+</li>
+    <li id="PTID_4077" class="PTSN_general    "><a 
+    href="../../../../general.html" 
+
+
+    class="sitemenu"        >General</a></li>
+    <li id="PTID_626" class="PTSN_partnerships    "><a 
+    href="../../../../partnerships/college-advisory-board.html" 
+
+
+    class="sitemenu"        >Partnerships</a><table role="presentation" id="dropmenu_626" class="dropmenu ">
+   
+        <tr class="lineOdd ">
+      <td class="dmtrig" id="dmtrig_704">
+	<a id="subitem_704"
+	  href="../../../../partnerships/college-advisory-board.html"
+
+	  	
+	    ><span id="_ptmt_704">College Advisory Board</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineEven ">
+      <td class="dmtrig" id="dmtrig_705">
+	<a id="subitem_705"
+	  href="../../../../partnerships/parent-support-group.html"
+
+	  	
+	    ><span id="_ptmt_705">Parent Support Group</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineOdd ">
+      <td class="dmtrig" id="dmtrig_706">
+	<a id="subitem_706"
+	  href="../../../../partnerships/jpjc-alumni.html"
+
+	  	
+	    ><span id="_ptmt_706">JPJC Alumni</span></a>      	 
+	  </td>
+    </tr>
+  </table>
+</li>
+  </ul>
+</div>
+  <div class="masthead2_area"></div>
+
+  <div class="content_area">
+    <div class="top"></div>
+    <div class="mid">
+            <div class="path_box">
+<a class='path' href='../../../../index.html'>Home</a> &gt;
+JPJC Experience &gt;
+Curriculum &gt;
+Mathematics &amp; Sciences &gt;
+<a class='path' href='../chemistry.html'>Chemistry</a> &gt;
+Syllabus &amp; Assessment 
+</div>
+  
+       
+
+<div class="pagecontent_box">
+  <div class="tools_box">
+    </div>
+  
+    <h1 id="_ptoh_2403" class="ive_editable">Syllabus &amp; Assessment</h1>
+      
+    
+    
+
+
+
+</div>
+
+
+      
+<div id="_ptoo_block_start" style="font-size:1px;border:1px solid transparent"></div>
+
+<div id="_ptoo_PTOID" class="pageblock_box " style="display:none">
+    <div id="_ptod_PTOID" class="ive_editable ive_ptod ive_content"></div>
+</div>
+
+  <div id="_ptoo_2411" class="pageblock_box " >
+    <h2 id="_ptoh_2411" class="ive_editable ive_ptoh">H1 CHEMISTRY (8873)</h2>
+    <div id="_ptod_2411" class="ive_editable ive_ptod ive_content"><br><span lang="EN-SG" style="font-size:11.0pt;line-height:115%;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:Calibri;mso-ansi-language:EN-SG;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA"></span><p class="MsoNormal" style="text-align:justify"><span lang="EN-SG" style="font-family:&quot;Arial&quot;,sans-serif">H1 Chemistry aims to develop scientific
+literacy in our students through the acquisition of core chemistry knowledge
+and scientific thinking. This includes <b>developing an understanding of the
+skills, ethics and attitudes relevant to the practices of science</b>. In
+particular, the syllabus aims to develop in students the ability to navigate
+Chemistry between macroscopic phenomena, submicroscopic interactions and
+symbolic representations to <b>communicate</b> and explain the natural world.</span></p>
+<span lang="EN-SG" style="font-size:11.0pt;line-height:115%;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:Calibri;mso-ansi-language:EN-SG;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA">The key features of the H1 Chemistry Curriculum
+comprise Core Ideas and Extension Topics, Practices of Science and Learning
+Experiences, as illustrated in the diagram below.&nbsp;<br></span><br><img src="../../../../qql/slot/u152/Curriculum/Maths%20and%20Science/Chemistry/Chemistry%202.jpg" hspace="2" width="100%" alt="Chemistry 2.jpg" class="ive_eobj_center" style="width: 100%; height: 458.568px;"><p class="MsoNormal" align="center" style="text-align:center"><i><span lang="EN-SG" style="font-family:&quot;Arial&quot;,sans-serif">H1 Chemistry Curriculum Framework</span></i></p>
+<table class="MsoNormalTable ive_eobj_center" border="0" cellspacing="3" cellpadding="0" width="605" style="width: 100%; height: 210px;">
+ 
+<tbody>
+<tr>
+  
+<td width="299" style="width: 397px; background: rgb(134, 31, 65); padding: 3.75pt;">
+  <p class="MsoNormal" align="center" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal;mso-outline-level:3"><b><span lang="EN-SG" style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+  &quot;Times New Roman&quot;;color:white;mso-fareast-language:ZH-CN;mso-bidi-language:
+  TA">Core Topics</span></b></p>
+  
+</td>
+  
+<td width="299" style="width: 397px; background: rgb(134, 31, 65); padding: 3.75pt;">
+  <p class="MsoNormal" align="center" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal;mso-outline-level:3"><b><span lang="EN-SG" style="font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+  &quot;Times New Roman&quot;;color:white;mso-fareast-language:ZH-CN;mso-bidi-language:
+  TA">Extension Topics</span></b></p>
+  
+</td>
+ 
+</tr>
+ 
+<tr>
+  
+<td width="299" style="width:224.55pt;background:#D9D9D9;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:7.1pt;margin-bottom:.0001pt;text-indent:-7.1pt;line-height:12.6pt;
+  mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-SG" style="font-size:12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+  mso-bidi-font-family:Symbol;mso-fareast-language:ZH-CN;mso-bidi-language:
+  TA">·<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">
+  </span></span><!--[endif]--><span lang="EN-SG" style="font-size:12.0pt;
+  font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:&quot;Times New Roman&quot;;
+  mso-fareast-language:ZH-CN;mso-bidi-language:TA">Atomic Structure</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:7.1pt;margin-bottom:.0001pt;text-indent:-7.1pt;line-height:12.6pt;
+  mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-SG" style="font-size:12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+  mso-bidi-font-family:Symbol;mso-fareast-language:ZH-CN;mso-bidi-language:
+  TA">·<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">
+  </span></span><!--[endif]--><span lang="EN-SG" style="font-size:12.0pt;
+  font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:&quot;Times New Roman&quot;;
+  mso-fareast-language:ZH-CN;mso-bidi-language:TA">Chemical Bonding</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:7.1pt;margin-bottom:.0001pt;text-indent:-7.1pt;line-height:12.6pt;
+  mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-SG" style="font-size:12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+  mso-bidi-font-family:Symbol;mso-fareast-language:ZH-CN;mso-bidi-language:
+  TA">·<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">
+  </span></span><!--[endif]--><span lang="EN-SG" style="font-size:12.0pt;
+  font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:&quot;Times New Roman&quot;;
+  mso-fareast-language:ZH-CN;mso-bidi-language:TA">The Periodic Table</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:7.1pt;margin-bottom:.0001pt;text-indent:-7.1pt;line-height:12.6pt;
+  mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-SG" style="font-size:12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+  mso-bidi-font-family:Symbol;mso-fareast-language:ZH-CN;mso-bidi-language:
+  TA">·<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">
+  </span></span><!--[endif]--><span lang="EN-SG" style="font-size:12.0pt;
+  font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:&quot;Times New Roman&quot;;
+  mso-fareast-language:ZH-CN;mso-bidi-language:TA">Theories of Acids &amp;
+  Bases</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:7.1pt;margin-bottom:.0001pt;text-indent:-7.1pt;line-height:12.6pt;
+  mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-SG" style="font-size:12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+  mso-bidi-font-family:Symbol;mso-fareast-language:ZH-CN;mso-bidi-language:
+  TA">·<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">
+  </span></span><!--[endif]--><span lang="EN-SG" style="font-size:12.0pt;
+  font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:&quot;Times New Roman&quot;;
+  mso-fareast-language:ZH-CN;mso-bidi-language:TA">The Mole Concept &amp;
+  Stoichiometry</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:7.1pt;margin-bottom:.0001pt;text-indent:-7.1pt;line-height:12.6pt;
+  mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-SG" style="font-size:12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+  mso-bidi-font-family:Symbol;mso-fareast-language:ZH-CN;mso-bidi-language:
+  TA">·<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">
+  </span></span><!--[endif]--><span lang="EN-SG" style="font-size:12.0pt;
+  font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:&quot;Times New Roman&quot;;
+  mso-fareast-language:ZH-CN;mso-bidi-language:TA">Chemical Energetics</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:7.1pt;margin-bottom:.0001pt;text-indent:-7.1pt;line-height:12.6pt;
+  mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-SG" style="font-size:12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+  mso-bidi-font-family:Symbol;mso-fareast-language:ZH-CN;mso-bidi-language:
+  TA">·<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">
+  </span></span><!--[endif]--><span lang="EN-SG" style="font-size:12.0pt;
+  font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:&quot;Times New Roman&quot;;
+  mso-fareast-language:ZH-CN;mso-bidi-language:TA">Reaction Kinetics</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:7.1pt;margin-bottom:.0001pt;text-indent:-7.1pt;line-height:12.6pt;
+  mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-SG" style="font-size:12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+  mso-bidi-font-family:Symbol;mso-fareast-language:ZH-CN;mso-bidi-language:
+  TA">·<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">
+  </span></span><!--[endif]--><span lang="EN-SG" style="font-size:12.0pt;
+  font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:&quot;Times New Roman&quot;;
+  mso-fareast-language:ZH-CN;mso-bidi-language:TA">Chemical Equilibria</span></p>
+  
+</td>
+  
+<td width="299" valign="top" style="width:224.55pt;background:#D9D9D9;padding:
+  3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:13.15pt;margin-bottom:.0001pt;text-indent:-14.15pt;line-height:
+  12.6pt;mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-SG" style="font-size:12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+  mso-bidi-font-family:Symbol;mso-fareast-language:ZH-CN;mso-bidi-language:
+  TA">·<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><!--[endif]--><span lang="EN-SG" style="font-size:12.0pt;
+  font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:&quot;Times New Roman&quot;;
+  mso-fareast-language:ZH-CN;mso-bidi-language:TA">Nanomaterials </span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:13.15pt;margin-bottom:.0001pt;text-indent:-14.15pt;line-height:
+  12.6pt;mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-SG" style="font-size:12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+  mso-bidi-font-family:Symbol;mso-fareast-language:ZH-CN;mso-bidi-language:
+  TA">·<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><!--[endif]--><span lang="EN-SG" style="font-size:12.0pt;
+  font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:&quot;Times New Roman&quot;;
+  mso-fareast-language:ZH-CN;mso-bidi-language:TA">Introduction to Organic</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:13.15pt;margin-bottom:.0001pt;text-indent:-14.15pt;line-height:
+  12.6pt;mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-SG" style="font-size:12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+  mso-bidi-font-family:Symbol;mso-fareast-language:ZH-CN;mso-bidi-language:
+  TA">·<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><!--[endif]--><span lang="EN-SG" style="font-size:12.0pt;
+  font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:&quot;Times New Roman&quot;;
+  mso-fareast-language:ZH-CN;mso-bidi-language:TA">Hydrocarbons</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:13.15pt;margin-bottom:.0001pt;text-indent:-14.15pt;line-height:
+  12.6pt;mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-SG" style="font-size:12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+  mso-bidi-font-family:Symbol;mso-fareast-language:ZH-CN;mso-bidi-language:
+  TA">·<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><!--[endif]--><span lang="EN-SG" style="font-size:12.0pt;
+  font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:&quot;Times New Roman&quot;;
+  mso-fareast-language:ZH-CN;mso-bidi-language:TA">Halogen Derivatives</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:13.15pt;margin-bottom:.0001pt;text-indent:-14.15pt;line-height:
+  12.6pt;mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-SG" style="font-size:12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+  mso-bidi-font-family:Symbol;mso-fareast-language:ZH-CN;mso-bidi-language:
+  TA">·<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><!--[endif]--><span lang="EN-SG" style="font-size:12.0pt;
+  font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:&quot;Times New Roman&quot;;
+  mso-fareast-language:ZH-CN;mso-bidi-language:TA">Hydroxyl Compounds</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:13.15pt;margin-bottom:.0001pt;text-indent:-14.15pt;line-height:
+  12.6pt;mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-SG" style="font-size:12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+  mso-bidi-font-family:Symbol;mso-fareast-language:ZH-CN;mso-bidi-language:
+  TA">·<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><!--[endif]--><span lang="EN-SG" style="font-size:12.0pt;
+  font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:&quot;Times New Roman&quot;;
+  mso-fareast-language:ZH-CN;mso-bidi-language:TA">Carbonyl Compounds</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:13.15pt;margin-bottom:.0001pt;text-indent:-14.15pt;line-height:
+  12.6pt;mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-SG" style="font-size:12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+  mso-bidi-font-family:Symbol;mso-fareast-language:ZH-CN;mso-bidi-language:
+  TA">·<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><!--[endif]--><span lang="EN-SG" style="font-size:12.0pt;
+  font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:&quot;Times New Roman&quot;;
+  mso-fareast-language:ZH-CN;mso-bidi-language:TA">Carboxylic acids and its
+  derivatives</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:13.15pt;margin-bottom:.0001pt;text-indent:-14.15pt;line-height:
+  12.6pt;mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-SG" style="font-size:12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+  mso-bidi-font-family:Symbol;mso-fareast-language:ZH-CN;mso-bidi-language:
+  TA">·<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><!--[endif]--><span lang="EN-SG" style="font-size:12.0pt;
+  font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:&quot;Times New Roman&quot;;
+  mso-fareast-language:ZH-CN;mso-bidi-language:TA">Polymers</span></p>
+  
+</td>
+ 
+</tr>
+</tbody>
+</table><br><img src="../../../../qql/slot/u152/Curriculum/Maths%20and%20Science/Chemistry/Chemistry%203.jpg" hspace="2" width="100%" alt="Chemistry 3.jpg" class="ive_eobj_center" style="width: 100%; height: 428.417px;"><p class="MsoNormal" align="center" style="text-align:center"><i><span lang="EN-SG" style="font-size:12.0pt;line-height:115%;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-language:ZH-CN;mso-bidi-language:TA;mso-no-proof:yes">Content map
+for H1 Chemistry</span></i></p><p class="MsoNormal" style="text-align:justify"><span lang="EN-SG" style="font-family:&quot;Arial&quot;,sans-serif">Candidates will be assumed to have
+knowledge and understanding of Chemistry at O-Level as a single subject or as
+part of a balanced science course. This syllabus is designed to place less
+emphasis on factual material and greater emphasis on the understanding and
+application of scientific concepts and principles. </span></p><p class="MsoNormal" style="text-align:justify"><span lang="EN-SG" style="font-family:&quot;Arial&quot;,sans-serif">Candidates may not simultaneously offer
+Chemistry H1 and H2 levels</span><span lang="EN-SG" style="font-size:14.0pt;
+line-height:115%;font-family:&quot;Arial&quot;,sans-serif">.</span></p>
+<table class="MsoNormalTable ive_eobj_center" border="0" cellspacing="3" cellpadding="0" width="610" style="width: 100%; height: 148px;">
+ 
+<tbody>
+<tr>
+  
+<td style="background: rgb(157, 39, 43); padding: 3.75pt; width: 82px;">
+  <p class="MsoNormal" align="center" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal;mso-outline-level:3"><b><span style="font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:&quot;Times New Roman&quot;;
+  color:white;mso-ansi-language:EN-US;mso-fareast-language:ZH-CN;mso-bidi-language:
+  TA">Paper</span></b><b><span lang="EN-SG" style="font-family:&quot;Arial&quot;,sans-serif;
+  mso-fareast-font-family:&quot;Times New Roman&quot;;color:#948C75;mso-fareast-language:
+  ZH-CN;mso-bidi-language:TA"></span></b></p>
+  
+</td>
+  
+<td width="271" style="width: 331px; background: rgb(157, 39, 43); padding: 3.75pt;">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal;mso-outline-level:3"><b><span style="font-family:&quot;Arial&quot;,sans-serif;
+  mso-fareast-font-family:&quot;Times New Roman&quot;;color:white;mso-ansi-language:EN-US;
+  mso-fareast-language:ZH-CN;mso-bidi-language:TA">Type of Paper</span></b><b><span lang="EN-SG" style="font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+  &quot;Times New Roman&quot;;color:#948C75;mso-fareast-language:ZH-CN;mso-bidi-language:
+  TA"></span></b></p>
+  
+</td>
+  
+<td width="87" style="width: 131px; background: rgb(157, 39, 43); padding: 3.75pt;">
+  <p class="MsoNormal" align="center" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal;mso-outline-level:3"><b><span style="font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:&quot;Times New Roman&quot;;
+  color:white;mso-ansi-language:EN-US;mso-fareast-language:ZH-CN;mso-bidi-language:
+  TA">Duration</span></b><b><span lang="EN-SG" style="font-family:&quot;Arial&quot;,sans-serif;
+  mso-fareast-font-family:&quot;Times New Roman&quot;;color:#948C75;mso-fareast-language:
+  ZH-CN;mso-bidi-language:TA"></span></b></p>
+  
+</td>
+  
+<td width="64" style="width: 105px; background: rgb(157, 39, 43); padding: 3.75pt;">
+  <p class="MsoNormal" align="center" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal;mso-outline-level:3"><b><span style="font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:&quot;Times New Roman&quot;;
+  color:white;mso-ansi-language:EN-US;mso-fareast-language:ZH-CN;mso-bidi-language:
+  TA">Marks</span></b><b><span lang="EN-SG" style="font-family:&quot;Arial&quot;,sans-serif;
+  mso-fareast-font-family:&quot;Times New Roman&quot;;color:#948C75;mso-fareast-language:
+  ZH-CN;mso-bidi-language:TA"></span></b></p>
+  
+</td>
+  
+<td width="100" style="width: 146px; background: rgb(157, 39, 43); padding: 3.75pt;">
+  <p class="MsoNormal" align="center" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal;mso-outline-level:3"><b><span style="font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:&quot;Times New Roman&quot;;
+  color:white;mso-ansi-language:EN-US;mso-fareast-language:ZH-CN;mso-bidi-language:
+  TA">Weighting</span></b><b><span lang="EN-SG" style="font-family:&quot;Arial&quot;,sans-serif;
+  mso-fareast-font-family:&quot;Times New Roman&quot;;color:#948C75;mso-fareast-language:
+  ZH-CN;mso-bidi-language:TA"></span></b></p>
+  
+</td>
+ 
+</tr>
+ 
+<tr>
+  
+<td style="background:#E9E9E9;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:12.6pt"><b><span lang="EN-SG" style="font-family:
+  &quot;Arial&quot;,sans-serif;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-fareast-language:
+  ZH-CN;mso-bidi-language:TA">1</span></b><span lang="EN-SG" style="font-family:
+  &quot;Arial&quot;,sans-serif;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-fareast-language:
+  ZH-CN;mso-bidi-language:TA"></span></p>
+  
+</td>
+  
+<td width="271" style="width:203.15pt;background:#E9E9E9;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  12.6pt"><span lang="EN-SG" style="font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+  &quot;Times New Roman&quot;;mso-fareast-language:ZH-CN;mso-bidi-language:TA">Multiple
+  Choice</span></p>
+  
+</td>
+  
+<td width="87" style="width:65.35pt;background:#E9E9E9;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:12.6pt"><span lang="EN-SG" style="font-family:
+  &quot;Arial&quot;,sans-serif;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-fareast-language:
+  ZH-CN;mso-bidi-language:TA">1 h</span></p>
+  
+</td>
+  
+<td width="64" style="width:48.3pt;background:#E9E9E9;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:12.6pt"><span lang="EN-SG" style="font-family:
+  &quot;Arial&quot;,sans-serif;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-fareast-language:
+  ZH-CN;mso-bidi-language:TA">30</span></p>
+  
+</td>
+  
+<td width="100" style="width:74.7pt;background:#E9E9E9;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:12.6pt"><span lang="EN-SG" style="font-family:
+  &quot;Arial&quot;,sans-serif;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-fareast-language:
+  ZH-CN;mso-bidi-language:TA">33%</span></p>
+  
+</td>
+ 
+</tr>
+ 
+<tr>
+  
+<td style="background:#F8F8F7;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:12.6pt"><b><span lang="EN-SG" style="font-family:
+  &quot;Arial&quot;,sans-serif;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-fareast-language:
+  ZH-CN;mso-bidi-language:TA">2</span></b><span lang="EN-SG" style="font-family:
+  &quot;Arial&quot;,sans-serif;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-fareast-language:
+  ZH-CN;mso-bidi-language:TA"></span></p>
+  
+</td>
+  
+<td width="271" style="width:203.15pt;background:#F8F8F7;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  12.6pt"><span lang="EN-SG" style="font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+  &quot;Times New Roman&quot;;mso-fareast-language:ZH-CN;mso-bidi-language:TA">Structured
+  and Free Response </span></p>
+  
+</td>
+  
+<td width="87" style="width:65.35pt;background:#F8F8F7;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:12.6pt"><span lang="EN-SG" style="font-family:
+  &quot;Arial&quot;,sans-serif;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-fareast-language:
+  ZH-CN;mso-bidi-language:TA">2 h</span></p>
+  
+</td>
+  
+<td width="64" style="width:48.3pt;background:#F8F8F7;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:12.6pt"><span lang="EN-SG" style="font-family:
+  &quot;Arial&quot;,sans-serif;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-fareast-language:
+  ZH-CN;mso-bidi-language:TA">80</span></p>
+  
+</td>
+  
+<td width="100" style="width:74.7pt;background:#F8F8F7;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:12.6pt"><span lang="EN-SG" style="font-family:
+  &quot;Arial&quot;,sans-serif;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-fareast-language:
+  ZH-CN;mso-bidi-language:TA">67%</span></p>
+  
+</td>
+ 
+</tr>
+</tbody>
+</table><p class="MsoNormal" style="text-align:justify"><b style="background-color: initial; font-size: 1em;"><span lang="EN-SG" style="font-family:&quot;Arial&quot;,sans-serif"><br></span></b></p><p class="MsoNormal" style="text-align:justify"><b style="background-color: initial; font-size: 1em;"><span lang="EN-SG" style="font-family:&quot;Arial&quot;,sans-serif">Paper 1</span></b><span lang="EN-SG" style="background-color: initial; font-size: 1em; font-family: Arial, sans-serif;"> (1 h, 30 marks)</span></p><p class="MsoNormal" style="margin-top:6.0pt;margin-right:0cm;margin-bottom:0cm;
+margin-left:0cm;margin-bottom:.0001pt;text-align:justify"><span lang="EN-SG" style="font-family:&quot;Arial&quot;,sans-serif">This paper consists of 30 compulsory
+multiple choice questions. Four to six items will be of the multiple completion
+type.</span></p><p class="MsoNormal" style="margin-top:6.0pt;margin-right:0cm;margin-bottom:0cm;
+margin-left:0cm;margin-bottom:.0001pt;text-align:justify"><span lang="EN-SG" style="font-family:&quot;Arial&quot;,sans-serif">All questions will include 4 options.</span></p><p class="MsoNormal" style="margin-top:6.0pt;margin-right:0cm;margin-bottom:0cm;
+margin-left:0cm;margin-bottom:.0001pt;text-align:justify"><span lang="EN-SG" style="font-family:&quot;Arial&quot;,sans-serif"><br></span></p><p class="MsoNormal" style="text-align:justify"><b style="background-color: initial; font-size: 1em;"><span lang="EN-SG" style="font-family:&quot;Arial&quot;,sans-serif">Paper 2</span></b><span lang="EN-SG" style="background-color: initial; font-size: 1em; font-family: Arial, sans-serif;"> (2 h, 80 marks)</span></p><p class="MsoNormal" style="margin-top:6.0pt;margin-right:0cm;margin-bottom:0cm;
+margin-left:0cm;margin-bottom:.0001pt;text-align:justify"><span lang="EN-SG" style="font-family:&quot;Arial&quot;,sans-serif">This paper consists of two sections:</span></p><p class="MsoNormal" style="margin-top:6.0pt;margin-right:0cm;margin-bottom:0cm;
+margin-left:0cm;margin-bottom:.0001pt;text-align:justify"><span lang="EN-SG" style="font-size:1.0pt;line-height:115%;font-family:&quot;Arial&quot;,sans-serif">&nbsp;</span><b style="background-color: initial; font-size: 1em;"><span lang="EN-SG" style="font-family:&quot;Arial&quot;,sans-serif">Section A</span></b><span lang="EN-SG" style="background-color: initial; font-size: 1em; font-family: Arial, sans-serif;"> (60 marks)</span></p><p class="MsoNormal" style="margin-top:6.0pt;margin-right:0cm;margin-bottom:0cm;
+margin-left:0cm;margin-bottom:.0001pt;text-align:justify"><span lang="EN-SG" style="font-family:&quot;Arial&quot;,sans-serif">A variable number of structured
+questions including data-based questions, all compulsory. The data-based
+question(s) constitute(s) 15</span><span lang="EN-SG" style="font-family:Symbol;
+mso-ascii-font-family:Arial;mso-hansi-font-family:Arial;mso-bidi-font-family:
+Arial;mso-char-type:symbol;mso-symbol-font-family:Symbol">-</span><span lang="EN-SG" style="font-family:&quot;Arial&quot;,sans-serif">20 marks for this paper. The
+data-based question(s) provide(s) a good opportunity to test higher order
+thinking skills such as handling, applying and evaluating information. </span></p><p class="MsoNormal" style="margin-top:6.0pt;margin-right:0cm;margin-bottom:0cm;
+margin-left:0cm;margin-bottom:.0001pt;text-align:justify"><span lang="EN-SG" style="font-size:1.0pt;line-height:115%;font-family:&quot;Arial&quot;,sans-serif">&nbsp;</span><b style="background-color: initial; font-size: 1em;"><span lang="EN-SG" style="font-family:&quot;Arial&quot;,sans-serif">Section B</span></b><span lang="EN-SG" style="background-color: initial; font-size: 1em; font-family: Arial, sans-serif;"> (20 marks)</span></p><p class="MsoNormal" style="margin-top:6.0pt;margin-right:0cm;margin-bottom:0cm;
+margin-left:0cm;margin-bottom:.0001pt;text-align:justify"><span lang="EN-SG" style="font-family:&quot;Arial&quot;,sans-serif">Candidates will be required to answer <b>one</b>
+out of two questions. Each question will carry 20 marks. These questions will
+require candidates to integrate knowledge and understanding from different
+areas and topics of the chemistry syllabus</span></p><p class="MsoNormal" align="center" style="text-align:center">
+</p><p class="MsoNormal"><span lang="EN-SG" style="font-family:&quot;Arial&quot;,sans-serif"><span style="background-color: initial; font-size: 1em;">For
+more details on the H1 Chemistry syllabus, click </span><a href="https://www.seab.gov.sg/docs/default-source/national-examinations/syllabus/alevel/2018syllabus/8873_2018.pdf" target="">here</a><span style="background-color: initial; font-size: 1em;"> to download the PDF from SEAB
+website.</span>&nbsp;</span></p><p class="MsoNormal" align="center" style="text-align:center"><i><span lang="EN-SG" style="font-size:12.0pt;line-height:115%;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-language:ZH-CN;mso-bidi-language:TA;mso-no-proof:yes"></span></i><i><span lang="EN-SG" style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Arial&quot;,sans-serif"></span></i></p><p class="MsoNormal" align="center" style="text-align:center"><i><span lang="EN-SG" style="font-family:&quot;Arial&quot;,sans-serif"></span></i></p>
+</div>
+</div>
+  <div id="_ptoo_2412" class="pageblock_box " >
+    <h2 id="_ptoh_2412" class="ive_editable ive_ptoh">H2 CHEMISTRY (9729)</h2>
+    <div id="_ptod_2412" class="ive_editable ive_ptod ive_content"><br><span lang="EN-SG" style="font-size:11.0pt;line-height:
+115%;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:Calibri;mso-ansi-language:
+EN-SG;mso-fareast-language:EN-US;mso-bidi-language:AR-SA"></span><span lang="EN-SG" style="font-size:11.0pt;line-height:
+115%;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:Calibri;mso-ansi-language:
+EN-SG;mso-fareast-language:EN-US;mso-bidi-language:AR-SA">H2 Chemistry aims to
+develop students’ understanding of the chemical concepts and how these concepts
+are related within chemistry and to other science discipline. A key feature in
+the study of H2 Chemistry is the development of students’ ability to navigate
+between macroscopic phenomena, microscopic interactions and symbolic
+representation to <b>attain a deep conceptual understanding of the behaviours
+of chemical systems</b>. It will enable students to extend this way of viewing
+and thinking about the behaviours of chemical systems to physical and
+biological phenomena, which are present in many aspects of daily life, e.g.
+environmental pollution and food science.</span><br></div>
+</div>
+  <div id="_ptoo_2413" class="pageblock_box " >
+    <h2 id="_ptoh_2413" class="ive_editable ive_ptoh">Syllabus Outline for H2 Chemistry</h2>
+    <div id="_ptod_2413" class="ive_editable ive_ptod ive_content"><p class="MsoNormal" style="text-align:justify"><span lang="EN-SG" style="font-family:&quot;Arial&quot;,sans-serif">The key features of the H2 Chemistry
+Curriculum comprise Core Ideas and Extension Topics, Practices of Science and
+Learning Experiences, as illustrated in the diagram below.</span></p><p class="MsoNormal" style="text-align:justify"><span lang="EN-SG" style="font-family:&quot;Arial&quot;,sans-serif"><img src="../../../../qql/slot/u152/Curriculum/Maths%20and%20Science/Chemistry/Chemistry%204.jpg" hspace="2" width="100%" alt="Chemistry 4.jpg" class="ive_eobj_center" style="width: 100%; height: 458.098px;"></span></p><p class="MsoNormal" align="center" style="text-align:center"><i><span lang="EN-SG" style="font-family:&quot;Arial&quot;,sans-serif">H2 Chemistry Curriculum Framework</span></i><span style="font-family: Arial, sans-serif; font-size: 12pt; background-color: initial;">&nbsp;</span></p>
+<table class="MsoNormalTable ive_eobj_center" border="0" cellspacing="3" cellpadding="0" width="605" style="width: 100%; height: 232px;">
+ 
+<tbody>
+<tr>
+  
+<td width="299" style="width: 397px; background: rgb(0, 40, 85); padding: 3.75pt;">
+  <p class="MsoNormal" align="center" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal;mso-outline-level:3"><b><span lang="EN-SG" style="font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+  &quot;Times New Roman&quot;;color:white;mso-fareast-language:ZH-CN;mso-bidi-language:
+  TA">Core Topics</span></b></p>
+  
+</td>
+  
+<td width="299" style="width: 397px; background: rgb(0, 40, 85); padding: 3.75pt;">
+  <p class="MsoNormal" align="center" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal;mso-outline-level:3"><b><span lang="EN-SG" style="font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+  &quot;Times New Roman&quot;;color:white;mso-fareast-language:ZH-CN;mso-bidi-language:
+  TA">Extension Topics</span></b></p>
+  
+</td>
+ 
+</tr>
+ 
+<tr>
+  
+<td width="299" style="width:224.55pt;background:#D9D9D9;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:7.1pt;margin-bottom:.0001pt;text-indent:-7.1pt;line-height:12.6pt;
+  mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-SG" style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+  Symbol;mso-fareast-language:ZH-CN;mso-bidi-language:TA">·<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;"> </span></span><!--[endif]--><span lang="EN-SG" style="font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+  &quot;Times New Roman&quot;;mso-fareast-language:ZH-CN;mso-bidi-language:TA">Atomic
+  Structure</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:7.1pt;margin-bottom:.0001pt;text-indent:-7.1pt;line-height:12.6pt;
+  mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-SG" style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+  Symbol;mso-fareast-language:ZH-CN;mso-bidi-language:TA">·<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;"> </span></span><!--[endif]--><span lang="EN-SG" style="font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+  &quot;Times New Roman&quot;;mso-fareast-language:ZH-CN;mso-bidi-language:TA">Chemical
+  Bonding</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:7.1pt;margin-bottom:.0001pt;text-indent:-7.1pt;line-height:12.6pt;
+  mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-SG" style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+  Symbol;mso-fareast-language:ZH-CN;mso-bidi-language:TA">·<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;"> </span></span><!--[endif]--><span lang="EN-SG" style="font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+  &quot;Times New Roman&quot;;mso-fareast-language:ZH-CN;mso-bidi-language:TA">The
+  Gaseous State</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:7.1pt;margin-bottom:.0001pt;text-indent:-7.1pt;line-height:12.6pt;
+  mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-SG" style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+  Symbol;mso-fareast-language:ZH-CN;mso-bidi-language:TA">·<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;"> </span></span><!--[endif]--><span lang="EN-SG" style="font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+  &quot;Times New Roman&quot;;mso-fareast-language:ZH-CN;mso-bidi-language:TA">The
+  Periodic Table</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:7.1pt;margin-bottom:.0001pt;text-indent:-7.1pt;line-height:12.6pt;
+  mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-SG" style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+  Symbol;mso-fareast-language:ZH-CN;mso-bidi-language:TA">·<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;"> </span></span><!--[endif]--><span lang="EN-SG" style="font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+  &quot;Times New Roman&quot;;mso-fareast-language:ZH-CN;mso-bidi-language:TA">Theories
+  of Acids &amp; Bases</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:7.1pt;margin-bottom:.0001pt;text-indent:-7.1pt;line-height:12.6pt;
+  mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-SG" style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+  Symbol;mso-fareast-language:ZH-CN;mso-bidi-language:TA">·<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;"> </span></span><!--[endif]--><span lang="EN-SG" style="font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+  &quot;Times New Roman&quot;;mso-fareast-language:ZH-CN;mso-bidi-language:TA">The Mole
+  Concept &amp; Stoichiometry</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:7.1pt;margin-bottom:.0001pt;text-indent:-7.1pt;line-height:12.6pt;
+  mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-SG" style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+  Symbol;mso-fareast-language:ZH-CN;mso-bidi-language:TA">·<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;"> </span></span><!--[endif]--><span lang="EN-SG" style="font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+  &quot;Times New Roman&quot;;mso-fareast-language:ZH-CN;mso-bidi-language:TA">Chemical
+  Energetics</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:7.1pt;margin-bottom:.0001pt;text-indent:-7.1pt;line-height:12.6pt;
+  mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-SG" style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+  Symbol;mso-fareast-language:ZH-CN;mso-bidi-language:TA">·<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;"> </span></span><!--[endif]--><span lang="EN-SG" style="font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+  &quot;Times New Roman&quot;;mso-fareast-language:ZH-CN;mso-bidi-language:TA">Reaction
+  Kinetics</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:7.1pt;margin-bottom:.0001pt;text-indent:-7.1pt;line-height:12.6pt;
+  mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-SG" style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+  Symbol;mso-fareast-language:ZH-CN;mso-bidi-language:TA">·<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;"> </span></span><!--[endif]--><span lang="EN-SG" style="font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+  &quot;Times New Roman&quot;;mso-fareast-language:ZH-CN;mso-bidi-language:TA">Chemical
+  Equilibria</span></p>
+  
+</td>
+  
+<td width="299" valign="top" style="width:224.55pt;background:#D9D9D9;padding:
+  3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:13.15pt;margin-bottom:.0001pt;text-indent:-14.15pt;line-height:
+  12.6pt;mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-SG" style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+  Symbol;mso-fareast-language:ZH-CN;mso-bidi-language:TA">·<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><!--[endif]--><span lang="EN-SG" style="font-family:&quot;Arial&quot;,sans-serif;
+  mso-fareast-font-family:&quot;Times New Roman&quot;;mso-fareast-language:ZH-CN;
+  mso-bidi-language:TA">Acids, Bases and Solubility Equilibria</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:13.15pt;margin-bottom:.0001pt;text-indent:-14.15pt;line-height:
+  12.6pt;mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-SG" style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+  Symbol;mso-fareast-language:ZH-CN;mso-bidi-language:TA">·<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><!--[endif]--><span lang="EN-SG" style="font-family:&quot;Arial&quot;,sans-serif;
+  mso-fareast-font-family:&quot;Times New Roman&quot;;mso-fareast-language:ZH-CN;
+  mso-bidi-language:TA">Electrochemistry</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:13.15pt;margin-bottom:.0001pt;text-indent:-14.15pt;line-height:
+  12.6pt;mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-SG" style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+  Symbol;mso-fareast-language:ZH-CN;mso-bidi-language:TA">·<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><!--[endif]--><span lang="EN-SG" style="font-family:&quot;Arial&quot;,sans-serif;
+  mso-fareast-font-family:&quot;Times New Roman&quot;;mso-fareast-language:ZH-CN;
+  mso-bidi-language:TA">Introduction to Organic &amp; Isomerism</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:13.15pt;margin-bottom:.0001pt;text-indent:-14.15pt;line-height:
+  12.6pt;mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-SG" style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+  Symbol;mso-fareast-language:ZH-CN;mso-bidi-language:TA">·<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><!--[endif]--><span lang="EN-SG" style="font-family:&quot;Arial&quot;,sans-serif;
+  mso-fareast-font-family:&quot;Times New Roman&quot;;mso-fareast-language:ZH-CN;
+  mso-bidi-language:TA">Hydrocarbons</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:13.15pt;margin-bottom:.0001pt;text-indent:-14.15pt;line-height:
+  12.6pt;mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-SG" style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+  Symbol;mso-fareast-language:ZH-CN;mso-bidi-language:TA">·<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><!--[endif]--><span lang="EN-SG" style="font-family:&quot;Arial&quot;,sans-serif;
+  mso-fareast-font-family:&quot;Times New Roman&quot;;mso-fareast-language:ZH-CN;
+  mso-bidi-language:TA">Halogen Derivatives</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:13.15pt;margin-bottom:.0001pt;text-indent:-14.15pt;line-height:
+  12.6pt;mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-SG" style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+  Symbol;mso-fareast-language:ZH-CN;mso-bidi-language:TA">·<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><!--[endif]--><span lang="EN-SG" style="font-family:&quot;Arial&quot;,sans-serif;
+  mso-fareast-font-family:&quot;Times New Roman&quot;;mso-fareast-language:ZH-CN;
+  mso-bidi-language:TA">Hydroxyl Compounds</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:13.15pt;margin-bottom:.0001pt;text-indent:-14.15pt;line-height:
+  12.6pt;mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-SG" style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+  Symbol;mso-fareast-language:ZH-CN;mso-bidi-language:TA">·<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><!--[endif]--><span lang="EN-SG" style="font-family:&quot;Arial&quot;,sans-serif;
+  mso-fareast-font-family:&quot;Times New Roman&quot;;mso-fareast-language:ZH-CN;
+  mso-bidi-language:TA">Carbonyl Compounds</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:13.15pt;margin-bottom:.0001pt;text-indent:-14.15pt;line-height:
+  12.6pt;mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-SG" style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+  Symbol;mso-fareast-language:ZH-CN;mso-bidi-language:TA">·<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><!--[endif]--><span lang="EN-SG" style="font-family:&quot;Arial&quot;,sans-serif;
+  mso-fareast-font-family:&quot;Times New Roman&quot;;mso-fareast-language:ZH-CN;
+  mso-bidi-language:TA">Carboxylic acids and its derivatives</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:13.15pt;margin-bottom:.0001pt;text-indent:-14.15pt;line-height:
+  12.6pt;mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-SG" style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+  Symbol;mso-fareast-language:ZH-CN;mso-bidi-language:TA">·<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><!--[endif]--><span lang="EN-SG" style="font-family:&quot;Arial&quot;,sans-serif;
+  mso-fareast-font-family:&quot;Times New Roman&quot;;mso-fareast-language:ZH-CN;
+  mso-bidi-language:TA">Chemistry of Transition Elements</span></p>
+  
+</td>
+ 
+</tr>
+</tbody>
+</table><p class="MsoNormal" style="text-align:justify"><span lang="EN-SG" style="font-family:&quot;Arial&quot;,sans-serif">
+</span></p><p class="MsoNormal" style="text-align:justify"><img src="../../../../qql/slot/u152/Curriculum/Maths%20and%20Science/Chemistry/Chemistry%205.jpg" hspace="2" width="100%" alt="Chemistry 5.jpg" class="ive_eobj_center" style="width: 100%; height: 523.752px;"></p><p class="MsoNormal" align="center" style="text-align:center"><i><span lang="EN-SG" style="font-size:12.0pt;line-height:115%;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-language:ZH-CN;mso-bidi-language:TA;mso-no-proof:yes">Content map
+for H2 Chemistry</span></i></p><p class="MsoNormal" style="text-align:justify"><span lang="EN-SG" style="font-family:&quot;Arial&quot;,sans-serif">Candidates will be assumed to have
+knowledge and understanding of Chemistry at O-Level as a single subject or as
+part of a balanced science course. This syllabus is designed to place less
+emphasis on factual material and greater emphasis on the understanding and
+application of scientific concepts and principles. Experimental work is an
+important component and should underpin the teaching and learning of Chemistry.
+</span></p><p class="MsoNormal" style="text-align:justify"><span lang="EN-SG" style="font-size:11.0pt;line-height:115%;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:Calibri;mso-ansi-language:EN-SG;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA"></span></p><p class="MsoNormal" style="text-align:justify">
+<span lang="EN-SG" style="font-size:11.0pt;line-height:115%;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:Calibri;mso-ansi-language:EN-SG;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA">Candidates may not simultaneously offer
+Chemistry H1 and H2 levels.</span></p><p class="MsoNormal" style="text-align:justify"><span lang="EN-SG" style="font-family:&quot;Arial&quot;,sans-serif">
+</span></p><p class="MsoNormal" style="text-align:justify"><b><u><span lang="EN-SG" style="font-size:10.0pt;line-height:115%;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;;color:#2C2C2C;mso-fareast-language:
+ZH-CN;mso-bidi-language:TA"><span style="text-decoration-line: none;"></span></span></u></b></p><p class="MsoNormal" style="text-align:justify"><span lang="EN-SG" style="font-family:&quot;Arial&quot;,sans-serif"></span></p>
+</div>
+</div>
+  <div id="_ptoo_2414" class="pageblock_box " >
+    <h2 id="_ptoh_2414" class="ive_editable ive_ptoh">Assessment for H2 Chemistry</h2>
+    <div id="_ptod_2414" class="ive_editable ive_ptod ive_content"><span style="text-align: justify; font-family: Arial, sans-serif; font-size: 12pt; background-color: initial;"><br>All candidates are required to enter for
+Papers 1, 2 3 and 4.<br></span><br><span lang="EN-SG" style="font-size:12.0pt;line-height:115%;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:Calibri;mso-ansi-language:EN-SG;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA">
+<table class="MsoNormalTable ive_eobj_center" border="0" cellspacing="3" cellpadding="0" width="610" style="width: 100%; height: 215px;">
+ 
+<tbody>
+<tr>
+  
+<td style="background: rgb(0, 40, 85); padding: 3.75pt; width: 175px;">
+  <p class="MsoNormal" align="center" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal;mso-outline-level:3"><b><span style="color: white;">Paper</span></b><b><span lang="EN-SG" style="color: rgb(148, 140, 117);"></span></b></p>
+  
+</td>
+  
+<td width="248" style="width: 275px; background: rgb(0, 40, 85); padding: 3.75pt;">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal;mso-outline-level:3"><b><span style="color: white;">Type of Paper</span></b><b><span lang="EN-SG" style="color: rgb(148, 140, 117);"></span></b></p>
+  
+</td>
+  
+<td width="110" style="width: 134px; background: rgb(0, 40, 85); padding: 3.75pt;">
+  <p class="MsoNormal" align="center" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal;mso-outline-level:3"><b><span style="color: white;">Duration</span></b><b><span lang="EN-SG" style="color: rgb(148, 140, 117);"></span></b></p>
+  
+</td>
+  
+<td width="64" style="width: 87px; background: rgb(0, 40, 85); padding: 3.75pt;">
+  <p class="MsoNormal" align="center" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal;mso-outline-level:3"><b><span style="color: white;">Marks</span></b><b><span lang="EN-SG" style="color: rgb(148, 140, 117);"></span></b></p>
+  
+</td>
+  
+<td width="100" style="width: 124px; background: rgb(0, 40, 85); padding: 3.75pt;">
+  <p class="MsoNormal" align="center" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal;mso-outline-level:3"><b><span style="color: white;">Weighting</span></b><b><span lang="EN-SG" style="color: rgb(148, 140, 117);"></span></b></p>
+  
+</td>
+ 
+</tr>
+ 
+<tr>
+  
+<td style="background:#E9E9E9;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:12.6pt"><b><span lang="EN-SG">1</span></b><span lang="EN-SG"></span></p>
+  
+</td>
+  
+<td width="248" style="width:185.75pt;background:#E9E9E9;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  12.6pt"><span lang="EN-SG">Multiple
+  Choice</span></p>
+  
+</td>
+  
+<td width="110" style="width:82.75pt;background:#E9E9E9;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:12.6pt"><span lang="EN-SG">1 h</span></p>
+  
+</td>
+  
+<td width="64" style="width:48.3pt;background:#E9E9E9;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:12.6pt"><span lang="EN-SG">30</span></p>
+  
+</td>
+  
+<td width="100" style="width:75.15pt;background:#E9E9E9;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:12.6pt"><span lang="EN-SG">15</span></p>
+  
+</td>
+ 
+</tr>
+ 
+<tr>
+  
+<td style="background:#F8F8F7;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:12.6pt"><b><span lang="EN-SG">2</span></b><span lang="EN-SG"></span></p>
+  
+</td>
+  
+<td width="248" style="width:185.75pt;background:#F8F8F7;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  12.6pt"><span lang="EN-SG">Structured
+  Questions </span></p>
+  
+</td>
+  
+<td width="110" style="width:82.75pt;background:#F8F8F7;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:12.6pt"><span lang="EN-SG">2 h</span></p>
+  
+</td>
+  
+<td width="64" style="width:48.3pt;background:#F8F8F7;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:12.6pt"><span lang="EN-SG">75</span></p>
+  
+</td>
+  
+<td width="100" style="width:75.15pt;background:#F8F8F7;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:12.6pt"><span lang="EN-SG">30</span></p>
+  
+</td>
+ 
+</tr>
+ 
+<tr>
+  
+<td style="background:#E9E9E9;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:12.6pt"><b><span lang="EN-SG">3</span></b><span lang="EN-SG"></span></p>
+  
+</td>
+  
+<td width="248" style="width:185.75pt;background:#E9E9E9;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  12.6pt"><span lang="EN-SG">Free
+  Response Questions</span></p>
+  
+</td>
+  
+<td width="110" style="width:82.75pt;background:#E9E9E9;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:12.6pt"><span lang="EN-SG">2 h</span></p>
+  
+</td>
+  
+<td width="64" style="width:48.3pt;background:#E9E9E9;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:12.6pt"><span lang="EN-SG">80</span></p>
+  
+</td>
+  
+<td width="100" style="width:75.15pt;background:#E9E9E9;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:12.6pt"><span lang="EN-SG">35</span></p>
+  
+</td>
+ 
+</tr>
+ 
+<tr>
+  
+<td style="background:#F8F8F7;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:12.6pt"><b><span lang="EN-SG">4</span></b></p>
+  
+</td>
+  
+<td width="248" style="width:185.75pt;background:#F8F8F7;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  12.6pt"><span lang="EN-SG">Practical
+  Paper</span></p>
+  
+</td>
+  
+<td width="110" style="width:82.75pt;background:#F8F8F7;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:12.6pt"><span lang="EN-SG">2 h 30 min</span></p>
+  
+</td>
+  
+<td width="64" style="width:48.3pt;background:#F8F8F7;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:12.6pt"><span lang="EN-SG">55</span></p>
+  
+</td>
+  
+<td width="100" style="width:75.15pt;background:#F8F8F7;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:12.6pt"><span lang="EN-SG">20</span></p>
+  
+</td>
+ 
+</tr>
+</tbody>
+</table>
+<p class="MsoNormal" style="text-align:justify"><b style="font-size: 12pt; background-color: initial;"><span lang="EN-SG">Paper 1</span></b><span lang="EN-SG" style="font-size: 12pt; background-color: initial;"> (1 h, 30 marks)</span></p>
+<p class="MsoNormal" style="margin-top:6.0pt;margin-right:0cm;margin-bottom:0cm;
+margin-left:0cm;margin-bottom:.0001pt;text-align:justify"><span lang="EN-SG">This paper consists of 30 compulsory
+multiple choice questions. Five to eight items will be of the multiple
+completion type.</span></p>
+<p class="MsoNormal" style="margin-top:6.0pt;margin-right:0cm;margin-bottom:0cm;
+margin-left:0cm;margin-bottom:.0001pt;text-align:justify"><span lang="EN-SG">All questions will include 4 options.</span></p><p class="MsoNormal" style="margin-top:6.0pt;margin-right:0cm;margin-bottom:0cm;
+margin-left:0cm;margin-bottom:.0001pt;text-align:justify"><span lang="EN-SG"><br></span></p>
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify"><b><span lang="EN-SG">Paper 2</span></b><span lang="EN-SG"> (2 h, 75 marks)</span></p>
+<p class="MsoNormal" style="text-align:justify"><span lang="EN-SG">This paper consists of a variable number
+of structured questions including data-based questions. All questions are
+compulsory and answered on the question paper. The data-based question(s)
+constitute(s) 20</span><span lang="EN-SG" style="font-family:Symbol;mso-ascii-font-family:
+Arial;mso-hansi-font-family:Arial;mso-bidi-font-family:Arial;mso-char-type:
+symbol;mso-symbol-font-family:Symbol">-</span><span lang="EN-SG">25 marks for this paper.</span></p>
+<p class="MsoNormal" style="text-align:justify"><span lang="EN-SG">The data-based question(s) provide(s) a
+good opportunity to test higher order thinking skills such as handling,
+applying and evaluating information. Some questions will also require
+candidates to integrate knowledge and understanding from different areas and
+topics of the chemistry syllabus.</span></p><p class="MsoNormal" style="text-align:justify"><span lang="EN-SG"><br></span></p>
+<p class="MsoNormal" style="margin-top:6.0pt;margin-right:0cm;margin-bottom:0cm;
+margin-left:0cm;margin-bottom:.0001pt;text-align:justify"><b><span lang="EN-SG">Paper 3</span></b><span lang="EN-SG"> (2 h, 80 marks)</span></p>
+<p class="MsoNormal" style="text-align:justify"><span lang="EN-SG">This paper consists of two sections:</span></p>
+<ul style="margin-top:0cm" type="disc">
+ 
+<li class="MsoNormal" style="text-align:justify;mso-list:l0 level1 lfo1"><b><span lang="EN-SG">Section A</span></b><span lang="EN-SG"> (60 marks) consists 3</span><span lang="EN-SG" style="font-family:Symbol;mso-ascii-font-family:Arial;
+     mso-hansi-font-family:Arial;mso-bidi-font-family:Arial;mso-char-type:symbol;
+     mso-symbol-font-family:Symbol">-</span><span lang="EN-SG">4 free response questions, all
+     compulsory. Each question constitutes 15</span><span lang="EN-SG" style="font-family:Symbol;mso-ascii-font-family:Arial;mso-hansi-font-family:
+     Arial;mso-bidi-font-family:Arial;mso-char-type:symbol;mso-symbol-font-family:
+     Symbol">-</span><span lang="EN-SG">25 marks.<b></b></span>
+</li>
+ 
+<li class="MsoNormal" style="text-align:justify;mso-list:l0 level1 lfo1"><b><span lang="EN-SG">Section B</span></b><span lang="EN-SG"> (20 marks) consists <i>two</i>
+     questions, each of 20 marks. Candidates are to answer any one question. <b></b></span>
+</li>
+</ul>
+<p class="MsoNormal" style="text-align:justify"><span lang="EN-SG">These questions will require candidates
+to integrate knowledge and understanding from different areas and topics of the
+chemistry syllabus.<b></b></span></p>
+<p class="MsoNormal" style="margin-top:6.0pt;margin-right:0cm;margin-bottom:0cm;
+margin-left:0cm;margin-bottom:.0001pt;text-align:justify"><span lang="EN-SG">&nbsp;</span></p>
+<p class="MsoNormal" style="margin-top:6.0pt;margin-right:0cm;margin-bottom:0cm;
+margin-left:0cm;margin-bottom:.0001pt;text-align:justify"><b><span lang="EN-SG">Paper 4</span></b><span lang="EN-SG"> (2 h 30 min, 55 marks)</span></p>
+<p class="MsoNormal" style="text-align:justify"><span lang="EN-SG">This paper will assess appropriate
+aspects of practical in the following skill areas:</span></p>
+<ul style="margin-top:0cm" type="disc">
+ 
+<li class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+     justify;mso-list:l1 level1 lfo2"><span lang="EN-SG">Planning
+     (P)</span>
+</li>
+ 
+<li class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+     justify;mso-list:l1 level1 lfo2"><span lang="EN-SG">Manipulation,
+     measurement and observation (MMO)</span>
+</li>
+ 
+<li class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+     justify;mso-list:l1 level1 lfo2"><span lang="EN-SG">Presentation
+     of data and observations (PDO)</span>
+</li>
+ 
+<li class="MsoNormal" style="text-align:justify;mso-list:l1 level1 lfo2"><span lang="EN-SG">Analysis, conclusion and
+     evaluation (ACE)</span>
+</li>
+</ul>
+<p class="MsoNormal" style="text-align:justify"><span lang="EN-SG">The assessment of Planning (P) will have
+a weighing of 5 %. The assessment of skill areas MMO, PDO and ACE will have a
+weighing of 15 %. </span></p>
+<p class="MsoNormal" style="text-align:justify"><span lang="EN-SG">The scope of the practical paper is
+indicated in the Practical Assessment section. The assessment of PDO and ACE
+may also include questions on data-analysis which do not require practical
+equipment and apparatus. Candidates will not be permitted to refer to books and
+laboratory notebooks during the assessment.</span></p>
+<p class="MsoNormal"><span lang="EN-SG">For
+more details on the H2 Chemistry syllabus, click <a href="https://www.seab.gov.sg/docs/default-source/national-examinations/syllabus/alevel/2019Syllabus/9729_2019.pdf" target="">here </a>to download the PDF from SEAB
+website. </span></p>
+<span lang="EN-SG" style="font-size: 12pt; line-height: 115%;"></span></span></div>
+</div>
+  <div id="_ptoo_2415" class="pageblock_box " >
+    <h2 id="_ptoh_2415" class="ive_editable ive_ptoh">H3 CHEMISTRY (9813)</h2>
+    <div id="_ptod_2415" class="ive_editable ive_ptod ive_content"><br><span lang="EN-SG" style="font-size:11.0pt;line-height:
+115%;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:Calibri;mso-ansi-language:
+EN-SG;mso-fareast-language:EN-US;mso-bidi-language:AR-SA"></span><span lang="EN-SG" style="font-size:11.0pt;line-height:
+115%;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:Calibri;mso-ansi-language:
+EN-SG;mso-fareast-language:EN-US;mso-bidi-language:AR-SA">H3 Chemistry syllabus
+has been designed to build on and extend the knowledge, understanding and
+skills acquired from the H2 Chemistry (9729) syllabus. It caters to students of
+strong ability and keen interest in chemistry, and is <b>designed with a strong
+emphasis on independent and self–directed learning</b>. Students should
+simultaneously offer H2 Chemistry. The H3 Chemistry is meant to nurture
+students’ passion for the subject and <b>provide greater depth and rigour in
+the subject</b> for those pursuing further studies in chemistry–related fields.</span><br></div>
+</div>
+  <div id="_ptoo_2416" class="pageblock_box " >
+    <h2 id="_ptoh_2416" class="ive_editable ive_ptoh">Syllabus Outline for H3 Chemistry</h2>
+    <div id="_ptod_2416" class="ive_editable ive_ptod ive_content"><br><span lang="EN-SG" style="font-size:11.0pt;line-height:
+115%;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:Calibri;mso-ansi-language:
+EN-SG;mso-fareast-language:EN-US;mso-bidi-language:AR-SA"></span><span lang="EN-SG" style="font-size:11.0pt;line-height:
+115%;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:Calibri;mso-ansi-language:
+EN-SG;mso-fareast-language:EN-US;mso-bidi-language:AR-SA">The H3 Chemistry
+framework is built on H2 Chemistry, anchored by the three Core Ideas – (1)
+Matter, (2) Structure and Properties, and (3) Transformation. Throughout the
+study of H3 Chemistry, explicit links will be made to the Core Ideas, deepening
+students’ understanding of their knowledge in these Core Ideas and the
+Practices of Science. Learning Experiences also feature prominently in H3
+Chemistry to enhance students’ learning.<br></span><br><img src="../../../../qql/slot/u152/Curriculum/Maths%20and%20Science/Chemistry/Chemistry%206(2).jpg" hspace="2" width="100%" alt="Chemistry 6(2).jpg" class="ive_eobj_center" style="width: 100%; height: 553px;"><span lang="EN-SG" style="font-size:12.0pt;line-height:
+115%;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:Calibri;mso-ansi-language:
+EN-SG;mso-fareast-language:EN-US;mso-bidi-language:AR-SA"><div style="text-align: center;"><span style="font-size: 12pt; background-color: initial;">H3 Chemistry
+Curriculum Framework</span></div></span><p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-SG" style="font-size:12.0pt;line-height:115%;font-family:&quot;Arial&quot;,sans-serif"></span></p>
+<table class="MsoNormalTable ive_eobj_center" border="0" cellspacing="3" cellpadding="0" width="605" style="width: 100%;">
+ 
+<tbody>
+<tr>
+  
+<td width="299" style="width: 397px; background: rgb(99, 102, 106); padding: 3.75pt;">
+  <p class="MsoNormal" align="center" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal;mso-outline-level:3"><b><span lang="EN-SG" style="font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+  &quot;Times New Roman&quot;;color:white;mso-fareast-language:ZH-CN;mso-bidi-language:
+  TA">Spectroscopic Techniques</span></b></p>
+  
+</td>
+  
+<td width="299" style="width: 397px; background: rgb(99, 102, 106); padding: 3.75pt;">
+  <p class="MsoNormal" align="center" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal;mso-outline-level:3"><b><span lang="EN-SG" style="font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+  &quot;Times New Roman&quot;;color:white;mso-fareast-language:ZH-CN;mso-bidi-language:
+  TA">Further Organic Mechanism</span></b></p>
+  
+</td>
+ 
+</tr>
+ 
+<tr>
+  
+<td width="299" style="width:224.55pt;background:#D9D9D9;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:7.1pt;margin-bottom:.0001pt;text-indent:-7.1pt;line-height:12.6pt;
+  mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-SG" style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+  Symbol;mso-fareast-language:ZH-CN;mso-bidi-language:TA">·<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;"> </span></span><!--[endif]--><span lang="EN-SG" style="font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+  &quot;Times New Roman&quot;;mso-fareast-language:ZH-CN;mso-bidi-language:TA">Basic
+  Principles of Spectroscopy</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:7.1pt;margin-bottom:.0001pt;text-indent:-7.1pt;line-height:12.6pt;
+  mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-SG" style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+  Symbol;mso-fareast-language:ZH-CN;mso-bidi-language:TA">·<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;"> </span></span><!--[endif]--><span lang="EN-SG" style="font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+  &quot;Times New Roman&quot;;mso-fareast-language:ZH-CN;mso-bidi-language:TA">Ultraviolet/Visible
+  Spectroscopy</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:7.1pt;margin-bottom:.0001pt;text-indent:-7.1pt;line-height:12.6pt;
+  mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-SG" style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+  Symbol;mso-fareast-language:ZH-CN;mso-bidi-language:TA">·<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;"> </span></span><!--[endif]--><span lang="EN-SG" style="font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+  &quot;Times New Roman&quot;;mso-fareast-language:ZH-CN;mso-bidi-language:TA">Infra-red
+  Spectroscopy</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:7.1pt;margin-bottom:.0001pt;text-indent:-7.1pt;line-height:12.6pt;
+  mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-SG" style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+  Symbol;mso-fareast-language:ZH-CN;mso-bidi-language:TA">·<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;"> </span></span><!--[endif]--><span lang="EN-SG" style="font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+  &quot;Times New Roman&quot;;mso-fareast-language:ZH-CN;mso-bidi-language:TA">Nuclear
+  Magnetic Resonance Spectroscopy</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:7.1pt;margin-bottom:.0001pt;text-indent:-7.1pt;line-height:12.6pt;
+  mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-SG" style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+  Symbol;mso-fareast-language:ZH-CN;mso-bidi-language:TA">·<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;"> </span></span><!--[endif]--><span lang="EN-SG" style="font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+  &quot;Times New Roman&quot;;mso-fareast-language:ZH-CN;mso-bidi-language:TA">Mass
+  Spectrometry</span></p>
+  
+</td>
+  
+<td width="299" valign="top" style="width:224.55pt;background:#D9D9D9;padding:
+  3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:13.15pt;margin-bottom:.0001pt;text-indent:-14.15pt;line-height:
+  12.6pt;mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-SG" style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+  Symbol;mso-fareast-language:ZH-CN;mso-bidi-language:TA">·<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><!--[endif]--><span lang="EN-SG" style="font-family:&quot;Arial&quot;,sans-serif;
+  mso-fareast-font-family:&quot;Times New Roman&quot;;mso-fareast-language:ZH-CN;
+  mso-bidi-language:TA">Molecular Stereochemistry</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:13.15pt;margin-bottom:.0001pt;text-indent:-14.15pt;line-height:
+  12.6pt;mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-SG" style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+  Symbol;mso-fareast-language:ZH-CN;mso-bidi-language:TA">·<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><!--[endif]--><span lang="EN-SG" style="font-family:&quot;Arial&quot;,sans-serif;
+  mso-fareast-font-family:&quot;Times New Roman&quot;;mso-fareast-language:ZH-CN;
+  mso-bidi-language:TA">Basic Physical Organic Chemistry</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:13.15pt;margin-bottom:.0001pt;text-indent:-14.15pt;line-height:
+  12.6pt;mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-SG" style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+  Symbol;mso-fareast-language:ZH-CN;mso-bidi-language:TA">·<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><!--[endif]--><span lang="EN-SG" style="font-family:&quot;Arial&quot;,sans-serif;
+  mso-fareast-font-family:&quot;Times New Roman&quot;;mso-fareast-language:ZH-CN;
+  mso-bidi-language:TA">Nucleophilic Substitution</span></p>
+  <p class="MsoNormal" style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:13.15pt;margin-bottom:.0001pt;text-indent:-14.15pt;line-height:
+  12.6pt;mso-list:l0 level1 lfo1"><!--[if !supportLists]--><span lang="EN-SG" style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+  Symbol;mso-fareast-language:ZH-CN;mso-bidi-language:TA">·<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><!--[endif]--><span lang="EN-SG" style="font-family:&quot;Arial&quot;,sans-serif;
+  mso-fareast-font-family:&quot;Times New Roman&quot;;mso-fareast-language:ZH-CN;
+  mso-bidi-language:TA">Elimination</span></p>
+  
+</td>
+ 
+</tr>
+</tbody>
+</table><p class="MsoNormal" style="text-align:justify"><span lang="EN-SG" style="font-family:&quot;Arial&quot;,sans-serif">Candidates should simultaneously offer
+H2 Chemistry.</span></p><p class="MsoNormal" style="text-align:justify"><span lang="EN-SG" style="font-family:&quot;Arial&quot;,sans-serif"></span></p><p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-SG" style="font-size:12.0pt;line-height:115%;font-family:&quot;Arial&quot;,sans-serif"></span></p></div>
+</div>
+  <div id="_ptoo_2417" class="pageblock_box " >
+    <h2 id="_ptoh_2417" class="ive_editable ive_ptoh">Assessment for H3 Chemistry</h2>
+    <div id="_ptod_2417" class="ive_editable ive_ptod ive_content"><br><span lang="EN-SG" style="font-size:11.0pt;line-height:115%;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:Calibri;mso-ansi-language:EN-SG;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA"></span><p class="MsoNormal" style="margin-top:6.0pt;margin-right:0cm;margin-bottom:0cm;
+margin-left:0cm;margin-bottom:.0001pt;text-align:justify"><span lang="EN-SG" style="font-family:&quot;Arial&quot;,sans-serif">Candidates will take a 2 h 30 min paper
+(100 marks total). This paper consists of two sections and will include
+questions that required candidates to integrate knowledge and understanding
+from different sections in the syllabus. </span></p>
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify"><span lang="EN-SG" style="font-family:&quot;Arial&quot;,sans-serif">&nbsp;</span></p>
+<p class="MsoNormal" style="margin-top:6.0pt;margin-right:0cm;margin-bottom:0cm;
+margin-left:0cm;margin-bottom:.0001pt;text-align:justify"><b><span lang="EN-SG" style="font-family:&quot;Arial&quot;,sans-serif">Section A</span></b><span lang="EN-SG" style="font-family:&quot;Arial&quot;,sans-serif"> (60 marks)</span></p>
+<p class="MsoNormal" style="margin-top:6.0pt;margin-right:0cm;margin-bottom:0cm;
+margin-left:0cm;margin-bottom:.0001pt;text-align:justify"><span lang="EN-SG" style="font-family:&quot;Arial&quot;,sans-serif">This section consists of a variable
+number of compulsory free response questions including 1 or 2 stimulus–based
+questions. The stimulus–based question(s) constitute(s) 15</span><span lang="EN-SG" style="font-family:Symbol;mso-ascii-font-family:Arial;mso-hansi-font-family:
+Arial;mso-bidi-font-family:Arial;mso-char-type:symbol;mso-symbol-font-family:
+Symbol">-</span><span lang="EN-SG" style="font-family:&quot;Arial&quot;,sans-serif">20 marks for this paper. </span></p>
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify"><span lang="EN-SG" style="font-family:&quot;Arial&quot;,sans-serif">&nbsp;</span></p>
+<p class="MsoNormal" style="margin-top:6.0pt;margin-right:0cm;margin-bottom:0cm;
+margin-left:0cm;margin-bottom:.0001pt;text-align:justify"><b><span lang="EN-SG" style="font-family:&quot;Arial&quot;,sans-serif">Section B</span></b><span lang="EN-SG" style="font-family:&quot;Arial&quot;,sans-serif"> (40 marks)</span></p>
+<p class="MsoNormal" style="margin-top:6.0pt;margin-right:0cm;margin-bottom:0cm;
+margin-left:0cm;margin-bottom:.0001pt;text-align:justify"><span lang="EN-SG" style="font-family:&quot;Arial&quot;,sans-serif">Candidates will be required to answer <b>two</b>
+out of three free response questions. Each question will carry 20 marks. </span></p>
+<p class="MsoNormal" style="margin-top:6.0pt;margin-right:0cm;margin-bottom:0cm;
+margin-left:0cm;margin-bottom:.0001pt;text-align:justify"><span lang="EN-SG" style="font-family:&quot;Arial&quot;,sans-serif">&nbsp;</span></p>
+<span lang="EN-SG" style="font-size:11.0pt;line-height:115%;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:Calibri;mso-ansi-language:EN-SG;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA">For more details on the H3 Chemistry syllabus,
+click <a href="https://www.seab.gov.sg/docs/default-source/national-examinations/syllabus/alevel/2019syllabus/9813_20197e2cfdafc63b45dd9354e4448c341f87.pdf" target="">here</a> to download the PDF from SEAB
+website.&nbsp;<br></span><br>
+</div>
+</div>
+          </div>
+    <div class="bottom"></div>
+  </div>
+
+  <div class="sidebar_area">
+    <div class="top"></div>
+    <div class="mid">
+        <div class="sidebar0_box"><div id="_ptosb0_2403" class="ive_content"></div></div>
+      
+
+
+
+
+
+
+
+
+
+
+
+      	<div class="subpages_box">
+    <ul>
+     
+        
+  <li id="_ptsp_2402" >
+    <a href="curriculum.html">Curriculum</a>  </li>
+      
+    <!-- myself -->
+        <li id="_ptsp_2403"><b>Syllabus &amp; Assessment</b></li>
+      
+  <!-- subpages -->
+  <ul class="mysubpages_">
+      </ul>
+  <!-- end subpages -->
+
+       
+        
+  <li id="_ptsp_2404" >
+    <a href="enrichment-programmes.html">Enrichment Programmes</a>  </li>
+        </ul>
+  
+</div>
+              <div class="sidebar1_box"><div id="_ptosb1_2403" class="ive_content"></div></div>
+    </div>
+    <div class="bottom"></div>
+  </div>
+
+  <div class="footer_area"> 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+  <div class="copyright">
+		© 2020 Jurong Pioneer Junior College.&nbsp;<span>All Rights Reserved.</span>		
+  </div>
+  <div class="links">
+		<ul>
+		<li><a href="https://www.tech.gov.sg/report_vulnerability" target="_blank">Report Vulnerability</a></li>
+		<li><a href="../../../../contact-us/contact-us.html" target="">Contact Us</a></li>
+		</ul>
+  </div>	
+</footer></div>
+
+</div>
+</div>
+  </div>
+</div>
+<!-- pagetree/a1/default_view.html -->
+</div>
+
+
+
+</body>
+
+<!-- Mirrored from jpjc.moe.edu.sg/jpjc-experience/curriculum/mathematics-n-sciences/chemistry/syllabus-n-assessment by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 Nov 2020 15:48:35 GMT -->
+</html>

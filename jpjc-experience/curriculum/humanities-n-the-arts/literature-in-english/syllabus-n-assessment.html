@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+
+<!-- Mirrored from jpjc.moe.edu.sg/jpjc-experience/curriculum/humanities-n-the-arts/literature-in-english/syllabus-n-assessment by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 Nov 2020 14:51:52 GMT -->
+<head>
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+<title>Syllabus &amp; Assessment</title>
+
+<link rel="shortcut icon" href="../../../../qql/slot/u152/nstyle/favicon1.png"/>
+
+ 
+ 
+
+<link rel="stylesheet" type="text/css" href="../../../../skin/qql/base.css">
+<link rel="stylesheet" type="text/css" href="../../../../rs/css/ct-factor.css">
+
+<link rel="stylesheet" type="text/css" id="main_css" href="../../../../qql/style/152_002/main.css?1597405381"> 
+
+<script type="text/javascript" src="../../../../site/ctx/js/menu.js"></script>
+<script type="text/javascript" src="../../../../site/ctx/jquery/jquery.js"></script>
+<script type="text/javascript" src="../../../../site/ctx/jquery/easing.js"></script>
+<script type="text/javascript" src="../../../../site/ctx/jquery/ctjq.js"></script>
+<link rel="stylesheet" type="text/css" href="../../../../site/ctx/jquery/ctjq.css">
+
+
+<script type="text/javascript">
+function get_idnum(a){ return parseInt(a.substr(a.lastIndexOf("_")+1,20)); }
+</script>
+
+
+<link rel="stylesheet" type="text/css" href="../../../../skin/qql/menu.css">
+
+
+<script>
+// non-admin vars
+if (typeof ive_settings=='undefined') {
+  ive_settings={};
+  ive_settings.ptid=2353;
+  ive_settings.url={
+    _head: '/cos/o.x?c=/qql/',
+    skin_path:'/skin/qql/' 
+  };
+  ive_settings.user={ fname: '', _id: '' , email:''};
+}
+</script>
+
+<!-- server extra head -->
+
+<!-- site extra head -->
+<meta name="viewport" content="width=device-width" />
+<script src="../../../../../assets.wogaa.sg/scripts/wogaa.js"></script>
+<script type="text/javascript">
+$(function(){		
+  $(".sidebar_area").insertAfter($(".content_area .mid:first"));
+	
+	if ($(".subpages_box UL UL.mysubpages_").length>0) {
+		var prev = $(".subpages_box UL UL.mysubpages_").prev();
+		$(prev).append($(".subpages_box UL UL.mysubpages_"));
+	}
+	
+  if ((!$("BODY").hasClass("pagelevel-1")) && ($(".path_box").length>0)) {
+		var pb = $(".path_box").html().split("&gt;");    
+    if (pb.length>0) {
+      var newpb = "<span>"+pb[0]+"</span>";
+      for (var i=1; i<pb.length; i++) {
+        newpb = newpb + "> <span>"+pb[i]+"</span>";          
+      }
+			$(".path_box").html(newpb);
+    }
+		$(".content_area > .top").append($(".path_box"));
+		
+		var par = pb[1];
+		if (pb.length>2) {
+			par = pb[pb.length-2];				
+		}
+			
+		$(".masthead2_area").html('<span class="subtitle">'+par+'</span><span class="leftt"></span><span class="rightt"></span>');
+		$(".masthead2_area .subtitle").html($(".subtitle").text());		
+		
+		if ($(".pagecontent_box H1").length>0) {
+			$(".content_area > .top").append("<h1>"+$(".pagecontent_box H1:first").text()+"</h1>");
+		}
+	} else {
+		$(".sidebar_area").remove();		
+	}
+	
+  $("#menu").click(function(){
+    $("#netcontent").toggleClass("show");
+    return false;
+  });  
+	
+	$("#search").click(function(){
+    $("#netcontent").toggleClass("showsearch");
+    return false;
+  });  
+	
+  $(".sitemenu_area a.sitemenu").each(function(){
+		if ($(this).closest("LI").find("table.dropmenu").length>0) {
+			$(this).closest("LI").addClass("hasdm");
+		}
+  });
+  	
+  $(".sitemenu_area a.sitemenu").on("click", function(){
+    var par = $(this).closest("LI");
+    if ($(par).find("table.dropmenu").length>0) {
+      if ((!$(par).hasClass("active")) && ($("#netcontent").hasClass("show"))) {
+        $(".sitemenu_area LI").removeClass("active");
+				$(par).addClass("active");
+				
+				$(".main_area").addClass("showdropmenu");
+        return false;
+      }
+    }
+  });
+	
+});
+
+$.fn.is_on_screen = function(){
+  var win = $(window);
+  var viewport = {
+    top : win.scrollTop()-100,
+	  left : win.scrollLeft()
+  };
+  viewport.right = viewport.left + win.width();
+	viewport.bottom = viewport.top + win.height();
+
+	var bounds = this.offset();
+	bounds.right = bounds.left + this.outerWidth();
+	bounds.bottom = bounds.top + this.outerHeight();
+
+	return (!(viewport.right < bounds.left || viewport.left > bounds.right || viewport.bottom < bounds.top || viewport.top > bounds.bottom));
+};
+</script>
+<!-- page extra head -->
+ 
+<!-- END all extra head -->
+
+<script>
+
+if (typeof(coto)=='undefined') coto={ ive: { } };
+if (!coto.ive.Controller) coto.ive.Controller = function() { };
+
+coto.ive.Controller.prototype.build=function(dom,opts){
+  if (typeof(dom)=='function') return this.build_func=dom;
+  this.dom=dom;
+  if (!(this.options=$(this.dom).data('widget_options'))) this.options={ };
+  if (!(this.idata=$(this.dom).data('idata'))) this.idata={ };
+  this.idata.controller=this;
+  this.build_func.call(this,opts);
+  $(dom).data('widget_options',this.options);
+  $(dom).data('idata',this.idata);
+};
+coto.controllers={ }; // controllers list
+function ive_controller(wtype) {
+  return coto.controllers[wtype]||(coto.controllers[wtype]=new coto.ive.Controller());
+}
+
+ive_tunings={ };
+function ive_tuning(cat) { return ive_tunings[cat]||(ive_tunings[cat]={ }); }
+
+// ----- DROPMENU -----
+$(function() {
+
+
+
+
+
+
+
+  // old menu.js
+  $('.sitemenu_area ul.sitemenu li, .dropmenu a').bind('mouseover mouseleave',function(ev) {
+    var menuid='dropmenu_'+get_idnum(this.id),$menu=$('#'+menuid);
+    var isenter=(ev.type=='mouseover'||ev.type=='mouseenter');
+    ctmenu[isenter?'show':'hide'](menuid,this,$menu.hasClass('drop_right_')?'right':'bottom');
+  });
+});
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="PTP499 PTP3988 PTP4019 PTP2229 PTP2255 pagelevel-6" >
+
+<div id="netcontent"><div id="lo_whole" class="layout-default">
+  <div id="lo_panel">
+    <div id="lo_main"><div class="main_area">
+
+  <div class="masthead_area"><header>
+  <a id="logo" href="../../../../index.html">Jurong Pioneer Junior College
+  </a>
+  <div id="search">Search
+  </div>	
+  <div id="menu">
+    <button type="button" class="hamburger">
+      <span class="hamb-top">
+      </span>
+      <span class="hamb-middle">
+      </span>
+      <span class="hamb-bottom">
+      </span>
+    </button>	
+  </div>
+</header>
+<div class="searchbox">
+  <form method="post" action="https://jpjc.moe.edu.sg/others/search&amp;func=search">
+    <input type="text" id="search_str" name="search_str" value="" placeholder="Search...">			
+  </form>
+</div> 	
+</div>
+<div class="sitemenu_area"><ul class="sitemenu">
+    <li id="PTID_499" class="PTSN_home first-item   "><a 
+    href="../../../../index.html" 
+
+
+    class="sitemenu"        >Home</a></li>
+    <li id="PTID_595" class="PTSN_about-jpjc    "><a 
+    href="../../../../about-jpjc.html" 
+
+
+    class="sitemenu"        >About&nbsp;JPJC</a><table role="presentation" id="dropmenu_595" class="dropmenu ">
+   
+        <tr class="lineEven ">
+      <td class="dmtrig" id="dmtrig_638">
+	<a id="subitem_638"
+	  href="../../../../about-jpjc/principals-message.html"
+
+	  	
+	    ><span id="_ptmt_638">Principal&#039;s Message</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineOdd ">
+      <td class="dmtrig" id="dmtrig_2698">
+	<a id="subitem_2698"
+	  href="../../../../about-jpjc/college-identity.html"
+
+	  	
+	    ><span id="_ptmt_2698">College Identity</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineEven ">
+      <td class="dmtrig" id="dmtrig_639">
+	<a id="subitem_639"
+	  href="../../../../about-jpjc/organisation-chart.html"
+
+	  	
+	    ><span id="_ptmt_639">Organisation Chart</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineOdd ">
+      <td class="dmtrig" id="dmtrig_640">
+	<a id="subitem_640"
+	  href="../../../../about-jpjc/college-calendar.html"
+
+	  	
+	    ><span id="_ptmt_640">College Calendar</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineEven ">
+      <td class="dmtrig" id="dmtrig_6203">
+	<a id="subitem_6203"
+	  href="../../../../about-jpjc/subject-combination.html"
+
+	  	
+	    ><span id="_ptmt_6203">Subject Combination</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineOdd ">
+      <td class="dmtrig" id="dmtrig_1904">
+	<a id="subitem_1904"
+	  href="../../../../about-jpjc/admission-matters.html"
+
+	  	
+	    ><span id="_ptmt_1904">Admission Matters</span></a>      	 
+	  </td>
+    </tr>
+   
+   
+        <tr class="lineEven ">
+      <td class="dmtrig" id="dmtrig_2486">
+	<a id="subitem_2486"
+	  href="../../../../about-jpjc/financial-assistance-scheme.html"
+
+	  	
+	    ><span id="_ptmt_2486">Financial Assistance Scheme</span></a>      	 
+	  </td>
+    </tr>
+   
+   
+  </table>
+</li>
+    <li id="PTID_3988" class="PTSN_jpjc-experience  focus  "><a 
+    href="../../../total-curriculum-framework.html" 
+
+
+    class="sitemenu sitemenulit"        >JPJC&nbsp;Experience</a><table role="presentation" id="dropmenu_3988" class="dropmenu ">
+   
+        <tr class="lineOdd ">
+      <td class="dmtrig" id="dmtrig_3989">
+	<a id="subitem_3989"
+	  href="../../../total-curriculum-framework.html"
+
+	  	
+	    ><span id="_ptmt_3989">Total Curriculum Framework</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineEven ">
+      <td class="dmtrig" id="dmtrig_4019">
+	<a id="subitem_4019"
+	  href="../../humanities-n-the-arts.html"
+
+	  	
+	    ><span id="_ptmt_4019">Curriculum</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineOdd ">
+      <td class="dmtrig" id="dmtrig_3991">
+	<a id="subitem_3991"
+	  href="../../../co-curriculum.html"
+
+	  	
+	    ><span id="_ptmt_3991">Co-Curriculum</span></a>      	 
+	  </td>
+    </tr>
+  </table>
+</li>
+    <li id="PTID_2545" class="PTSN_life-@-jpjc    "><a 
+    href="../../../../life-at-jpjc-1.html" 
+
+
+    class="sitemenu"        >Life&nbsp;@&nbsp;JPJC</a><table role="presentation" id="dropmenu_2545" class="dropmenu ">
+   
+        <tr class="lineEven ">
+      <td class="dmtrig" id="dmtrig_2546">
+	<a id="subitem_2546"
+	  href="../../../../life-at-jpjc-1/2019-events.html"
+
+	  	
+	    ><span id="_ptmt_2546">2019 Events</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineOdd ">
+      <td class="dmtrig" id="dmtrig_4103">
+	<a id="subitem_4103"
+	  href="../../../../life-at-jpjc-1/2020-events.html"
+
+	  	
+	    ><span id="_ptmt_4103">2020 Events</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineEven ">
+      <td class="dmtrig" id="dmtrig_6269">
+	<a id="subitem_6269"
+	  href="../../../../life-at-jpjc-1/publications.html"
+
+	  	
+	    ><span id="_ptmt_6269">Publications</span></a>      	 
+	  </td>
+    </tr>
+  </table>
+</li>
+    <li id="PTID_4077" class="PTSN_general    "><a 
+    href="../../../../general.html" 
+
+
+    class="sitemenu"        >General</a></li>
+    <li id="PTID_626" class="PTSN_partnerships    "><a 
+    href="../../../../partnerships/college-advisory-board.html" 
+
+
+    class="sitemenu"        >Partnerships</a><table role="presentation" id="dropmenu_626" class="dropmenu ">
+   
+        <tr class="lineOdd ">
+      <td class="dmtrig" id="dmtrig_704">
+	<a id="subitem_704"
+	  href="../../../../partnerships/college-advisory-board.html"
+
+	  	
+	    ><span id="_ptmt_704">College Advisory Board</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineEven ">
+      <td class="dmtrig" id="dmtrig_705">
+	<a id="subitem_705"
+	  href="../../../../partnerships/parent-support-group.html"
+
+	  	
+	    ><span id="_ptmt_705">Parent Support Group</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineOdd ">
+      <td class="dmtrig" id="dmtrig_706">
+	<a id="subitem_706"
+	  href="../../../../partnerships/jpjc-alumni.html"
+
+	  	
+	    ><span id="_ptmt_706">JPJC Alumni</span></a>      	 
+	  </td>
+    </tr>
+  </table>
+</li>
+  </ul>
+</div>
+  <div class="masthead2_area"></div>
+
+  <div class="content_area">
+    <div class="top"></div>
+    <div class="mid">
+            <div class="path_box">
+<a class='path' href='../../../../index.html'>Home</a> &gt;
+JPJC Experience &gt;
+Curriculum &gt;
+<a class='path' href='../../humanities-n-the-arts.html'>Humanities &amp; the Arts</a> &gt;
+<a class='path' href='../literature-in-english.html'>Literature in English</a> &gt;
+Syllabus &amp; Assessment 
+</div>
+  
+       
+
+<div class="pagecontent_box">
+  <div class="tools_box">
+    </div>
+  
+    <h1 id="_ptoh_2353" class="ive_editable">Syllabus &amp; Assessment</h1>
+      
+    
+    
+
+
+
+</div>
+
+
+      
+<div id="_ptoo_block_start" style="font-size:1px;border:1px solid transparent"></div>
+
+<div id="_ptoo_PTOID" class="pageblock_box " style="display:none">
+    <div id="_ptod_PTOID" class="ive_editable ive_ptod ive_content"></div>
+</div>
+
+  <div id="_ptoo_4052" class="pageblock_box " >
+    <h2 id="_ptoh_4052" class="ive_editable ive_ptoh">Syllabus Outline</h2>
+    <div id="_ptod_4052" class="ive_editable ive_ptod ive_content"><p class=""><span class="">H1 / H2 Literature in English</span><span class=""></span></p>
+
+<p class=""><span class=""></span></p>
+
+<p class=""><span class="">Candidates should be capable of commenting on the stylistic and
+literary features of the texts in their discussion of unseen extracts and texts
+studied. In other words, the ability to appreciate the text in and of its own
+right is assessed, alongside the ability to demonstrate knowledge of the
+literary context. Assessment comes in the form of writing critical essays
+relevant to the examination questions asked. These involve both a personal
+informed response through the use of various literary technical devices linked
+to the overall theme of the literary texts, as well as demonstration of
+critical understanding and insight into the literary epoch within which the
+selected texts are drawn from.</span><span class=""></span></p>
+
+<p class=""><span class=""></span></p>
+
+<p class=""><span class="">H1 candidates will sit for P1.<br></span><span style="background-color: initial; font-size: 1em;">H2 candidates will sit for P1 and P3.</span><span style="text-align: justify; background-color: initial; font-size: 11pt; font-family: Arial, sans-serif; color: black;">&nbsp;</span></p></div>
+</div>
+  <div id="_ptoo_2356" class="pageblock_box " >
+    <h2 id="_ptoh_2356" class="ive_editable ive_ptoh">Assessment</h2>
+    <div id="_ptod_2356" class="ive_editable ive_ptod ive_content"><p style="text-align: justify;"><font face="arial, sans-serif"><span lang="EN-SG" style=""></span></font></p><span lang="EN-SG" style="font-size:11.0pt;line-height:115%;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:Calibri;mso-ansi-language:EN-SG;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA"><a href="https://www.seab.gov.sg/docs/default-source/national-examinations/syllabus/alevel/2019syllabus/9509_2019aa7bb4ce11764962b33e8575314e5c4b.pdf"></a></span><p style="margin:0cm;margin-bottom:.0001pt;text-align:justify"><span style="font-size:11.0pt;font-family:&quot;Arial&quot;,sans-serif"><o:p></o:p></span></p><p class=""><span class="">H1 Literature in English (8832): Paper 1</span></p><p class=""><span class="">H2 Literature in
+English (9509): Paper 1 &amp; Paper 3</span></p><p class=""><b class=""><u class=""><span class="">Paper 1: Reading
+Literature (3 hours - Open Book)</span></u></b></p><p class=""><span class="">Paper
+1 is a compulsory paper designed to give students a broad exposure to literary study.
+Candidates will answer one question from each of the three sections. All
+questions hold equal weight in the computing of marks for the paper.</span></p><p class=""><u class=""><span class="">Section A: Unseen Poetry</span></u></p><p class=""><span class="">Two questions will be
+set, primarily focusing on response and comparison skills.</span></p><p class=""><span class="">H2:
+Each question will require the candidate to respond to and critically compare
+two unseen poems.</span></p><p class=""><span class="">H1:
+Each question will require the candidate to respond to an unseen poem.</span></p><p class=""><span class="">At
+least one of the questions will feature a Singaporean poem. The candidate will
+answer one question.</span></p><p class=""><u class=""><span class="">Section B: Prose</span></u></p><p class=""><span class="">Two questions will be
+set, primarily focusing on analysis skills. One question will be an essay
+question, the other a passage-based question. The candidate will answer one
+question on one text (<i class="">Frankenstein</i> by
+Mary Shelley).</span></p><p class=""><span class=""></span></p><p class=""><u class=""><span class="">Section C: Drama</span></u></p><p class=""><span class="">Two questions will be
+set, primarily focusing on analysis skills. One question will be an essay
+question, the other a passage-based question. The candidate will answer one
+question on one text (<i class="">Saint Joan</i> by
+George Bernard Shaw).</span></p><p class=""><span class=""></span></p><p class=""><b class=""><u class=""><span class="">Paper 3: The Mind and
+Self in Literature (3 hours - Open Book)</span></u></b></p><p class=""><span class="">In
+addition to Paper 1, H2 students offer Paper 3: The Mind and Self in
+Literature, a 3-hour open book paper.&nbsp;
+This paper explores the relationship between the mind and self as
+represented in Literature. This involves examining the means by which writers offer
+insight into how consciousness is linked to identity, individuality and social
+contexts. The texts are literary explorations of how the interaction between
+the mind and self underscores various forms of revelation and discovery.</span></p><p class=""><span class="">Candidates
+study the following three texts:</span></p><p class=""><i class=""><span class="">Hamlet</span></i><span class=""> by William Shakespeare</span></p><p class=""><i class=""><span class="">Woman in Mind</span></i><span class=""> by Alan Ayckbourn</span></p><p class=""><span class="">Regeneration by Pat
+Barker</span></p><p class=""><span class="">Candidates
+will answer three questions (bearing equal weightage).</span></p><p class=""><u class=""><span class="">Section A</span></u><span class="">: Unseen &nbsp;</span></p><p class=""><span class="">There
+will be a choice of two questions on an unseen text extract from the topic that
+is the focus of the paper. This question will focus primarily on response and
+analysis skills.</span></p><p class=""><u class=""><span class="">Section B</span></u><span class=""> </span></p><p class=""><span class="">Answer
+one comparison question from a choice of two. The question will require them to
+compare two texts they have studied and will focus primarily on comparison and
+analysis skills.</span></p><p class=""><u class=""><span class="">Section C</span></u></p><p class="">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p><p class=""><span class="">Answer one question,
+primarily focusing on analysis skills from a choice of six. Two questions will
+be set on each of the texts studied. The questions set for the topic-based
+papers will be related to some aspect of the topic studied. Candidates must not
+use the same texts in Section B and Section C.</span></p>
+<p class=""><span lang="EN-SG" class=""></span></p>
+<p class=""><span lang="EN-SG" class=""></span></p>
+<p class=""><span lang="EN-SG" class=""></span></p>
+<p class=""><span lang="EN-SG" class=""></span></p>
+<p class=""><span lang="EN-SG" class=""></span></p>
+<p class=""><span lang="EN-SG" class=""></span></p>
+<p class=""><b class=""><span lang="EN-SG" class=""></span></b></p>
+<p class=""><span lang="EN-SG" class=""></span></p>
+<p class=""><span lang="EN-SG" class=""></span></p><p class="MsoNormal"><span lang="EN-SG" style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Arial&quot;,sans-serif"></span></p><p class="MsoListParagraph" style="margin-left:0cm;mso-add-space:auto;line-height:
+normal"><span lang="EN-SG" style="font-family:&quot;Arial&quot;,sans-serif"></span></p><p style="margin:0cm;margin-bottom:.0001pt;text-align:justify"><span lang="EN-SG" style="font-size:11.0pt;font-family:&quot;Arial&quot;,sans-serif"></span></p><p style="margin:0cm;margin-bottom:.0001pt;text-align:justify"><span lang="EN-SG" style="font-size:11.0pt;font-family:&quot;Arial&quot;,sans-serif"></span></p></div>
+</div>
+          </div>
+    <div class="bottom"></div>
+  </div>
+
+  <div class="sidebar_area">
+    <div class="top"></div>
+    <div class="mid">
+        <div class="sidebar0_box"><div id="_ptosb0_2353" class="ive_content"></div></div>
+      
+
+
+
+
+
+
+
+
+
+
+
+      	<div class="subpages_box">
+    <ul>
+     
+        
+  <li id="_ptsp_2352" >
+    <a href="curriculum.html">Curriculum</a>  </li>
+      
+    <!-- myself -->
+        <li id="_ptsp_2353"><b>Syllabus &amp; Assessment</b></li>
+      
+  <!-- subpages -->
+  <ul class="mysubpages_">
+      </ul>
+  <!-- end subpages -->
+
+       
+        
+  <li id="_ptsp_2354" >
+    <a href="enrichment.html">Enrichment</a>  </li>
+        </ul>
+  
+</div>
+              <div class="sidebar1_box"><div id="_ptosb1_2353" class="ive_content"></div></div>
+    </div>
+    <div class="bottom"></div>
+  </div>
+
+  <div class="footer_area"> 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+  <div class="copyright">
+		© 2020 Jurong Pioneer Junior College.&nbsp;<span>All Rights Reserved.</span>		
+  </div>
+  <div class="links">
+		<ul>
+		<li><a href="https://www.tech.gov.sg/report_vulnerability" target="_blank">Report Vulnerability</a></li>
+		<li><a href="../../../../contact-us/contact-us.html" target="">Contact Us</a></li>
+		</ul>
+  </div>	
+</footer></div>
+
+</div>
+</div>
+  </div>
+</div>
+<!-- pagetree/a1/default_view.html -->
+</div>
+
+
+
+</body>
+
+<!-- Mirrored from jpjc.moe.edu.sg/jpjc-experience/curriculum/humanities-n-the-arts/literature-in-english/syllabus-n-assessment by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 Nov 2020 14:51:52 GMT -->
+</html>

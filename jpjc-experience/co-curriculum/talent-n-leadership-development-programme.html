@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+
+<!-- Mirrored from jpjc.moe.edu.sg/jpjc-experience/co-curriculum/talent-n-leadership-development-programme by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 Nov 2020 12:52:48 GMT -->
+<head>
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+<title>Talent &amp; Leadership Development Programme</title>
+
+<link rel="shortcut icon" href="../../qql/slot/u152/nstyle/favicon1.png"/>
+
+ 
+ 
+
+<link rel="stylesheet" type="text/css" href="../../skin/qql/base.css">
+<link rel="stylesheet" type="text/css" href="../../rs/css/ct-factor.css">
+
+<link rel="stylesheet" type="text/css" id="main_css" href="../../qql/style/152_002/main.css?1597405381"> 
+
+<script type="text/javascript" src="../../site/ctx/js/menu.js"></script>
+<script type="text/javascript" src="../../site/ctx/jquery/jquery.js"></script>
+<script type="text/javascript" src="../../site/ctx/jquery/easing.js"></script>
+<script type="text/javascript" src="../../site/ctx/jquery/ctjq.js"></script>
+<link rel="stylesheet" type="text/css" href="../../site/ctx/jquery/ctjq.css">
+
+
+<script type="text/javascript">
+function get_idnum(a){ return parseInt(a.substr(a.lastIndexOf("_")+1,20)); }
+</script>
+
+
+<link rel="stylesheet" type="text/css" href="../../skin/qql/menu.css">
+
+
+<script>
+// non-admin vars
+if (typeof ive_settings=='undefined') {
+  ive_settings={};
+  ive_settings.ptid=3995;
+  ive_settings.url={
+    _head: '/cos/o.x?c=/qql/',
+    skin_path:'/skin/qql/' 
+  };
+  ive_settings.user={ fname: '', _id: '' , email:''};
+}
+</script>
+
+<!-- server extra head -->
+
+<!-- site extra head -->
+<meta name="viewport" content="width=device-width" />
+<script src="../../../assets.wogaa.sg/scripts/wogaa.js"></script>
+<script type="text/javascript">
+$(function(){		
+  $(".sidebar_area").insertAfter($(".content_area .mid:first"));
+	
+	if ($(".subpages_box UL UL.mysubpages_").length>0) {
+		var prev = $(".subpages_box UL UL.mysubpages_").prev();
+		$(prev).append($(".subpages_box UL UL.mysubpages_"));
+	}
+	
+  if ((!$("BODY").hasClass("pagelevel-1")) && ($(".path_box").length>0)) {
+		var pb = $(".path_box").html().split("&gt;");    
+    if (pb.length>0) {
+      var newpb = "<span>"+pb[0]+"</span>";
+      for (var i=1; i<pb.length; i++) {
+        newpb = newpb + "> <span>"+pb[i]+"</span>";          
+      }
+			$(".path_box").html(newpb);
+    }
+		$(".content_area > .top").append($(".path_box"));
+		
+		var par = pb[1];
+		if (pb.length>2) {
+			par = pb[pb.length-2];				
+		}
+			
+		$(".masthead2_area").html('<span class="subtitle">'+par+'</span><span class="leftt"></span><span class="rightt"></span>');
+		$(".masthead2_area .subtitle").html($(".subtitle").text());		
+		
+		if ($(".pagecontent_box H1").length>0) {
+			$(".content_area > .top").append("<h1>"+$(".pagecontent_box H1:first").text()+"</h1>");
+		}
+	} else {
+		$(".sidebar_area").remove();		
+	}
+	
+  $("#menu").click(function(){
+    $("#netcontent").toggleClass("show");
+    return false;
+  });  
+	
+	$("#search").click(function(){
+    $("#netcontent").toggleClass("showsearch");
+    return false;
+  });  
+	
+  $(".sitemenu_area a.sitemenu").each(function(){
+		if ($(this).closest("LI").find("table.dropmenu").length>0) {
+			$(this).closest("LI").addClass("hasdm");
+		}
+  });
+  	
+  $(".sitemenu_area a.sitemenu").on("click", function(){
+    var par = $(this).closest("LI");
+    if ($(par).find("table.dropmenu").length>0) {
+      if ((!$(par).hasClass("active")) && ($("#netcontent").hasClass("show"))) {
+        $(".sitemenu_area LI").removeClass("active");
+				$(par).addClass("active");
+				
+				$(".main_area").addClass("showdropmenu");
+        return false;
+      }
+    }
+  });
+	
+});
+
+$.fn.is_on_screen = function(){
+  var win = $(window);
+  var viewport = {
+    top : win.scrollTop()-100,
+	  left : win.scrollLeft()
+  };
+  viewport.right = viewport.left + win.width();
+	viewport.bottom = viewport.top + win.height();
+
+	var bounds = this.offset();
+	bounds.right = bounds.left + this.outerWidth();
+	bounds.bottom = bounds.top + this.outerHeight();
+
+	return (!(viewport.right < bounds.left || viewport.left > bounds.right || viewport.bottom < bounds.top || viewport.top > bounds.bottom));
+};
+</script>
+<!-- page extra head -->
+ 
+<!-- END all extra head -->
+
+<script>
+
+if (typeof(coto)=='undefined') coto={ ive: { } };
+if (!coto.ive.Controller) coto.ive.Controller = function() { };
+
+coto.ive.Controller.prototype.build=function(dom,opts){
+  if (typeof(dom)=='function') return this.build_func=dom;
+  this.dom=dom;
+  if (!(this.options=$(this.dom).data('widget_options'))) this.options={ };
+  if (!(this.idata=$(this.dom).data('idata'))) this.idata={ };
+  this.idata.controller=this;
+  this.build_func.call(this,opts);
+  $(dom).data('widget_options',this.options);
+  $(dom).data('idata',this.idata);
+};
+coto.controllers={ }; // controllers list
+function ive_controller(wtype) {
+  return coto.controllers[wtype]||(coto.controllers[wtype]=new coto.ive.Controller());
+}
+
+ive_tunings={ };
+function ive_tuning(cat) { return ive_tunings[cat]||(ive_tunings[cat]={ }); }
+
+// ----- DROPMENU -----
+$(function() {
+
+
+
+
+
+
+
+  // old menu.js
+  $('.sitemenu_area ul.sitemenu li, .dropmenu a').bind('mouseover mouseleave',function(ev) {
+    var menuid='dropmenu_'+get_idnum(this.id),$menu=$('#'+menuid);
+    var isenter=(ev.type=='mouseover'||ev.type=='mouseenter');
+    ctmenu[isenter?'show':'hide'](menuid,this,$menu.hasClass('drop_right_')?'right':'bottom');
+  });
+});
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="PTP499 PTP3988 PTP3991 pagelevel-4" >
+
+<div id="netcontent"><div id="lo_whole" class="layout-default">
+  <div id="lo_panel">
+    <div id="lo_main"><div class="main_area">
+
+  <div class="masthead_area"><header>
+  <a id="logo" href="../../index.html">Jurong Pioneer Junior College
+  </a>
+  <div id="search">Search
+  </div>	
+  <div id="menu">
+    <button type="button" class="hamburger">
+      <span class="hamb-top">
+      </span>
+      <span class="hamb-middle">
+      </span>
+      <span class="hamb-bottom">
+      </span>
+    </button>	
+  </div>
+</header>
+<div class="searchbox">
+  <form method="post" action="https://jpjc.moe.edu.sg/others/search&amp;func=search">
+    <input type="text" id="search_str" name="search_str" value="" placeholder="Search...">			
+  </form>
+</div> 	
+</div>
+<div class="sitemenu_area"><ul class="sitemenu">
+    <li id="PTID_499" class="PTSN_home first-item   "><a 
+    href="../../index.html" 
+
+
+    class="sitemenu"        >Home</a></li>
+    <li id="PTID_595" class="PTSN_about-jpjc    "><a 
+    href="../../about-jpjc.html" 
+
+
+    class="sitemenu"        >About&nbsp;JPJC</a><table role="presentation" id="dropmenu_595" class="dropmenu ">
+   
+        <tr class="lineEven ">
+      <td class="dmtrig" id="dmtrig_638">
+	<a id="subitem_638"
+	  href="../../about-jpjc/principals-message.html"
+
+	  	
+	    ><span id="_ptmt_638">Principal&#039;s Message</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineOdd ">
+      <td class="dmtrig" id="dmtrig_2698">
+	<a id="subitem_2698"
+	  href="../../about-jpjc/college-identity.html"
+
+	  	
+	    ><span id="_ptmt_2698">College Identity</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineEven ">
+      <td class="dmtrig" id="dmtrig_639">
+	<a id="subitem_639"
+	  href="../../about-jpjc/organisation-chart.html"
+
+	  	
+	    ><span id="_ptmt_639">Organisation Chart</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineOdd ">
+      <td class="dmtrig" id="dmtrig_640">
+	<a id="subitem_640"
+	  href="../../about-jpjc/college-calendar.html"
+
+	  	
+	    ><span id="_ptmt_640">College Calendar</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineEven ">
+      <td class="dmtrig" id="dmtrig_6203">
+	<a id="subitem_6203"
+	  href="../../about-jpjc/subject-combination.html"
+
+	  	
+	    ><span id="_ptmt_6203">Subject Combination</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineOdd ">
+      <td class="dmtrig" id="dmtrig_1904">
+	<a id="subitem_1904"
+	  href="../../about-jpjc/admission-matters.html"
+
+	  	
+	    ><span id="_ptmt_1904">Admission Matters</span></a>      	 
+	  </td>
+    </tr>
+   
+   
+        <tr class="lineEven ">
+      <td class="dmtrig" id="dmtrig_2486">
+	<a id="subitem_2486"
+	  href="../../about-jpjc/financial-assistance-scheme.html"
+
+	  	
+	    ><span id="_ptmt_2486">Financial Assistance Scheme</span></a>      	 
+	  </td>
+    </tr>
+   
+   
+  </table>
+</li>
+    <li id="PTID_3988" class="PTSN_jpjc-experience  focus  "><a 
+    href="../total-curriculum-framework.html" 
+
+
+    class="sitemenu sitemenulit"        >JPJC&nbsp;Experience</a><table role="presentation" id="dropmenu_3988" class="dropmenu ">
+   
+        <tr class="lineOdd ">
+      <td class="dmtrig" id="dmtrig_3989">
+	<a id="subitem_3989"
+	  href="../total-curriculum-framework.html"
+
+	  	
+	    ><span id="_ptmt_3989">Total Curriculum Framework</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineEven ">
+      <td class="dmtrig" id="dmtrig_4019">
+	<a id="subitem_4019"
+	  href="../curriculum/humanities-n-the-arts.html"
+
+	  	
+	    ><span id="_ptmt_4019">Curriculum</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineOdd ">
+      <td class="dmtrig" id="dmtrig_3991">
+	<a id="subitem_3991"
+	  href="../co-curriculum.html"
+
+	  	
+	    ><span id="_ptmt_3991">Co-Curriculum</span></a>      	 
+	  </td>
+    </tr>
+  </table>
+</li>
+    <li id="PTID_2545" class="PTSN_life-@-jpjc    "><a 
+    href="../../life-at-jpjc-1.html" 
+
+
+    class="sitemenu"        >Life&nbsp;@&nbsp;JPJC</a><table role="presentation" id="dropmenu_2545" class="dropmenu ">
+   
+        <tr class="lineEven ">
+      <td class="dmtrig" id="dmtrig_2546">
+	<a id="subitem_2546"
+	  href="../../life-at-jpjc-1/2019-events.html"
+
+	  	
+	    ><span id="_ptmt_2546">2019 Events</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineOdd ">
+      <td class="dmtrig" id="dmtrig_4103">
+	<a id="subitem_4103"
+	  href="../../life-at-jpjc-1/2020-events.html"
+
+	  	
+	    ><span id="_ptmt_4103">2020 Events</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineEven ">
+      <td class="dmtrig" id="dmtrig_6269">
+	<a id="subitem_6269"
+	  href="../../life-at-jpjc-1/publications.html"
+
+	  	
+	    ><span id="_ptmt_6269">Publications</span></a>      	 
+	  </td>
+    </tr>
+  </table>
+</li>
+    <li id="PTID_4077" class="PTSN_general    "><a 
+    href="../../general.html" 
+
+
+    class="sitemenu"        >General</a></li>
+    <li id="PTID_626" class="PTSN_partnerships    "><a 
+    href="../../partnerships/college-advisory-board.html" 
+
+
+    class="sitemenu"        >Partnerships</a><table role="presentation" id="dropmenu_626" class="dropmenu ">
+   
+        <tr class="lineOdd ">
+      <td class="dmtrig" id="dmtrig_704">
+	<a id="subitem_704"
+	  href="../../partnerships/college-advisory-board.html"
+
+	  	
+	    ><span id="_ptmt_704">College Advisory Board</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineEven ">
+      <td class="dmtrig" id="dmtrig_705">
+	<a id="subitem_705"
+	  href="../../partnerships/parent-support-group.html"
+
+	  	
+	    ><span id="_ptmt_705">Parent Support Group</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineOdd ">
+      <td class="dmtrig" id="dmtrig_706">
+	<a id="subitem_706"
+	  href="../../partnerships/jpjc-alumni.html"
+
+	  	
+	    ><span id="_ptmt_706">JPJC Alumni</span></a>      	 
+	  </td>
+    </tr>
+  </table>
+</li>
+  </ul>
+</div>
+  <div class="masthead2_area"></div>
+
+  <div class="content_area">
+    <div class="top"></div>
+    <div class="mid">
+            <div class="path_box">
+<a class='path' href='../../index.html'>Home</a> &gt;
+JPJC Experience &gt;
+<a class='path' href='../co-curriculum.html'>Co-Curriculum</a> &gt;
+Talent &amp; Leadership Development Programme 
+</div>
+  
+       
+
+<div class="pagecontent_box">
+  <div class="tools_box">
+    </div>
+  
+    <h1 id="_ptoh_3995" class="ive_editable">Talent &amp; Leadership Development Programme</h1>
+      
+    
+    
+
+
+
+</div>
+
+
+      
+<div id="_ptoo_block_start" style="font-size:1px;border:1px solid transparent"></div>
+
+<div id="_ptoo_PTOID" class="pageblock_box " style="display:none">
+    <div id="_ptod_PTOID" class="ive_editable ive_ptod ive_content"></div>
+</div>
+
+  <div id="_ptoo_4009" class="pageblock_box " >
+    <div id="_ptod_4009" class="ive_editable ive_ptod ive_content"><p class="MsoNormal" style="text-align:justify"><span style="background-color: initial; font-size: 1em; text-align: left;">The Talent
+and Leadership Development (TLD) Programme stems from the core belief that every
+student has talents, interest areas and leadership potential that can be
+nurtured. This programme provides a wide range of opportunities to encourage
+the pursuit of interests and development of leadership capabilities. The TLD
+framework follows Dr. Treffinger’s Levels of Services Approach, and guides
+students in setting goals, monitoring and evaluating their own progress through
+the activities made available to them.</span></p>
+
+<p class="MsoNormal"><span lang="EN-GB"><span style="background-color: initial; font-size: 1em;">As students
+embark on this journey of discovery, they can develop and excel in their knowledge
+and skills, and grow into effective leaders who will make positive
+contributions to our community.</span>&nbsp;</span></p><p class="MsoNormal"><span lang="EN-GB"><o:p></o:p></span><span style="background-color: initial; font-size: 1em;">Talent and Leadership Development Framework</span></p><p class="MsoNormal"><img src="../../qql/slot/u152/JPJC%20Experience/co-curriculum/Talent%20and%20Leadership%20Development%20Framework.jpg" hspace="2" alt="Talent and Leadership Development Framework.jpg" class="ive_eobj_center"><span style="background-color: initial; font-size: 1em;"><br></span></p><p class="MsoNormal"><span lang="EN-GB"><o:p></o:p></span></p><p class="MsoNormal"><span lang="EN-GB" style="font-size:16.0pt;font-family:&quot;Arial&quot;,sans-serif"><o:p></o:p></span></p><p class=""><span lang="EN-GB" class=""></span></p><p class=""><span lang="EN-GB" class="">The
+wide variety of activities are organised by different committees under the
+Talent and Leadership Development Council. These committees are:&nbsp;</span></p><p class=""><span lang="EN-GB" class=""></span></p>
+
+<table class="iveo_table ives_tab_1 ive_eobj_center">
+ <tbody class=""><tr class="">
+  <td width="300" class="">
+  <p class="" align="center"><b class=""><u class=""><span lang="EN-GB" class=""><font color="#000000"><a href="talent-n-leadership-development-programme/co-curricular-activities.html" target="">Co-Curricular Activities (CCA)</a></font></span></u></b></p>
+  <p class="" align="center"><i class=""><span lang="EN-GB" class=""><font color="#000000">Discover, Develop, Excel</font></span></i><img src="../../qql/slot/u152/JPJC%20Experience/co-curriculum/Comm_JPJC_1.jpg" hspace="2" alt="Comm_JPJC_1.jpg" class="ive_eobj_center" style="text-align: left; font-size: 1em;"></p>
+  <p class="" align="center"><font color="#000000"><span lang="EN-GB" class=""></span><i class=""><span lang="EN-GB" class=""></span></i></font></p>
+  </td>
+  <td width="300" class="">
+  <p class="" align="center"><font color="#000000"><a href="talent-n-leadership-development-programme/house-system.html" target=""><b class=""><u class=""><span lang="EN-GB" class="">House System</span></u></b><span lang="EN-GB" class=""></span></a></font></p>
+  <p class="" align="center"><font color="#000000"><i class=""><span lang="EN-GB" class="">House spirit flying high</span></i></font><img src="../../qql/slot/u152/JPJC%20Experience/co-curriculum/Comm_JPJC_2.jpg" hspace="2" alt="Comm_JPJC_2.jpg" class="ive_eobj_center" style="text-align: left; font-size: 1em;"></p>
+  <p class="" align="center"><font color="#000000"><span lang="EN-GB" class=""></span><span lang="EN-GB" class=""></span></font></p>
+  </td>
+ </tr>
+ <tr class="">
+  <td width="300" class="">
+  <p class="" align="center"><font color="#000000"><b class=""><u class=""><span lang="EN-GB" class=""><a href="talent-n-leadership-development-programme/student-leadership.html" target="">Student Leadership</a></span></u></b><i class=""><span lang="EN-GB" class=""></span></i></font></p>
+  <p class="" align="center"><i class=""><span lang="EN-GB" class=""><font color="#000000">Amazing Race challenges during LTC</font></span></i><img src="../../qql/slot/u152/JPJC%20Experience/co-curriculum/Comm_JPJC_3.jpg" hspace="2" alt="Comm_JPJC_3.jpg" class="ive_eobj_center" style="text-align: left; font-size: 1em;"></p>
+  <p class="" align="center"><font color="#000000"><span lang="EN-GB" class=""></span><span lang="EN-GB" class=""></span></font></p>
+  </td>
+  <td width="300" class="">
+  <p class="" align="center"><font color="#000000"><b class=""><u class=""><span lang="EN-GB" class=""><a href="talent-n-leadership-development-programme/scholars-development-programme.html" target="">Scholars Development Programme</a></span></u></b><i class=""><span lang="EN-GB" class=""></span></i></font></p>
+  <p class="" align="center"><font color="#000000"><i class=""><span lang="EN-GB" class="">Grassroots
+  engagement with Minister Grace Fu in 2017. Developing scholars with a heart
+  for others.</span></i></font><img src="../../qql/slot/u152/JPJC%20Experience/co-curriculum/Comm_JPJC_4.jpg" hspace="2" alt="Comm_JPJC_4.jpg" class="ive_eobj_center" style="text-align: left; font-size: 1em;"></p>
+  </td>
+ </tr>
+ <tr class="">
+  <td width="300" class="">
+  <p class="" align="center"><font color="#000000"><b class=""><u class=""><span lang="EN-GB" class=""><a href="talent-n-leadership-development-programme/stem.html" target="">STEM Programme</a></span></u></b><span lang="EN-GB" class=""> </span></font></p>
+  <p class="" align="center"><font color="#000000"><i class=""><span lang="EN-GB" class="">Fun and exciting STEM activities!</span></i></font><img src="../../qql/slot/u152/JPJC%20Experience/co-curriculum/Comm_JPJC_5.jpg" hspace="2" alt="Comm_JPJC_5.jpg" class="ive_eobj_center" style="text-align: left; font-size: 1em;"></p>
+  <p class="" align="center"><font color="#000000"><span lang="EN-GB" class=""></span><span lang="EN-GB" class=""></span></font></p>
+  </td>
+  <td width="300" class="">
+  <p class="" align="center"><font color="#000000"><b class=""><u class=""><span lang="EN-GB" class=""><a href="talent-n-leadership-development-programme/humanities-interest-programmes.html" target="">Humanities Interest Programme</a></span></u></b><span lang="EN-GB" class=""></span></font></p>
+  <p class="" align="center"><i class=""><span lang="EN-GB" class=""><font color="#000000">Prize presentation ceremony for </font></span></i></p>
+  <p class="" align="center"><font color="#000000"><i class=""><span lang="EN-GB" class="">World Scholar’s Cup</span></i></font><img src="../../qql/slot/u152/JPJC%20Experience/co-curriculum/Comm_JPJC_6.jpg" hspace="2" alt="Comm_JPJC_6.jpg" class="ive_eobj_center" style="text-align: left; font-size: 1em;"></p>
+  <p class="" align="center"><font color="#000000"><b class=""><span lang="EN-GB" class=""></span></b><span lang="EN-GB" class=""></span></font></p>
+  </td>
+ </tr>
+ <tr class="">
+  <td width="300" class="">
+  <p class="" align="center"><font color="#000000"><b class=""><u class=""><span lang="EN-GB" class=""><a href="talent-n-leadership-development-programme/arts-and-aesthetics.html" target="">Arts and Aesthetic Programme</a></span></u></b><span lang="EN-GB" class=""></span></font></p>
+  <p class="" align="center"><font color="#000000"><i class=""><span lang="EN-GB" class="">The Modern Dance Club performing a Jazz item
+  at the Biennial Public</span></i></font><img src="../../qql/slot/u152/JPJC%20Experience/co-curriculum/Comm_JPJC_78.jpg" hspace="2" alt="Comm_JPJC_78.jpg" class="ive_eobj_center" style="text-align: left; font-size: 1em;"></p>
+  <p class="" align="center"><font color="#000000"><span lang="EN-GB" class=""></span><span lang="EN-GB" class=""></span></font></p>
+  </td>
+  <td width="300" class="">
+  <p class="" align="center"><font color="#000000"><span lang="EN-GB" class=""></span></font></p>
+  </td>
+ </tr></tbody></table><p class=""><span lang="EN-GB" class=""></span></p><p></p><p class=""><span lang="EN-GB" class=""></span></p><p class="MsoNormal"><span lang="EN-GB"><o:p></o:p></span></p></div>
+</div>
+          </div>
+    <div class="bottom"></div>
+  </div>
+
+  <div class="sidebar_area">
+    <div class="top"></div>
+    <div class="mid">
+        <div class="sidebar0_box"><div id="_ptosb0_3995" class="ive_content"></div></div>
+      
+
+
+
+
+
+
+
+
+
+
+
+      	<div class="subpages_box">
+  
+  <!-- subpages -->
+  <ul class="mysubpages_">
+     
+        
+
+    <li id="_ptsp_4004"  >
+    <a class="label_" ive_tn="" href="talent-n-leadership-development-programme/arts-and-aesthetics.html">Arts and Aesthetics</a>	    
+
+          </li>
+     
+        
+
+    <li id="_ptsp_4007"  >
+    <a class="label_" ive_tn="" href="talent-n-leadership-development-programme/co-curricular-activities.html">Co-Curricular Activities</a>	    
+
+          </li>
+     
+        
+
+    <li id="_ptsp_3998"  >
+    <a class="label_" ive_tn="" href="talent-n-leadership-development-programme/house-system.html">House System</a>	    
+
+          </li>
+     
+        
+
+    <li id="_ptsp_3999"  >
+    <a class="label_" ive_tn="" href="talent-n-leadership-development-programme/humanities-interest-programmes.html">Humanities Interest Programmes</a>	    
+
+          </li>
+     
+        
+
+    <li id="_ptsp_4000"  >
+    <a class="label_" ive_tn="" href="talent-n-leadership-development-programme/scholars-development-programme.html">Scholars Development Programme</a>	    
+
+          </li>
+     
+        
+
+    <li id="_ptsp_4001"  >
+    <a class="label_" ive_tn="" href="talent-n-leadership-development-programme/stem.html">STEM</a>	    
+
+          </li>
+     
+        
+
+    <li id="_ptsp_4002"  >
+    <a class="label_" ive_tn="" href="talent-n-leadership-development-programme/student-leadership.html">Student Leadership</a>	    
+
+          </li>
+      </ul>
+  <!-- end subpages -->
+
+  
+</div>
+              <div class="sidebar1_box"><div id="_ptosb1_3995" class="ive_content"></div></div>
+    </div>
+    <div class="bottom"></div>
+  </div>
+
+  <div class="footer_area"> 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+  <div class="copyright">
+		© 2020 Jurong Pioneer Junior College.&nbsp;<span>All Rights Reserved.</span>		
+  </div>
+  <div class="links">
+		<ul>
+		<li><a href="https://www.tech.gov.sg/report_vulnerability" target="_blank">Report Vulnerability</a></li>
+		<li><a href="../../contact-us/contact-us.html" target="">Contact Us</a></li>
+		</ul>
+  </div>	
+</footer></div>
+
+</div>
+</div>
+  </div>
+</div>
+<!-- pagetree/a1/default_view.html -->
+</div>
+
+
+
+</body>
+
+<!-- Mirrored from jpjc.moe.edu.sg/jpjc-experience/co-curriculum/talent-n-leadership-development-programme by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 Nov 2020 12:52:51 GMT -->
+</html>

@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+
+<!-- Mirrored from jpjc.moe.edu.sg/jpjc-experience/curriculum/language-elective-programmes by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 Nov 2020 12:52:39 GMT -->
+<head>
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+<title>Language Elective Programmes</title>
+
+<link rel="shortcut icon" href="../../qql/slot/u152/nstyle/favicon1.png"/>
+
+ 
+ 
+
+<link rel="stylesheet" type="text/css" href="../../skin/qql/base.css">
+<link rel="stylesheet" type="text/css" href="../../rs/css/ct-factor.css">
+
+<link rel="stylesheet" type="text/css" id="main_css" href="../../qql/style/152_002/main.css?1597405381"> 
+
+<script type="text/javascript" src="../../site/ctx/js/menu.js"></script>
+<script type="text/javascript" src="../../site/ctx/jquery/jquery.js"></script>
+<script type="text/javascript" src="../../site/ctx/jquery/easing.js"></script>
+<script type="text/javascript" src="../../site/ctx/jquery/ctjq.js"></script>
+<link rel="stylesheet" type="text/css" href="../../site/ctx/jquery/ctjq.css">
+
+
+<script type="text/javascript">
+function get_idnum(a){ return parseInt(a.substr(a.lastIndexOf("_")+1,20)); }
+</script>
+
+
+<link rel="stylesheet" type="text/css" href="../../skin/qql/menu.css">
+
+
+<script>
+// non-admin vars
+if (typeof ive_settings=='undefined') {
+  ive_settings={};
+  ive_settings.ptid=2491;
+  ive_settings.url={
+    _head: '/cos/o.x?c=/qql/',
+    skin_path:'/skin/qql/' 
+  };
+  ive_settings.user={ fname: '', _id: '' , email:''};
+}
+</script>
+
+<!-- server extra head -->
+
+<!-- site extra head -->
+<meta name="viewport" content="width=device-width" />
+<script src="../../../assets.wogaa.sg/scripts/wogaa.js"></script>
+<script type="text/javascript">
+$(function(){		
+  $(".sidebar_area").insertAfter($(".content_area .mid:first"));
+	
+	if ($(".subpages_box UL UL.mysubpages_").length>0) {
+		var prev = $(".subpages_box UL UL.mysubpages_").prev();
+		$(prev).append($(".subpages_box UL UL.mysubpages_"));
+	}
+	
+  if ((!$("BODY").hasClass("pagelevel-1")) && ($(".path_box").length>0)) {
+		var pb = $(".path_box").html().split("&gt;");    
+    if (pb.length>0) {
+      var newpb = "<span>"+pb[0]+"</span>";
+      for (var i=1; i<pb.length; i++) {
+        newpb = newpb + "> <span>"+pb[i]+"</span>";          
+      }
+			$(".path_box").html(newpb);
+    }
+		$(".content_area > .top").append($(".path_box"));
+		
+		var par = pb[1];
+		if (pb.length>2) {
+			par = pb[pb.length-2];				
+		}
+			
+		$(".masthead2_area").html('<span class="subtitle">'+par+'</span><span class="leftt"></span><span class="rightt"></span>');
+		$(".masthead2_area .subtitle").html($(".subtitle").text());		
+		
+		if ($(".pagecontent_box H1").length>0) {
+			$(".content_area > .top").append("<h1>"+$(".pagecontent_box H1:first").text()+"</h1>");
+		}
+	} else {
+		$(".sidebar_area").remove();		
+	}
+	
+  $("#menu").click(function(){
+    $("#netcontent").toggleClass("show");
+    return false;
+  });  
+	
+	$("#search").click(function(){
+    $("#netcontent").toggleClass("showsearch");
+    return false;
+  });  
+	
+  $(".sitemenu_area a.sitemenu").each(function(){
+		if ($(this).closest("LI").find("table.dropmenu").length>0) {
+			$(this).closest("LI").addClass("hasdm");
+		}
+  });
+  	
+  $(".sitemenu_area a.sitemenu").on("click", function(){
+    var par = $(this).closest("LI");
+    if ($(par).find("table.dropmenu").length>0) {
+      if ((!$(par).hasClass("active")) && ($("#netcontent").hasClass("show"))) {
+        $(".sitemenu_area LI").removeClass("active");
+				$(par).addClass("active");
+				
+				$(".main_area").addClass("showdropmenu");
+        return false;
+      }
+    }
+  });
+	
+});
+
+$.fn.is_on_screen = function(){
+  var win = $(window);
+  var viewport = {
+    top : win.scrollTop()-100,
+	  left : win.scrollLeft()
+  };
+  viewport.right = viewport.left + win.width();
+	viewport.bottom = viewport.top + win.height();
+
+	var bounds = this.offset();
+	bounds.right = bounds.left + this.outerWidth();
+	bounds.bottom = bounds.top + this.outerHeight();
+
+	return (!(viewport.right < bounds.left || viewport.left > bounds.right || viewport.bottom < bounds.top || viewport.top > bounds.bottom));
+};
+</script>
+<!-- page extra head -->
+ 
+<!-- END all extra head -->
+
+<script>
+
+if (typeof(coto)=='undefined') coto={ ive: { } };
+if (!coto.ive.Controller) coto.ive.Controller = function() { };
+
+coto.ive.Controller.prototype.build=function(dom,opts){
+  if (typeof(dom)=='function') return this.build_func=dom;
+  this.dom=dom;
+  if (!(this.options=$(this.dom).data('widget_options'))) this.options={ };
+  if (!(this.idata=$(this.dom).data('idata'))) this.idata={ };
+  this.idata.controller=this;
+  this.build_func.call(this,opts);
+  $(dom).data('widget_options',this.options);
+  $(dom).data('idata',this.idata);
+};
+coto.controllers={ }; // controllers list
+function ive_controller(wtype) {
+  return coto.controllers[wtype]||(coto.controllers[wtype]=new coto.ive.Controller());
+}
+
+ive_tunings={ };
+function ive_tuning(cat) { return ive_tunings[cat]||(ive_tunings[cat]={ }); }
+
+// ----- DROPMENU -----
+$(function() {
+
+
+
+
+
+
+
+  // old menu.js
+  $('.sitemenu_area ul.sitemenu li, .dropmenu a').bind('mouseover mouseleave',function(ev) {
+    var menuid='dropmenu_'+get_idnum(this.id),$menu=$('#'+menuid);
+    var isenter=(ev.type=='mouseover'||ev.type=='mouseenter');
+    ctmenu[isenter?'show':'hide'](menuid,this,$menu.hasClass('drop_right_')?'right':'bottom');
+  });
+});
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="PTP499 PTP3988 PTP4019 pagelevel-4" >
+
+<div id="netcontent"><div id="lo_whole" class="layout-default">
+  <div id="lo_panel">
+    <div id="lo_main"><div class="main_area">
+
+  <div class="masthead_area"><header>
+  <a id="logo" href="../../index.html">Jurong Pioneer Junior College
+  </a>
+  <div id="search">Search
+  </div>	
+  <div id="menu">
+    <button type="button" class="hamburger">
+      <span class="hamb-top">
+      </span>
+      <span class="hamb-middle">
+      </span>
+      <span class="hamb-bottom">
+      </span>
+    </button>	
+  </div>
+</header>
+<div class="searchbox">
+  <form method="post" action="https://jpjc.moe.edu.sg/others/search&amp;func=search">
+    <input type="text" id="search_str" name="search_str" value="" placeholder="Search...">			
+  </form>
+</div> 	
+</div>
+<div class="sitemenu_area"><ul class="sitemenu">
+    <li id="PTID_499" class="PTSN_home first-item   "><a 
+    href="../../index.html" 
+
+
+    class="sitemenu"        >Home</a></li>
+    <li id="PTID_595" class="PTSN_about-jpjc    "><a 
+    href="../../about-jpjc.html" 
+
+
+    class="sitemenu"        >About&nbsp;JPJC</a><table role="presentation" id="dropmenu_595" class="dropmenu ">
+   
+        <tr class="lineEven ">
+      <td class="dmtrig" id="dmtrig_638">
+	<a id="subitem_638"
+	  href="../../about-jpjc/principals-message.html"
+
+	  	
+	    ><span id="_ptmt_638">Principal&#039;s Message</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineOdd ">
+      <td class="dmtrig" id="dmtrig_2698">
+	<a id="subitem_2698"
+	  href="../../about-jpjc/college-identity.html"
+
+	  	
+	    ><span id="_ptmt_2698">College Identity</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineEven ">
+      <td class="dmtrig" id="dmtrig_639">
+	<a id="subitem_639"
+	  href="../../about-jpjc/organisation-chart.html"
+
+	  	
+	    ><span id="_ptmt_639">Organisation Chart</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineOdd ">
+      <td class="dmtrig" id="dmtrig_640">
+	<a id="subitem_640"
+	  href="../../about-jpjc/college-calendar.html"
+
+	  	
+	    ><span id="_ptmt_640">College Calendar</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineEven ">
+      <td class="dmtrig" id="dmtrig_6203">
+	<a id="subitem_6203"
+	  href="../../about-jpjc/subject-combination.html"
+
+	  	
+	    ><span id="_ptmt_6203">Subject Combination</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineOdd ">
+      <td class="dmtrig" id="dmtrig_1904">
+	<a id="subitem_1904"
+	  href="../../about-jpjc/admission-matters.html"
+
+	  	
+	    ><span id="_ptmt_1904">Admission Matters</span></a>      	 
+	  </td>
+    </tr>
+   
+   
+        <tr class="lineEven ">
+      <td class="dmtrig" id="dmtrig_2486">
+	<a id="subitem_2486"
+	  href="../../about-jpjc/financial-assistance-scheme.html"
+
+	  	
+	    ><span id="_ptmt_2486">Financial Assistance Scheme</span></a>      	 
+	  </td>
+    </tr>
+   
+   
+  </table>
+</li>
+    <li id="PTID_3988" class="PTSN_jpjc-experience  focus  "><a 
+    href="../total-curriculum-framework.html" 
+
+
+    class="sitemenu sitemenulit"        >JPJC&nbsp;Experience</a><table role="presentation" id="dropmenu_3988" class="dropmenu ">
+   
+        <tr class="lineOdd ">
+      <td class="dmtrig" id="dmtrig_3989">
+	<a id="subitem_3989"
+	  href="../total-curriculum-framework.html"
+
+	  	
+	    ><span id="_ptmt_3989">Total Curriculum Framework</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineEven ">
+      <td class="dmtrig" id="dmtrig_4019">
+	<a id="subitem_4019"
+	  href="humanities-n-the-arts.html"
+
+	  	
+	    ><span id="_ptmt_4019">Curriculum</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineOdd ">
+      <td class="dmtrig" id="dmtrig_3991">
+	<a id="subitem_3991"
+	  href="../co-curriculum.html"
+
+	  	
+	    ><span id="_ptmt_3991">Co-Curriculum</span></a>      	 
+	  </td>
+    </tr>
+  </table>
+</li>
+    <li id="PTID_2545" class="PTSN_life-@-jpjc    "><a 
+    href="../../life-at-jpjc-1.html" 
+
+
+    class="sitemenu"        >Life&nbsp;@&nbsp;JPJC</a><table role="presentation" id="dropmenu_2545" class="dropmenu ">
+   
+        <tr class="lineEven ">
+      <td class="dmtrig" id="dmtrig_2546">
+	<a id="subitem_2546"
+	  href="../../life-at-jpjc-1/2019-events.html"
+
+	  	
+	    ><span id="_ptmt_2546">2019 Events</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineOdd ">
+      <td class="dmtrig" id="dmtrig_4103">
+	<a id="subitem_4103"
+	  href="../../life-at-jpjc-1/2020-events.html"
+
+	  	
+	    ><span id="_ptmt_4103">2020 Events</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineEven ">
+      <td class="dmtrig" id="dmtrig_6269">
+	<a id="subitem_6269"
+	  href="../../life-at-jpjc-1/publications.html"
+
+	  	
+	    ><span id="_ptmt_6269">Publications</span></a>      	 
+	  </td>
+    </tr>
+  </table>
+</li>
+    <li id="PTID_4077" class="PTSN_general    "><a 
+    href="../../general.html" 
+
+
+    class="sitemenu"        >General</a></li>
+    <li id="PTID_626" class="PTSN_partnerships    "><a 
+    href="../../partnerships/college-advisory-board.html" 
+
+
+    class="sitemenu"        >Partnerships</a><table role="presentation" id="dropmenu_626" class="dropmenu ">
+   
+        <tr class="lineOdd ">
+      <td class="dmtrig" id="dmtrig_704">
+	<a id="subitem_704"
+	  href="../../partnerships/college-advisory-board.html"
+
+	  	
+	    ><span id="_ptmt_704">College Advisory Board</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineEven ">
+      <td class="dmtrig" id="dmtrig_705">
+	<a id="subitem_705"
+	  href="../../partnerships/parent-support-group.html"
+
+	  	
+	    ><span id="_ptmt_705">Parent Support Group</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineOdd ">
+      <td class="dmtrig" id="dmtrig_706">
+	<a id="subitem_706"
+	  href="../../partnerships/jpjc-alumni.html"
+
+	  	
+	    ><span id="_ptmt_706">JPJC Alumni</span></a>      	 
+	  </td>
+    </tr>
+  </table>
+</li>
+  </ul>
+</div>
+  <div class="masthead2_area"></div>
+
+  <div class="content_area">
+    <div class="top"></div>
+    <div class="mid">
+            <div class="path_box">
+<a class='path' href='../../index.html'>Home</a> &gt;
+JPJC Experience &gt;
+Curriculum &gt;
+Language Elective Programmes 
+</div>
+  
+       
+
+<div class="pagecontent_box">
+  <div class="tools_box">
+    </div>
+  
+    <h1 id="_ptoh_2491" class="ive_editable">Language Elective Programmes</h1>
+      
+    
+        <div class='description ive_editable ive_ptod ive_content' id='_ptod_2491'><div><br></div><span lang="EN-SG" style="font-size: 12pt; line-height: 115%;">
+
+<div style="text-align: center;"><br></div></span></div>
+  
+
+
+
+</div>
+
+
+      
+<div id="_ptoo_block_start" style="font-size:1px;border:1px solid transparent"></div>
+
+<div id="_ptoo_PTOID" class="pageblock_box " style="display:none">
+    <div id="_ptod_PTOID" class="ive_editable ive_ptod ive_content"></div>
+</div>
+
+  <div id="_ptoo_4041" class="pageblock_box " >
+    <div id="_ptod_4041" class="ive_editable ive_ptod ive_content"><p class=""><b class="" style="background-color: initial; font-size: 1em;"><span lang="EN" class=""><img src="../../qql/slot/u152/JPJC%20Experience/Curriculum/LEP/LEP%201.jpg" hspace="2" alt="LEP 1.jpg" class="ive_eobj_center"></span></b></p><p class="" align="center"><span class="">S</span><span lang="EN" class="">kit performances by CLEP
+&amp; MLEP students at the MTL symposium 2018</span></p><p class="MsoNormal"><span lang="EN"></span></p></div>
+</div>
+  <div id="_ptoo_4042" class="pageblock_box " >
+    <h2 id="_ptoh_4042" class="ive_editable ive_ptoh">Chinese Language Elective Programme</h2>
+    <div id="_ptod_4042" class="ive_editable ive_ptod ive_content"><p class="" style="line-height: 22.4px;"><span style="background-color: initial; font-size: 1em;">Jurong Pioneer Junior College is a Ministry of Education (MOE) Language Elective Programme (LEP) Centre for Chinese.</span><br></p><p class="" style="line-height: 22.4px;"><span lang="EN" class=""></span></p><p class="" style="line-height: 22.4px;"><span lang="EN" class="">Students who are enrolled in the Chinese Language Elective Programme (CLEP) must take Chinese Language and Literature at H2 level. Interested students may also take another CL related subject such as H2 China Studies in Chinese, H2 Translation or H1 General Studies in Chinese.</span></p><p class="" style="line-height: 22.4px;"><span lang="EN" class=""></span></p><p class="" style="line-height: 22.4px;"><span lang="EN" class="">Some of the distinctive elements of the JPJC CLEP are:</span></p><p class="" style="line-height: 22.4px;"><span lang="EN" class=""></span></p><p class="" style="line-height: 22.4px;"><b class="">Overseas Experiential Learning Programme</b></p><p class="" style="line-height: 22.4px;"><span lang="EN" class="">Each year, the Mother Tongue Language Department leads CLEP students to major provinces and cities in China to study its history, literature and culture. Some of the destinations include Chengdu (</span><span lang="ZH-CN" class="">成都</span><span lang="EN" class="">), Xi’an (</span><span lang="ZH-CN" class="">西安</span><span lang="EN" class="">), Zhengzhou (</span><span lang="ZH-CN" class="">郑州</span><span lang="EN" class="">), Wuhan (</span><span lang="ZH-CN" class="">武汉</span><span lang="EN" class="">), Beijing (</span><span lang="ZH-CN" class="">北京</span><span lang="EN" class="">), Hubei (</span><span lang="ZH-CN" class="">湖北</span><span lang="EN" class="">), Hunan (</span><span lang="ZH-CN" class="">湖南</span><span lang="EN" class="">), Gansu (</span><span lang="ZH-CN" class="">甘肃</span><span lang="EN" class="">) and Shanghai (</span><span lang="ZH-CN" class="">上海</span><span lang="EN" class="">). In 2018, the students visited Beijing (</span><span lang="ZH-CN" class="">北京</span><span lang="EN" class="">) and Taipei (</span><span lang="ZH-CN" class="">台北</span><span lang="EN" class="">).</span></p><p class="" style="line-height: 22.4px;"><span lang="EN" class=""><img src="../../../jpjc-moe-edu-sg-admin.cwp.sg/qql/slot/u152/JPJC%20Experience/Curriculum/LEP/LEP%202.jpg" hspace="2" alt="LEP 2.jpg" class="ive_eobj_center"></span></p><p class="" style="line-height: 22.4px; text-align: center;"><i class="">CLEP students at the Great Wall of China in Beijing</i></p><p class="" align="center" style="line-height: 22.4px;"><span lang="EN" class="">&nbsp;</span></p><p class="" style="line-height: 22.4px;"><b class="">Writers Forum: Distinguished Speaker Series</b></p><p class="" style="line-height: 22.4px;"><span lang="EN" class="">In order to help students to attain a higher level of proficiency and a better understanding of Chinese language and literature, distinguished writers and academics are regularly invited to deliver lectures on their areas of expertise.</span></p><p class="" style="line-height: 22.4px;"><span lang="EN" class=""><img src="../../qql/slot/u152/JPJC%20Experience/Curriculum/LEP/LEP%203.jpg" hspace="2" alt="LEP 3.jpg" class="ive_eobj_center"></span></p><p class="" style="text-align: center; line-height: 22.4px;"><i class="">Local writers Mr&nbsp;</i><i class="">Su Zhangkai and Ms Zou Lu at our Writers Forum</i></p><p class="" style="text-align: center; line-height: 22.4px;"><i class=""><br></i></p><p class="" style="text-align: center; line-height: 22.4px;"><i class=""><img src="../../qql/slot/u152/JPJC%20Experience/Curriculum/LEP/LEP%204.jpg" hspace="2" alt="LEP 4.jpg" class="ive_eobj_center"></i></p><p class="" style="text-align: center; line-height: 22.4px;"><i class="">A talk by Ms Kuo Jian Hong, Artistic Director from the Theatre Practice</i></p><p class="" style="line-height: 22.4px;"><span lang="EN" class=""></span></p><p class="" style="line-height: 22.4px;"><b class=""><br></b></p><p class="" style="line-height: 22.4px;"><b class="">Chinese Cultural Society</b></p><p class="" style="line-height: 22.4px;"><span lang="EN" class="">JPJC CLEP students are encouraged to join as a member of the Chinese Cultural Society. Members get to experience Chinese enrichment activities such as Song Writing, Calligraphy, Drama lessons and Tea Art appreciation sessions.</span></p><p class="" style="text-align: center; line-height: 22.4px;"><span lang="EN" class=""><img src="../../qql/slot/u152/JPJC%20Experience/Curriculum/LEP/LEP%205.jpg" hspace="2" alt="LEP 5.jpg" class="ive_eobj_center"></span></p><p class="" style="text-align: center; line-height: 22.4px;"><i class="">Creative Calligraphy class</i></p><p class="" style="text-align: center; line-height: 22.4px;"><i class=""><br></i></p><p class="" style="text-align: center; line-height: 22.4px;"><i class=""><img src="../../qql/slot/u152/JPJC%20Experience/Curriculum/LEP/LEP%206.jpg" hspace="2" alt="LEP 6.jpg" class="ive_eobj_center"></i></p><p class="" style="text-align: center; line-height: 22.4px;"><i class="">Tea Appreciation Session at Tea Chapter</i></p><p class="" style="text-align: center; line-height: 22.4px;"><i class=""><br></i></p><p class="" style="text-align: center; line-height: 22.4px;"><i class=""><img src="../../qql/slot/u152/JPJC%20Experience/Curriculum/LEP/LEP%207.jpg" hspace="2" alt="LEP 7.jpg" class="ive_eobj_center"></i></p><p class="" style="text-align: center; line-height: 22.4px;"><i class="">Getting ready for SYF Drama Presentation 2018</i></p><p class="" style="line-height: 22.4px;"><span lang="EN" class=""></span></p><p class="" style="line-height: 22.4px;"><span lang="EN" class=""></span></p><p class="" align="center" style="line-height: 22.4px;"><span lang="EN" class="">&nbsp;</span></p><p class="" style="line-height: 22.4px;"><b class="">Student Internship Programme</b></p><p class="" style="line-height: 22.4px;"><span lang="EN" class="">Internship opportunities are given to CLEP students in various organisations such as Business China, CapitalRadio 958, Lianhe Zaobao, Xinhuanet, Interlexis etc. Students are given the opportunity to better understand the career opportunities related to Chinese language.</span></p><p class="" style="line-height: 22.4px;"><span lang="EN" class=""><img src="../../qql/slot/u152/JPJC%20Experience/Curriculum/LEP/LEP%208.jpg" hspace="2" alt="LEP 8.jpg" class="ive_eobj_center"></span></p><p class="" style="line-height: 22.4px;"><span lang="EN-US" class=""><v:shape o:spid="_x0000_i1041" type="#_x0000_t75" class=""><v:imagedata src="../../../file/C_/Users/admin/AppData/Local/Temp/msohtmlclip1/01/clip_image009-2.jpg" o:title="" class=""></v:imagedata></v:shape><v:shape o:spid="_x0000_i1040" type="#_x0000_t75" class=""><v:imagedata src="../../../file/C_/Users/admin/AppData/Local/Temp/msohtmlclip1/01/clip_image010-2.jpg" o:title="" class=""></v:imagedata></v:shape></span><span lang="EN" class=""></span></p><p class="" align="center" style="line-height: 22.4px;"><i class="">Students’ internship at SPH and Capital 958FM</i></p><p class="" style="line-height: 22.4px;"><b class=""><span lang="EN" class=""></span></b></p><p class="" style="line-height: 22.4px;"><b class=""><span lang="EN" class=""></span></b></p><p class="" style="line-height: 22.4px;"><b class=""><br></b></p><p class="" style="line-height: 22.4px;"><b class="">Chinese Publications</b></p><p class="" style="line-height: 22.4px;"><span lang="EN" class="">CLEP students’ works are published in our very own CL publications namely</span><span lang="ZH-CN" class="">《茁之集》、《三思经纬》、《裕轩纵横》、《我的实习日记》</span><span lang="EN" class="">and&nbsp;</span><span lang="ZH-CN" class="">《启航》</span><span lang="EN" class="">. The latest addition&nbsp;</span><span lang="ZH-CN" class="">《启航》</span><span lang="EN" class="">&nbsp;captures students’ reflections and experiences during their internship as well as Overseas Experiential Learning Programme.</span></p><p class="" style="line-height: 22.4px;"><span lang="EN" class=""><img src="../../qql/slot/u152/JPJC%20Experience/Curriculum/LEP/LEP%209.jpg" hspace="2" alt="LEP 9.jpg" class="ive_eobj_center"></span></p><p class="" align="center" style="line-height: 22.4px;"><i class="">Chinese publications showcasing students’ works</i></p><p class="" style="line-height: 22.4px;"><br></p><p class="" style="line-height: 22.4px;"><b class="">“</b><b class=""><span lang="ZH-CN" class="">新空下</span></b><b class="">” National Xinyao Singing and Song Writing Competition</b></p><p class="" style="line-height: 22.4px;"><span lang="EN" class="">Xinyao played an important part in the development of Singapore's cultural history. In the early 1980s, students got together and sang the songs which they have composed on their own, a first for the local music scene. Many of the pioneers of Xinyao, amongst which one of the most distinguished, Eric Moo, began their music journey in JJC in the early 1980s, before going on the bigger regional stage.&nbsp; Chen Jia Ming, one of Singapore’s most prolific lyricists in the Mandopop scene, also started penning songs in JJC.</span></p><p class="" style="line-height: 22.4px;"><span lang="EN" class=""></span></p><p class="" style="line-height: 22.4px;"><span lang="EN" class="">In 2015, Jurong JC Mother Tongue Languages Department, together with TCR Music Stations, organised the inaugural “</span><span lang="ZH-CN" class="">新空下</span><span lang="EN" class="">” National Xinyao Singing Competition. The competition received overwhelming responses from students of secondary schools and JC/CIs. In the spirit of injecting new life into the Xinyao legacy, a new song writing category has also been included in 2017 to encourage students to compose their own songs. In the same year, the Committee to Promote Chinese Language Learning also came on board in the organisation of the competition.</span></p><p class="" style="line-height: 22.4px;"><span lang="EN" class=""></span></p><p class="" style="line-height: 22.4px;"><span lang="EN" class="">“</span><span lang="ZH-CN" class="">新空下</span><span lang="EN" class="">” would be into its 5th edition this year and the competition continues to inject new elements, as well as attract students from secondary schools and tertiary institutions to showcase and celebrate their talents.</span><span lang="EN" class=""></span></p><p class="" style="line-height: 22.4px;"><span lang="EN" class=""></span></p><p class="" style="line-height: 22.4px;"><span lang="EN-US" class=""><v:imagedata src="../../../file/C_/Users/admin/AppData/Local/Temp/msohtmlclip1/01/clip_image013.jpg" o:title="" class=""></v:imagedata></span><span lang="EN" class=""></span></p><p class="" style="text-align: center; line-height: 22.4px;"><i class=""><img src="../../qql/slot/u152/JPJC%20Experience/Curriculum/LEP/LEP%2010.jpg" hspace="2" alt="LEP 10.jpg" class="ive_eobj_center"></i></p><p class="" style="text-align: center; line-height: 22.4px;"><i class="">Competition Finals in 2016</i></p><p class="" style="text-align: center; line-height: 22.4px;"><i class=""><br></i></p><p class="" style="text-align: center; line-height: 22.4px;"><i class=""><img src="../../qql/slot/u152/JPJC%20Experience/Curriculum/LEP/LEP%2011.jpg" hspace="2" alt="LEP 11.jpg" class="ive_eobj_center"></i></p><p class="" style="text-align: center; line-height: 22.4px;"><i class="">Competition Finals in 2017</i></p><p class="" style="text-align: center; line-height: 22.4px;"><i class=""><br></i></p><p class="" style="text-align: center; line-height: 22.4px;"><i class=""><img src="../../qql/slot/u152/JPJC%20Experience/Curriculum/LEP/LEP%2012.jpg" hspace="2" alt="LEP 12.jpg" class="ive_eobj_center"></i></p><p class="" style="text-align: center; line-height: 22.4px;"><i class="">Competition Finals in 2018</i></p><p class="" style="text-align: center; line-height: 22.4px;"><i class=""><br></i></p><p class="" style="text-align: center; line-height: 22.4px;"><i class=""><img src="../../qql/slot/u152/JPJC%20Experience/Curriculum/LEP/LEP%2013.jpg" hspace="2" alt="LEP 13.jpg" class="ive_eobj_center"></i></p><p class="" align="center" style="line-height: 22.4px;"><i class="">Xinyao Song Writing Workshop</i><b class=""><span lang="EN" class=""></span></b></p><p class="" style="line-height: 22.4px;"><b class=""><span lang="EN" class=""></span></b></p><p class="" style="line-height: 22.4px;"><b class=""><br></b></p><p class="" style="line-height: 22.4px;"><b class="">Chinese Enrichment Programmes</b></p><p class="" style="line-height: 22.4px;"><b class=""><span lang="EN" class=""></span></b></p><p class="" style="line-height: 22.4px;"><span lang="EN" class="">A number of enrichment programmes are organised to enhance the learning experience of our CLEP students. These include the annual Chinese New Year Celebrations, Mother Tongue Fortnight Programmes as well as programmes under the Cultural Performance Exposure Scheme.</span></p><p class="" style="line-height: 22.4px;"><span lang="EN" class=""></span></p><p class="" style="line-height: 22.4px;"><span lang="EN-US" class=""><v:imagedata src="../../../file/C_/Users/admin/AppData/Local/Temp/msohtmlclip1/01/clip_image001.jpg" o:title="" class=""></v:imagedata></span><span lang="EN" class=""></span></p><p class="" style="line-height: 22.4px;"><span lang="EN" class=""><img src="../../qql/slot/u152/JPJC%20Experience/Curriculum/LEP/LEP%2014.jpg" hspace="2" alt="LEP 14.jpg" class="ive_eobj_center"></span></p><div style="text-align: center;"><span style="background-color: initial; font-size: 1em;">A skit performance at the MTL symposium 2018</span></div><div style="text-align: center;"><span style="background-color: initial; font-size: 1em;"><br></span></div><p></p><p class="" style="line-height: 22.4px;"><span lang="EN" class=""></span></p><p class="" style="line-height: 22.4px;"><span lang="EN-US" class=""><v:imagedata src="../../../file/C_/Users/admin/AppData/Local/Temp/msohtmlclip1/01/clip_image018.jpg" o:title="" class=""></v:imagedata></span><span lang="EN" class=""></span></p><p class="" style="line-height: 22.4px;"><span lang="EN" class=""><img src="../../qql/slot/u152/JPJC%20Experience/Curriculum/LEP/LEP%2015.jpg" hspace="2" alt="LEP 15.jpg" class="ive_eobj_center"></span></p><div style="text-align: center;"><span style="background-color: initial; font-size: 1em;">Moon cake making session</span></div><div style="text-align: center;"><span style="background-color: initial; font-size: 1em;"><br></span></div><p></p><p class="" style="line-height: 22.4px;"><span lang="EN" class=""></span></p><p class="" style="line-height: 22.4px;"><span lang="EN-US" class=""><v:imagedata src="../../../file/C_/Users/admin/AppData/Local/Temp/msohtmlclip1/01/clip_image019.jpg" o:title="" class=""></v:imagedata></span><span lang="EN" class=""></span></p><p class="" style="line-height: 22.4px;"><span lang="EN" class=""><img src="../../qql/slot/u152/JPJC%20Experience/Curriculum/LEP/LEP%2016.jpg" hspace="2" alt="LEP 16.jpg" class="ive_eobj_center"></span></p><div style="text-align: center;"><span style="background-color: initial; font-size: 1em;">Traditional Games booth at Racial Harmony Day</span></div><div style="text-align: center;"><span style="background-color: initial; font-size: 1em;"><br></span></div><p></p><p class="" style="line-height: 22.4px;"><span lang="EN" class=""></span></p><p class="" style="line-height: 22.4px;"><span lang="EN-US" class=""><v:imagedata src="../../../file/C_/Users/admin/AppData/Local/Temp/msohtmlclip1/01/clip_image020.jpg" o:title="" class=""></v:imagedata></span><span lang="EN" class=""></span></p><p class="" style="line-height: 22.4px;"><span lang="EN" class=""></span></p><div style="text-align: center;"><img src="../../qql/slot/u152/JPJC%20Experience/Curriculum/LEP/LEP%2017.jpg" hspace="2" alt="LEP 17.jpg" class="ive_eobj_center"><span style="background-color: initial; font-size: 1em;">Chinese Riddle Booth at Moon Cake Celebrations</span></div><p></p><p class="" style="line-height: 22.4px;"><b class="">&nbsp;</b></p><p class="" style="line-height: 22.4px;"><span lang="EN" class="">For Further Clarification</span></p><p class="" style="line-height: 22.4px;"><span lang="EN" class="">Please contact Subject Head, Chinese Language, Mdm Lim Sok Koon at&nbsp;</span><span lang="EN" class=""><a href="mailto:lim_sok_koon@moe.edu.sg" class="">lim_sok_koon@moe.edu.sg</a></span><span lang="EN" class=""></span></p><p class="" style="line-height: 22.4px;"><span lang="EN" class="">&nbsp;</span></p><p class="" style="line-height: 22.4px;"><span lang="EN" class="">&nbsp;</span></p></div>
+</div>
+  <div id="_ptoo_4043" class="pageblock_box " >
+    <h2 id="_ptoh_4043" class="ive_editable ive_ptoh">Malay Language Elective Programme</h2>
+    <div id="_ptod_4043" class="ive_editable ive_ptod ive_content"><p class="" style="line-height: 22.4px;"><i class="" style="background-color: initial; font-size: 1em;">‘Advocates of Humanitarian Values’ (Penggerak Nilai Kemanusiaan)&nbsp;</i></p><p class="" style="line-height: 22.4px;"><b class="">Introduction</b></p><p class="" style="line-height: 22.4px;"><span style="background-color: initial; font-size: 1em;">In 2012, Pioneer Junior College (PJC) was selected to be the 3rd Malay Language Elective Programme (MLEP) in Singapore. The Malay Language Elective Programme (MLEP) was introduced in 2001 by the Ministry of Education as a platform for students who have the interest and inclination to study Malay language at a higher level. The programme offers a wide range of activities to enhance students’ language skills and interest in Malay language, literature and culture.&nbsp;In 2019, MLEP continues to be offered at the new merged college, Jurong Pioneer Junior College.</span></p><p class="" style="line-height: 22.4px;"><span lang="EN" class="">MLEP is a two-year programme which prepares students for the GCE ‘A’ Level H2 Malay Language and Literature with the option to offer H3 Malay. Aimed at producing Malay scholars who are ‘Advocates of Humanitarian Values’ (Penggerak Nilai Kemanusiaan).&nbsp;</span></p><p class="" style="line-height: 22.4px;"><b class="">Special Features and programmes</b></p><p class="" style="line-height: 22.4px;"><span lang="EN" class="">Features of the MLEP at JPJC include specialised enrichment activities, leadership and management skills programmes, local and overseas immersion programmes, producing publications and attending work-shadowing in corporate opportunities.</span></p><p class="" style="line-height: 22.4px;"><span lang="EN" class="">MLEP students in JPJC will attend an overseas Immersion Programme where they learn more about the Malay community, and the challenges which the community faces pertaining to preservation of identity, culture and language.&nbsp;</span></p><p class="" style="line-height: 22.4px;"><b class="">J2 MLEP Graduation Showcase</b></p><p class="" style="line-height: 22.4px;"><span lang="EN" class="">The Graduation Showcase is an annual performance by the JC2 MLEP students. After an enriching year in MLEP, the showcase is a culmination of their involvement and experience. Led by students and supported by teachers, the showcase is a theatre performance, incorporating acting, singing and dancing. The performance is an important aspect of their appreciation of the Malay arts and culture.&nbsp;</span></p><p class="" style="line-height: 22.4px;"><span lang="EN" class="">In 2018, the Guest-of-Honour for the 6<sup class="">th</sup>&nbsp;MLEP Graduation Showcase was&nbsp;</span><span lang="EN" class="">Mr Masagos Zulkifli, Minister for the Environment and Water Resources.</span></p><p class="" style="line-height: 22.4px;"><span lang="EN" class="">Audience at the 2018 showcase also witnessed the launch of the graduands’ Literary Anthology publication. The publication is a compilation of the literary works produced by the students, over their course of study in MLEP.</span></p><p class="" style="line-height: 22.4px;"><span lang="EN" class="">&nbsp;</span></p><p class="" style="line-height: 22.4px;"><span lang="EN-US" class=""><v:imagedata src="../../../file/C_/Users/admin/AppData/Local/Temp/msohtmlclip1/01/clip_image021.jpg" o:title="" class=""></v:imagedata></span><span lang="EN" class=""></span></p><p class="" style="line-height: 22.4px;"><i class=""><img src="../../qql/slot/u152/JPJC%20Experience/Curriculum/LEP/MLEP_JPJC_1.jpg" hspace="2" alt="MLEP_JPJC_1.jpg" class="ive_eobj_center">Our 6<sup class="">th</sup>&nbsp;cohort of MLEP students receiving their Graduation Certificates from&nbsp;</i><i class="">Mr Masagos Zulkifli, Minister for the Environment and Water Resources.</i><i class=""><span lang="EN" class=""></span></i></p><p class="" style="line-height: 22.4px;"><span lang="EN" class="">&nbsp;</span></p><p class="" style="line-height: 22.4px;"><span lang="EN-US" class=""><v:imagedata src="../../../file/C_/Users/admin/AppData/Local/Temp/msohtmlclip1/01/clip_image022.jpg" o:title="" class=""></v:imagedata></span><span lang="EN" class=""></span></p><p class="" style="line-height: 22.4px;"><i class=""><img src="../../qql/slot/u152/JPJC%20Experience/Curriculum/LEP/MLEP_JPJC_2.jpg" hspace="2" alt="MLEP_JPJC_2.jpg" class="ive_eobj_center">Mr Masagos Zulkifli, Minister for the Environment and Water Resources</i><i class="">, launching the 6<sup class="">th</sup>&nbsp;MLEP Publication, entitled ‘Epilog Nilai Bangsa’. The publication is a compilation of literary works by the MLEP students.</i></p><p class="" style="line-height: 22.4px;"><i class="">&nbsp;</i></p><p class="" style="line-height: 22.4px;"><span lang="EN-US" class=""><v:imagedata src="../../../file/C_/Users/admin/AppData/Local/Temp/msohtmlclip1/01/clip_image023.jpg" o:title="" class=""></v:imagedata></span><span lang="EN" class=""></span></p><p class="" style="line-height: 22.4px;"><i class=""><img src="../../qql/slot/u152/JPJC%20Experience/Curriculum/LEP/MLEP_JPJC_3.jpg" hspace="2" alt="MLEP_JPJC_3.jpg" class="ive_eobj_center">6<sup class="">th</sup>&nbsp;MLEP cohort students in their roles for their Graduation Showcase. Entitled ‘Tepuk Amai-amai’, the production is about the academic issues students face.</i></p><p class="" style="line-height: 22.4px;"><span lang="EN" class="">&nbsp;</span></p><p class="" style="line-height: 22.4px;"><b class="">MP Attachment with Mr Zaqy Mohamad and Keat Hong Community Centre</b></p><p class="" style="line-height: 22.4px;"><span lang="EN" class="">As part of community engagement, MLEP students were privileged to shadow the Grassroots Leader of Choa Chua Kang GRC, MP Mr Zaqy Mohamad during the Meet-the-Residents session. During the sessions, MLEP students were given the opportunity to witness and understand community issues better and know what it is like to be a leader of the community.</span></p><p class="" style="line-height: 22.4px;"><span lang="EN" class="">This programme is part of their leadership training and provides students with exposure, broadening their worldview. MLEP prepares our students to be leaders of the community.</span></p><p class="" style="line-height: 22.4px;"><span lang="EN" class="">Future collaborations with Keat Hong CC enables them to extend their involvement in the community. This includes leadership training and activities that focus on Malay Language and Culture.</span></p><p class="" style="line-height: 22.4px;"><img src="../../qql/slot/u152/JPJC%20Experience/Curriculum/LEP/MLEP_JPJC_4.jpg" hspace="2" alt="MLEP_JPJC_4.jpg" class="ive_eobj_center"></p><p class="" style="line-height: 22.4px;"><span lang="EN-US" class=""><v:imagedata src="../../../file/C_/Users/admin/AppData/Local/Temp/msohtmlclip1/01/clip_image024.png" o:title="" class=""></v:imagedata></span><span lang="EN" class=""></span></p><p class="" style="line-height: 22.4px;"><i class="">MLEP students shadowing Mr Zaqy Mohamad, MP for Choa Chu Kang GRC, during the Meet-the-Residents session.</i></p><p class="" style="line-height: 22.4px;"><b class="">Malay Heritage Centre Student Guides Programme</b></p><p class="" style="line-height: 22.4px;"><span lang="EN" class="">MLEP students attended a workshop at the Malay Heritage Centre to prepare for their role as docents to the Malay Heritage Gallery. This programme aims to build confidence in interacting with the public and provide a good understanding of the Malay culture and heritage.</span></p><p class="" style="line-height: 22.4px;"><span lang="EN-US" class=""><v:imagedata src="../../../file/C_/Users/admin/AppData/Local/Temp/msohtmlclip1/01/clip_image025.jpg" o:title="" class=""></v:imagedata></span><span lang="EN" class=""></span></p><p class="" style="line-height: 22.4px;"><i class=""><img src="../../qql/slot/u152/JPJC%20Experience/Curriculum/LEP/MLEP_JPJC_5.jpg" hspace="2" alt="MLEP_JPJC_5.jpg" class="ive_eobj_center"><div style="text-align: center;"><i class="" style="background-color: initial; font-size: 1em;">MLEP students explaining to visitors during their docent stint at the Malay Heritage Gallery.</i></div></i></p><p class="" style="line-height: 22.4px;"><span lang="EN" class="">&nbsp;</span></p><p class="" style="line-height: 22.4px;"><b class="">Windows of Work (WOW) by Association of Muslim Professionals (AMP)</b></p><p class="" style="line-height: 22.4px;"><span lang="EN" class="">Under the three-phase programme by Young AMP, MLEP students undergo useful training sessions like personality profiling, CV writing, personal grooming, effective communication, as well as project presentation skills, before working together in teams to pitch their own business proposals to the Young AMP Board of Management.</span></p><p class="" style="line-height: 22.4px;"><span lang="EN" class="">The Work Shadowing Programme gives our students the opportunity to be mentored by distinguished professionals, so that they could be guided to make good choices in Higher Education and future career.</span></p><p class="" style="line-height: 22.4px;"><span lang="EN" class="">Prior to the attachment, students attended workshops and are exposed to career developmental skills in both formal and informal creative settings.</span></p><p class="" style="line-height: 22.4px;"><span lang="EN-US" class=""><v:imagedata src="../../../file/C_/Users/admin/AppData/Local/Temp/msohtmlclip1/01/clip_image026.jpg" o:title="" class=""></v:imagedata></span><span lang="EN" class=""></span></p><p class="" style="line-height: 22.4px;"><i class=""><img src="../../qql/slot/u152/JPJC%20Experience/Curriculum/LEP/MLEP_JPJC_6.jpg" hspace="2" alt="MLEP_JPJC_6.jpg" class="ive_eobj_center"><div style="text-align: center;"><i class="" style="background-color: initial; font-size: 1em;">Students attending the Workshop by AMP&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</i></div></i></p><p class="" style="line-height: 22.4px;"><span lang="EN" class="">For Further Clarification<br class=""><br class="">Please contact Senior Teacher, Malay Language and Coordinator for Malay Language Elective Programme, Madam Siti Atiqah Punari at&nbsp;</span><span lang="EN" class=""><a href="mailto:siti_atiqah_punari@moe.edu.sg" class="">siti_atiqah_punari@moe.edu.sg</a></span><span lang="EN" class="">.</span></p></div>
+</div>
+          </div>
+    <div class="bottom"></div>
+  </div>
+
+  <div class="sidebar_area">
+    <div class="top"></div>
+    <div class="mid">
+        <div class="sidebar0_box"><div id="_ptosb0_2491" class="ive_content"></div></div>
+      
+
+
+
+
+
+
+
+
+
+
+
+      	<div class="subpages_box">
+    <ul>
+     
+        
+  <li id="_ptsp_2229" >
+    <a href="humanities-n-the-arts.html">Humanities &amp; the Arts</a>  </li>
+       
+        
+  <li id="_ptsp_4021" >
+    <a href="physical-education-n-co-curricular-activities/physical-education.html">Physical Education &amp; Co-Curricular Activities</a>  </li>
+       
+        
+  <li id="_ptsp_2230" >
+    <a href="mathematics-n-sciences/biology.html">Mathematics &amp; Sciences</a>  </li>
+       
+        
+  <li id="_ptsp_4040" >
+    <a href="languages.html">Languages</a>  </li>
+      
+    <!-- myself -->
+        <li id="_ptsp_2491"><b>Language Elective Programmes</b></li>
+      
+  <!-- subpages -->
+  <ul class="mysubpages_">
+      </ul>
+  <!-- end subpages -->
+
+       
+        
+  <li id="_ptsp_2232" >
+    <a href="knowledge-skills/general-paper.html">Knowledge Skills</a>  </li>
+        </ul>
+  
+</div>
+              <div class="sidebar1_box"><div id="_ptosb1_2491" class="ive_content"></div></div>
+    </div>
+    <div class="bottom"></div>
+  </div>
+
+  <div class="footer_area"> 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+  <div class="copyright">
+		© 2020 Jurong Pioneer Junior College.&nbsp;<span>All Rights Reserved.</span>		
+  </div>
+  <div class="links">
+		<ul>
+		<li><a href="https://www.tech.gov.sg/report_vulnerability" target="_blank">Report Vulnerability</a></li>
+		<li><a href="../../contact-us/contact-us.html" target="">Contact Us</a></li>
+		</ul>
+  </div>	
+</footer></div>
+
+</div>
+</div>
+  </div>
+</div>
+<!-- pagetree/a1/default_view.html -->
+</div>
+
+
+
+</body>
+
+<!-- Mirrored from jpjc.moe.edu.sg/jpjc-experience/curriculum/language-elective-programmes by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 Nov 2020 12:52:43 GMT -->
+</html>
