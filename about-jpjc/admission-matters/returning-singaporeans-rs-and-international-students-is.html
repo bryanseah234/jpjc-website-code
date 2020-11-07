@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+
+<!-- Mirrored from jpjc.moe.edu.sg/about-jpjc/admission-matters/returning-singaporeans-rs-and-international-students-is by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 Nov 2020 12:51:59 GMT -->
+<head>
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+<title>Returning Singaporeans (RS) and International Students (IS)</title>
+
+<link rel="shortcut icon" href="../../qql/slot/u152/nstyle/favicon1.png"/>
+
+ 
+ 
+
+<link rel="stylesheet" type="text/css" href="../../skin/qql/base.css">
+<link rel="stylesheet" type="text/css" href="../../rs/css/ct-factor.css">
+
+<link rel="stylesheet" type="text/css" id="main_css" href="../../qql/style/152_002/main.css?1597405381"> 
+
+<script type="text/javascript" src="../../site/ctx/js/menu.js"></script>
+<script type="text/javascript" src="../../site/ctx/jquery/jquery.js"></script>
+<script type="text/javascript" src="../../site/ctx/jquery/easing.js"></script>
+<script type="text/javascript" src="../../site/ctx/jquery/ctjq.js"></script>
+<link rel="stylesheet" type="text/css" href="../../site/ctx/jquery/ctjq.css">
+
+
+<script type="text/javascript">
+function get_idnum(a){ return parseInt(a.substr(a.lastIndexOf("_")+1,20)); }
+</script>
+
+
+<link rel="stylesheet" type="text/css" href="../../skin/qql/menu.css">
+
+
+<script>
+// non-admin vars
+if (typeof ive_settings=='undefined') {
+  ive_settings={};
+  ive_settings.ptid=2481;
+  ive_settings.url={
+    _head: '/cos/o.x?c=/qql/',
+    skin_path:'/skin/qql/' 
+  };
+  ive_settings.user={ fname: '', _id: '' , email:''};
+}
+</script>
+
+<!-- server extra head -->
+
+<!-- site extra head -->
+<meta name="viewport" content="width=device-width" />
+<script src="../../../assets.wogaa.sg/scripts/wogaa.js"></script>
+<script type="text/javascript">
+$(function(){		
+  $(".sidebar_area").insertAfter($(".content_area .mid:first"));
+	
+	if ($(".subpages_box UL UL.mysubpages_").length>0) {
+		var prev = $(".subpages_box UL UL.mysubpages_").prev();
+		$(prev).append($(".subpages_box UL UL.mysubpages_"));
+	}
+	
+  if ((!$("BODY").hasClass("pagelevel-1")) && ($(".path_box").length>0)) {
+		var pb = $(".path_box").html().split("&gt;");    
+    if (pb.length>0) {
+      var newpb = "<span>"+pb[0]+"</span>";
+      for (var i=1; i<pb.length; i++) {
+        newpb = newpb + "> <span>"+pb[i]+"</span>";          
+      }
+			$(".path_box").html(newpb);
+    }
+		$(".content_area > .top").append($(".path_box"));
+		
+		var par = pb[1];
+		if (pb.length>2) {
+			par = pb[pb.length-2];				
+		}
+			
+		$(".masthead2_area").html('<span class="subtitle">'+par+'</span><span class="leftt"></span><span class="rightt"></span>');
+		$(".masthead2_area .subtitle").html($(".subtitle").text());		
+		
+		if ($(".pagecontent_box H1").length>0) {
+			$(".content_area > .top").append("<h1>"+$(".pagecontent_box H1:first").text()+"</h1>");
+		}
+	} else {
+		$(".sidebar_area").remove();		
+	}
+	
+  $("#menu").click(function(){
+    $("#netcontent").toggleClass("show");
+    return false;
+  });  
+	
+	$("#search").click(function(){
+    $("#netcontent").toggleClass("showsearch");
+    return false;
+  });  
+	
+  $(".sitemenu_area a.sitemenu").each(function(){
+		if ($(this).closest("LI").find("table.dropmenu").length>0) {
+			$(this).closest("LI").addClass("hasdm");
+		}
+  });
+  	
+  $(".sitemenu_area a.sitemenu").on("click", function(){
+    var par = $(this).closest("LI");
+    if ($(par).find("table.dropmenu").length>0) {
+      if ((!$(par).hasClass("active")) && ($("#netcontent").hasClass("show"))) {
+        $(".sitemenu_area LI").removeClass("active");
+				$(par).addClass("active");
+				
+				$(".main_area").addClass("showdropmenu");
+        return false;
+      }
+    }
+  });
+	
+});
+
+$.fn.is_on_screen = function(){
+  var win = $(window);
+  var viewport = {
+    top : win.scrollTop()-100,
+	  left : win.scrollLeft()
+  };
+  viewport.right = viewport.left + win.width();
+	viewport.bottom = viewport.top + win.height();
+
+	var bounds = this.offset();
+	bounds.right = bounds.left + this.outerWidth();
+	bounds.bottom = bounds.top + this.outerHeight();
+
+	return (!(viewport.right < bounds.left || viewport.left > bounds.right || viewport.bottom < bounds.top || viewport.top > bounds.bottom));
+};
+</script>
+<!-- page extra head -->
+ 
+<!-- END all extra head -->
+
+<script>
+
+if (typeof(coto)=='undefined') coto={ ive: { } };
+if (!coto.ive.Controller) coto.ive.Controller = function() { };
+
+coto.ive.Controller.prototype.build=function(dom,opts){
+  if (typeof(dom)=='function') return this.build_func=dom;
+  this.dom=dom;
+  if (!(this.options=$(this.dom).data('widget_options'))) this.options={ };
+  if (!(this.idata=$(this.dom).data('idata'))) this.idata={ };
+  this.idata.controller=this;
+  this.build_func.call(this,opts);
+  $(dom).data('widget_options',this.options);
+  $(dom).data('idata',this.idata);
+};
+coto.controllers={ }; // controllers list
+function ive_controller(wtype) {
+  return coto.controllers[wtype]||(coto.controllers[wtype]=new coto.ive.Controller());
+}
+
+ive_tunings={ };
+function ive_tuning(cat) { return ive_tunings[cat]||(ive_tunings[cat]={ }); }
+
+// ----- DROPMENU -----
+$(function() {
+
+
+
+
+
+
+
+  // old menu.js
+  $('.sitemenu_area ul.sitemenu li, .dropmenu a').bind('mouseover mouseleave',function(ev) {
+    var menuid='dropmenu_'+get_idnum(this.id),$menu=$('#'+menuid);
+    var isenter=(ev.type=='mouseover'||ev.type=='mouseenter');
+    ctmenu[isenter?'show':'hide'](menuid,this,$menu.hasClass('drop_right_')?'right':'bottom');
+  });
+});
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="PTP499 PTP595 PTP1904 pagelevel-4" >
+
+<div id="netcontent"><div id="lo_whole" class="layout-default">
+  <div id="lo_panel">
+    <div id="lo_main"><div class="main_area">
+
+  <div class="masthead_area"><header>
+  <a id="logo" href="../../index.html">Jurong Pioneer Junior College
+  </a>
+  <div id="search">Search
+  </div>	
+  <div id="menu">
+    <button type="button" class="hamburger">
+      <span class="hamb-top">
+      </span>
+      <span class="hamb-middle">
+      </span>
+      <span class="hamb-bottom">
+      </span>
+    </button>	
+  </div>
+</header>
+<div class="searchbox">
+  <form method="post" action="https://jpjc.moe.edu.sg/others/search&amp;func=search">
+    <input type="text" id="search_str" name="search_str" value="" placeholder="Search...">			
+  </form>
+</div> 	
+</div>
+<div class="sitemenu_area"><ul class="sitemenu">
+    <li id="PTID_499" class="PTSN_home first-item   "><a 
+    href="../../index.html" 
+
+
+    class="sitemenu"        >Home</a></li>
+    <li id="PTID_595" class="PTSN_about-jpjc  focus  "><a 
+    href="../../about-jpjc.html" 
+
+
+    class="sitemenu sitemenulit"        >About&nbsp;JPJC</a><table role="presentation" id="dropmenu_595" class="dropmenu ">
+   
+        <tr class="lineEven ">
+      <td class="dmtrig" id="dmtrig_638">
+	<a id="subitem_638"
+	  href="../principals-message.html"
+
+	  	
+	    ><span id="_ptmt_638">Principal&#039;s Message</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineOdd ">
+      <td class="dmtrig" id="dmtrig_2698">
+	<a id="subitem_2698"
+	  href="../college-identity.html"
+
+	  	
+	    ><span id="_ptmt_2698">College Identity</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineEven ">
+      <td class="dmtrig" id="dmtrig_639">
+	<a id="subitem_639"
+	  href="../organisation-chart.html"
+
+	  	
+	    ><span id="_ptmt_639">Organisation Chart</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineOdd ">
+      <td class="dmtrig" id="dmtrig_640">
+	<a id="subitem_640"
+	  href="../college-calendar.html"
+
+	  	
+	    ><span id="_ptmt_640">College Calendar</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineEven ">
+      <td class="dmtrig" id="dmtrig_6203">
+	<a id="subitem_6203"
+	  href="../subject-combination.html"
+
+	  	
+	    ><span id="_ptmt_6203">Subject Combination</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineOdd ">
+      <td class="dmtrig" id="dmtrig_1904">
+	<a id="subitem_1904"
+	  href="../admission-matters.html"
+
+	  	
+	    ><span id="_ptmt_1904">Admission Matters</span></a>      	 
+	  </td>
+    </tr>
+   
+   
+        <tr class="lineEven ">
+      <td class="dmtrig" id="dmtrig_2486">
+	<a id="subitem_2486"
+	  href="../financial-assistance-scheme.html"
+
+	  	
+	    ><span id="_ptmt_2486">Financial Assistance Scheme</span></a>      	 
+	  </td>
+    </tr>
+   
+   
+  </table>
+</li>
+    <li id="PTID_3988" class="PTSN_jpjc-experience    "><a 
+    href="../../jpjc-experience/total-curriculum-framework.html" 
+
+
+    class="sitemenu"        >JPJC&nbsp;Experience</a><table role="presentation" id="dropmenu_3988" class="dropmenu ">
+   
+        <tr class="lineOdd ">
+      <td class="dmtrig" id="dmtrig_3989">
+	<a id="subitem_3989"
+	  href="../../jpjc-experience/total-curriculum-framework.html"
+
+	  	
+	    ><span id="_ptmt_3989">Total Curriculum Framework</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineEven ">
+      <td class="dmtrig" id="dmtrig_4019">
+	<a id="subitem_4019"
+	  href="../../jpjc-experience/curriculum/humanities-n-the-arts.html"
+
+	  	
+	    ><span id="_ptmt_4019">Curriculum</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineOdd ">
+      <td class="dmtrig" id="dmtrig_3991">
+	<a id="subitem_3991"
+	  href="../../jpjc-experience/co-curriculum.html"
+
+	  	
+	    ><span id="_ptmt_3991">Co-Curriculum</span></a>      	 
+	  </td>
+    </tr>
+  </table>
+</li>
+    <li id="PTID_2545" class="PTSN_life-@-jpjc    "><a 
+    href="../../life-at-jpjc-1.html" 
+
+
+    class="sitemenu"        >Life&nbsp;@&nbsp;JPJC</a><table role="presentation" id="dropmenu_2545" class="dropmenu ">
+   
+        <tr class="lineEven ">
+      <td class="dmtrig" id="dmtrig_2546">
+	<a id="subitem_2546"
+	  href="../../life-at-jpjc-1/2019-events.html"
+
+	  	
+	    ><span id="_ptmt_2546">2019 Events</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineOdd ">
+      <td class="dmtrig" id="dmtrig_4103">
+	<a id="subitem_4103"
+	  href="../../life-at-jpjc-1/2020-events.html"
+
+	  	
+	    ><span id="_ptmt_4103">2020 Events</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineEven ">
+      <td class="dmtrig" id="dmtrig_6269">
+	<a id="subitem_6269"
+	  href="../../life-at-jpjc-1/publications.html"
+
+	  	
+	    ><span id="_ptmt_6269">Publications</span></a>      	 
+	  </td>
+    </tr>
+  </table>
+</li>
+    <li id="PTID_4077" class="PTSN_general    "><a 
+    href="../../general.html" 
+
+
+    class="sitemenu"        >General</a></li>
+    <li id="PTID_626" class="PTSN_partnerships    "><a 
+    href="../../partnerships/college-advisory-board.html" 
+
+
+    class="sitemenu"        >Partnerships</a><table role="presentation" id="dropmenu_626" class="dropmenu ">
+   
+        <tr class="lineOdd ">
+      <td class="dmtrig" id="dmtrig_704">
+	<a id="subitem_704"
+	  href="../../partnerships/college-advisory-board.html"
+
+	  	
+	    ><span id="_ptmt_704">College Advisory Board</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineEven ">
+      <td class="dmtrig" id="dmtrig_705">
+	<a id="subitem_705"
+	  href="../../partnerships/parent-support-group.html"
+
+	  	
+	    ><span id="_ptmt_705">Parent Support Group</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineOdd ">
+      <td class="dmtrig" id="dmtrig_706">
+	<a id="subitem_706"
+	  href="../../partnerships/jpjc-alumni.html"
+
+	  	
+	    ><span id="_ptmt_706">JPJC Alumni</span></a>      	 
+	  </td>
+    </tr>
+  </table>
+</li>
+  </ul>
+</div>
+  <div class="masthead2_area"></div>
+
+  <div class="content_area">
+    <div class="top"></div>
+    <div class="mid">
+            <div class="path_box">
+<a class='path' href='../../index.html'>Home</a> &gt;
+<a class='path' href='../../about-jpjc.html'>About JPJC</a> &gt;
+<a class='path' href='../admission-matters.html'>Admission Matters</a> &gt;
+Returning Singaporeans (RS) and International Students (IS) 
+</div>
+  
+       
+
+<div class="pagecontent_box">
+  <div class="tools_box">
+    </div>
+  
+    <h1 id="_ptoh_2481" class="ive_editable">Returning Singaporeans (RS) and International Students (IS)</h1>
+      
+    
+    
+
+
+
+</div>
+
+
+      
+<div id="_ptoo_block_start" style="font-size:1px;border:1px solid transparent"></div>
+
+<div id="_ptoo_PTOID" class="pageblock_box " style="display:none">
+    <div id="_ptod_PTOID" class="ive_editable ive_ptod ive_content"></div>
+</div>
+
+  <div id="_ptoo_4829" class="pageblock_box " >
+    <h2 id="_ptoh_4829" class="ive_editable ive_ptoh">Returning Singaporeans (RS)</h2>
+    <div id="_ptod_4829" class="ive_editable ive_ptod ive_content"><div style="text-align: justify;"><span style="background-color: initial;">Returning Singaporeans who wish to seek admission to JC1 in the next academic year must meet the requirements set by MOE and are strongly encouraged to register for the School Placement Exercise for Returning Singaporeans - Junior Colleges and Millennia Institute (SPERS-JC/MI). This is a centralised merit-based placement exercise conducted for returning Singaporeans who wish to join Year 1 of a junior college (JC) or Millennia Institute (MI) at the beginning of the next academic year.</span></div><div style="text-align: justify;"><br></div><div style="text-align: justify;"><span style="background-color: initial;">Please click </span><a href="https://beta.moe.gov.sg/returning-singaporeans/post-secondary/spers/" target="" style="background-color: initial;">here</a><span style="background-color: initial;"> for more information.</span></div><div style="text-align: justify;"><br></div><div style="text-align: justify;">Returning Singaporean applicants must provide their personal particulars, contact details, academic results, co-curricular achievements and other relevant supporting documents in their application. The admission application form will be made available in November/December.<span style="background-color: initial;">&nbsp;For applicants who have sat for the SPERS-JC/MI, they must include their list of eligible JCs and/or test results. All documents should be submitted through postage mail or in person to JPJC by <b>31 December</b> to be considered for admission in the next academic year.</span></div><div style="text-align: justify;"><br></div><div style="text-align: justify;"><span style="background-color: initial;">Shortlisted applicants will called up for interview and further placement tests may be required to ascertain desired subject combination. Any decision taken by the college is final.</span></div><div style="text-align: justify;"><br></div><div style="text-align: justify;">Please visit the Ministry of Education websites for other related information for RS admission:</div><div><ol><li style="text-align: justify;"><u><a href="https://beta.moe.gov.sg/returning-singaporeans/" target="">Overview of school admissions for Returning Singaporeans</a></u></li><li style="text-align: justify;"><u><a href="https://va.ecitizen.gov.sg/cfp/customerPages/moe/explorefaq.aspx?category=25017" target="">FAQs on SPERS</a></u></li></ol></div></div>
+</div>
+  <div id="_ptoo_4830" class="pageblock_box " >
+    <h2 id="_ptoh_4830" class="ive_editable ive_ptoh">International Students (IS)</h2>
+    <div id="_ptod_4830" class="ive_editable ive_ptod ive_content"><div style="text-align: justify;"><span style="background-color: initial;">International Students (IS) who wish to seek admission to JPJC must meet the requirements set by MOE and take a centralised assessment (J-PACT - Junior College Principals Academy Certification Test) conducted by Principals Academy Inc (PAI).&nbsp; Please note that J-PACT results only provide a benchmark for all international students seeking admission to junior colleges in Singapore and do not in any way guarantee a place in any junior colleges. For information and instructions on J-PACT test schedule/fees and important notes for application, please </span><a href="https://www.pact.sg/" target="" style="background-color: initial;">visit J-PACT website</a><span style="background-color: initial;">.</span></div><p class="" style="text-align: justify;"><span lang="EN-SG" class=""><br></span></p><p class="" style="text-align: justify;"><span lang="EN-SG" class="">IS applicants who have passed the J-PACT test and wish to be considered for admission will need to submit their applications.&nbsp;Please submit the completed application form, J-Pact test results and other relevant supporting documents in person, through postage mail or via email to <a href="mailto:jpjc@moe.edu.sg" target="">jpjc@moe.edu.sg</a> by before <b>31 December</b> to be considered for admission to JC1 in the next academic year. The admission application form will be made available in November/December.</span></p><p class="" style="text-align: justify;"><span lang="EN-SG" class=""><br></span></p><p class="" style="text-align: justify;"><span lang="EN-SG" class="">Shortlisted applicants will be interviewed and/or required to take placement tests to ascertain their suitability for admission and desired subject combination. Any decision taken by the college is final. Please note that there is no financial aid for international students in JPJC.<br></span></p><p class="" style="text-align: justify;"><span lang="EN-SG" class=""><br></span></p><p class="" style="text-align: justify;"><span lang="EN-SG" class="">Please visit the Ministry of Education websites for other related information for IS admission:<br></span></p><p class=""></p><ol><li style="text-align: justify;"><a href="https://www.moe.gov.sg/admissions/international-students/general-info" target="">General Information on Studying in Singapore</a> (include appropriate age and fee information)</li><li style="text-align: justify;"><a href="https://va.ecitizen.gov.sg/cfp/customerPages/moe/explorefaq.aspx?Category=45067" target="">FAQs on International Student Admission</a></li></ol><p></p><p class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: justify;"><span lang="EN-SG" style="font-family: Arial, sans-serif;"></span></p></div>
+</div>
+  <div id="_ptoo_2484" class="pageblock_box " >
+    <div id="_ptod_2484" class="ive_editable ive_ptod ive_content"><!--<p class=""><b class=""><span lang="EN-SG" class="">Returning Singaporeans</span></b></p><p class=""><span lang="EN-SG" class="">Returning Singaporeans&nbsp;who wish to seek admission to JPJC are strongly encouraged to take part in the School Placement Exercise for Returning Singaporeans - Junior Colleges and Millennia Institute (SPERS-JC/MI). This is a centralised placement exercise conducted in November each year for Returning Singaporeans who wish to join the Pre-University 1 level at the beginning of the next academic year.</span></p><p class=""><span lang="EN-SG" class="">Registration for SPERS-JC/MI opens in July each year and more information about SPERS-JC/MI is available&nbsp;<span class=""><i class=""><span class=""><a href="https://www.moe.gov.sg/admissions/returning-singaporeans/spers-jc-mi" class=""><span class="">here</span></a></span></i></span>.</span></p><p class=""><span lang="EN-SG" class="">Returning Singaporean applicants can download the SPERS-JC/MI application form by clicking <span class=""><a href="https://pact.sg/index.php?option=com_content&amp;view=article&amp;id=81&amp;catid=69&amp;Itemid=95" target="_blank" style="">here</a></span>. Applicants must provide their personal particulars, contact details, academic results, co-curricular achievements and other relevant supporting documents. For applicants who have sat for the SPERS-JC/MI, they must include their list of eligible JCs and/or test results. All documents should be submitted through postage mail or in person to JPJC by before 31 December, for admission in the next academic year.</span></p><p class=""><span lang="EN-SG" class="">Shortlisted applicants will be called up for an interview and further placement tests may be required to ascertain desired subject combination.&nbsp; <br><br></span></p><p class=""><span lang="EN-SG" class=""></span></p><p class=""><b class=""><span lang="EN-SG" class="">International Students</span></b></p><p class=""><span lang="EN-SG" class=""></span></p><p class=""><span lang="EN-SG" class="">International Students (IS) who wish to seek admission to JC1 in the next academic year must meet the requirements set by MOE.&nbsp; </span></p><p class=""><span lang="EN-SG" class=""></span></p><p class=""><span lang="EN-SG" class="">They should also register for a centralized assessment (J-PACT - Junior College Principals Academy Certification Test) conducted by Principals Academy Inc (PAI).&nbsp; Please note that J-PACT results only provide a benchmark for all international students seeking admission to junior colleges in Singapore and do not in any way guarantee a place in any junior colleges. For information and instructions on J-PACT test schedule/fees and important notes for application, please visit <a href="https://www.pact.sg/" target="_blank">J-PACT website</a> . </span></p><p class=""><span lang="EN-SG" class=""></span></p><p class=""><span lang="EN-SG" class="">IS who have passed the J-PACT test and wish to apply for admission to JPJC could apply either in person, through postage mail or via email to <span class=""><span class=""><a href="mailto:jpjc@moe.edu.sg" class=""><span class="">jpjc@moe.edu.sg</span></a></span></span>. The J-Pact application form can be downloaded <span class=""><a href="https://pact.sg/index.php?option=com_content&amp;view=article&amp;id=81&amp;catid=69&amp;Itemid=95" target="_blank" style="">here</a><b>.</b></span> The completed application form, J-PACT test results and other supporting documents (testimonial, examination results, co-curricular records etc.) must reach the college before 31 December, for admission in the next academic year. Shortlisted applicants may be interviewed and/or required to take placement tests to ascertain their suitability for admission and desired subject combination. </span></p><p class=""><span lang="EN-SG" class=""></span></p><p class=""><span lang="EN-SG" class="">IS should take note that there is no financial aid from the college. The 2020 school fee is $1040 per month for IS from ASEAN and $1750 per month for other nationalities. Similar to Singapore Citizens, IS are also required to pay miscellaneous fees in addition to the school fees.<br><br></span></p><p class=""><span lang="EN-SG" class=""></span></p><p class="">
+</p><p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;text-justify:inter-ideograph"><span lang="EN-SG" style="font-family:&quot;Arial&quot;,sans-serif"><span style="background-color: initial; font-size: 1em; text-align: left; font-family: Raleway, sans-serif;">Please visit the Ministry of Education website for other related information on international student admission - </span><span class="" style="background-color: initial; font-size: 1em; text-align: left; font-family: Raleway, sans-serif;"><span class=""><a href="https://www.moe.gov.sg/admissions/international-students/general-info" class="" target="_blank"><span class="">General Information on Studying in Singapore</span></a></span></span><span style="background-color: initial; font-size: 1em; text-align: left; font-family: Raleway, sans-serif;"> (include appropriate age and fee information).</span>&nbsp;<o:p></o:p></span></p>--></div>
+</div>
+          </div>
+    <div class="bottom"></div>
+  </div>
+
+  <div class="sidebar_area">
+    <div class="top"></div>
+    <div class="mid">
+        <div class="sidebar0_box"><div id="_ptosb0_2481" class="ive_content"></div></div>
+      
+
+
+
+
+
+
+
+
+
+
+
+      	<div class="subpages_box">
+    <ul>
+     
+           
+        
+  <li id="_ptsp_2480" >
+    <a href="joint-admissions-exercise-2020.html">Joint Admissions Exercise 2020</a>  </li>
+      
+    <!-- myself -->
+        <li id="_ptsp_2481"><b>Returning Singaporeans (RS) and International Students (IS)</b></li>
+      
+  <!-- subpages -->
+  <ul class="mysubpages_">
+      </ul>
+  <!-- end subpages -->
+
+       
+        
+  <li id="_ptsp_4186" >
+    <a href="km-portal-registration-n-selection-of-subject-combination.html">KM Portal Registration &amp; Selection of Subject Combination</a>  </li>
+       
+            </ul>
+  
+</div>
+              <div class="sidebar1_box"><div id="_ptosb1_2481" class="ive_content"></div></div>
+    </div>
+    <div class="bottom"></div>
+  </div>
+
+  <div class="footer_area"> 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+  <div class="copyright">
+		© 2020 Jurong Pioneer Junior College.&nbsp;<span>All Rights Reserved.</span>		
+  </div>
+  <div class="links">
+		<ul>
+		<li><a href="https://www.tech.gov.sg/report_vulnerability" target="_blank">Report Vulnerability</a></li>
+		<li><a href="../../contact-us/contact-us.html" target="">Contact Us</a></li>
+		</ul>
+  </div>	
+</footer></div>
+
+</div>
+</div>
+  </div>
+</div>
+<!-- pagetree/a1/default_view.html -->
+</div>
+
+
+
+</body>
+
+<!-- Mirrored from jpjc.moe.edu.sg/about-jpjc/admission-matters/returning-singaporeans-rs-and-international-students-is by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 Nov 2020 12:51:59 GMT -->
+</html>

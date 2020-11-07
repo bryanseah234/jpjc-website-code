@@ -1,0 +1,1616 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+
+<!-- Mirrored from jpjc.moe.edu.sg/about-jpjc/subject-combination by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 Nov 2020 10:14:08 GMT -->
+<head>
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+<title>Subject Combination</title>
+
+<link rel="shortcut icon" href="../qql/slot/u152/nstyle/favicon1.png"/>
+
+ 
+ 
+
+<link rel="stylesheet" type="text/css" href="../skin/qql/base.css">
+<link rel="stylesheet" type="text/css" href="../rs/css/ct-factor.css">
+
+<link rel="stylesheet" type="text/css" id="main_css" href="../qql/style/152_002/main.css?1597405381"> 
+
+<script type="text/javascript" src="../site/ctx/js/menu.js"></script>
+<script type="text/javascript" src="../site/ctx/jquery/jquery.js"></script>
+<script type="text/javascript" src="../site/ctx/jquery/easing.js"></script>
+<script type="text/javascript" src="../site/ctx/jquery/ctjq.js"></script>
+<link rel="stylesheet" type="text/css" href="../site/ctx/jquery/ctjq.css">
+
+
+<script type="text/javascript">
+function get_idnum(a){ return parseInt(a.substr(a.lastIndexOf("_")+1,20)); }
+</script>
+
+
+<link rel="stylesheet" type="text/css" href="../skin/qql/menu.css">
+
+
+<script>
+// non-admin vars
+if (typeof ive_settings=='undefined') {
+  ive_settings={};
+  ive_settings.ptid=6203;
+  ive_settings.url={
+    _head: '/cos/o.x?c=/qql/',
+    skin_path:'/skin/qql/' 
+  };
+  ive_settings.user={ fname: '', _id: '' , email:''};
+}
+</script>
+
+<!-- server extra head -->
+
+<!-- site extra head -->
+<meta name="viewport" content="width=device-width" />
+<script src="../../assets.wogaa.sg/scripts/wogaa.js"></script>
+<script type="text/javascript">
+$(function(){		
+  $(".sidebar_area").insertAfter($(".content_area .mid:first"));
+	
+	if ($(".subpages_box UL UL.mysubpages_").length>0) {
+		var prev = $(".subpages_box UL UL.mysubpages_").prev();
+		$(prev).append($(".subpages_box UL UL.mysubpages_"));
+	}
+	
+  if ((!$("BODY").hasClass("pagelevel-1")) && ($(".path_box").length>0)) {
+		var pb = $(".path_box").html().split("&gt;");    
+    if (pb.length>0) {
+      var newpb = "<span>"+pb[0]+"</span>";
+      for (var i=1; i<pb.length; i++) {
+        newpb = newpb + "> <span>"+pb[i]+"</span>";          
+      }
+			$(".path_box").html(newpb);
+    }
+		$(".content_area > .top").append($(".path_box"));
+		
+		var par = pb[1];
+		if (pb.length>2) {
+			par = pb[pb.length-2];				
+		}
+			
+		$(".masthead2_area").html('<span class="subtitle">'+par+'</span><span class="leftt"></span><span class="rightt"></span>');
+		$(".masthead2_area .subtitle").html($(".subtitle").text());		
+		
+		if ($(".pagecontent_box H1").length>0) {
+			$(".content_area > .top").append("<h1>"+$(".pagecontent_box H1:first").text()+"</h1>");
+		}
+	} else {
+		$(".sidebar_area").remove();		
+	}
+	
+  $("#menu").click(function(){
+    $("#netcontent").toggleClass("show");
+    return false;
+  });  
+	
+	$("#search").click(function(){
+    $("#netcontent").toggleClass("showsearch");
+    return false;
+  });  
+	
+  $(".sitemenu_area a.sitemenu").each(function(){
+		if ($(this).closest("LI").find("table.dropmenu").length>0) {
+			$(this).closest("LI").addClass("hasdm");
+		}
+  });
+  	
+  $(".sitemenu_area a.sitemenu").on("click", function(){
+    var par = $(this).closest("LI");
+    if ($(par).find("table.dropmenu").length>0) {
+      if ((!$(par).hasClass("active")) && ($("#netcontent").hasClass("show"))) {
+        $(".sitemenu_area LI").removeClass("active");
+				$(par).addClass("active");
+				
+				$(".main_area").addClass("showdropmenu");
+        return false;
+      }
+    }
+  });
+	
+});
+
+$.fn.is_on_screen = function(){
+  var win = $(window);
+  var viewport = {
+    top : win.scrollTop()-100,
+	  left : win.scrollLeft()
+  };
+  viewport.right = viewport.left + win.width();
+	viewport.bottom = viewport.top + win.height();
+
+	var bounds = this.offset();
+	bounds.right = bounds.left + this.outerWidth();
+	bounds.bottom = bounds.top + this.outerHeight();
+
+	return (!(viewport.right < bounds.left || viewport.left > bounds.right || viewport.bottom < bounds.top || viewport.top > bounds.bottom));
+};
+</script>
+<!-- page extra head -->
+<style type="text/css">
+@media  screen  and (max-width:450px) {
+	.content_area .mid TABLE { display:block; overflow:auto; }
+}
+</style> 
+<!-- END all extra head -->
+
+<script>
+
+if (typeof(coto)=='undefined') coto={ ive: { } };
+if (!coto.ive.Controller) coto.ive.Controller = function() { };
+
+coto.ive.Controller.prototype.build=function(dom,opts){
+  if (typeof(dom)=='function') return this.build_func=dom;
+  this.dom=dom;
+  if (!(this.options=$(this.dom).data('widget_options'))) this.options={ };
+  if (!(this.idata=$(this.dom).data('idata'))) this.idata={ };
+  this.idata.controller=this;
+  this.build_func.call(this,opts);
+  $(dom).data('widget_options',this.options);
+  $(dom).data('idata',this.idata);
+};
+coto.controllers={ }; // controllers list
+function ive_controller(wtype) {
+  return coto.controllers[wtype]||(coto.controllers[wtype]=new coto.ive.Controller());
+}
+
+ive_tunings={ };
+function ive_tuning(cat) { return ive_tunings[cat]||(ive_tunings[cat]={ }); }
+
+// ----- DROPMENU -----
+$(function() {
+
+
+
+
+
+
+
+  // old menu.js
+  $('.sitemenu_area ul.sitemenu li, .dropmenu a').bind('mouseover mouseleave',function(ev) {
+    var menuid='dropmenu_'+get_idnum(this.id),$menu=$('#'+menuid);
+    var isenter=(ev.type=='mouseover'||ev.type=='mouseenter');
+    ctmenu[isenter?'show':'hide'](menuid,this,$menu.hasClass('drop_right_')?'right':'bottom');
+  });
+});
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="PTP499 PTP595 pagelevel-3" >
+
+<div id="netcontent"><div id="lo_whole" class="layout-default">
+  <div id="lo_panel">
+    <div id="lo_main"><div class="main_area">
+
+  <div class="masthead_area"><header>
+  <a id="logo" href="../index.html">Jurong Pioneer Junior College
+  </a>
+  <div id="search">Search
+  </div>	
+  <div id="menu">
+    <button type="button" class="hamburger">
+      <span class="hamb-top">
+      </span>
+      <span class="hamb-middle">
+      </span>
+      <span class="hamb-bottom">
+      </span>
+    </button>	
+  </div>
+</header>
+<div class="searchbox">
+  <form method="post" action="https://jpjc.moe.edu.sg/others/search&amp;func=search">
+    <input type="text" id="search_str" name="search_str" value="" placeholder="Search...">			
+  </form>
+</div> 	
+</div>
+<div class="sitemenu_area"><ul class="sitemenu">
+    <li id="PTID_499" class="PTSN_home first-item   "><a 
+    href="../index.html" 
+
+
+    class="sitemenu"        >Home</a></li>
+    <li id="PTID_595" class="PTSN_about-jpjc  focus  "><a 
+    href="../about-jpjc.html" 
+
+
+    class="sitemenu sitemenulit"        >About&nbsp;JPJC</a><table role="presentation" id="dropmenu_595" class="dropmenu ">
+   
+        <tr class="lineEven ">
+      <td class="dmtrig" id="dmtrig_638">
+	<a id="subitem_638"
+	  href="principals-message.html"
+
+	  	
+	    ><span id="_ptmt_638">Principal&#039;s Message</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineOdd ">
+      <td class="dmtrig" id="dmtrig_2698">
+	<a id="subitem_2698"
+	  href="college-identity.html"
+
+	  	
+	    ><span id="_ptmt_2698">College Identity</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineEven ">
+      <td class="dmtrig" id="dmtrig_639">
+	<a id="subitem_639"
+	  href="organisation-chart.html"
+
+	  	
+	    ><span id="_ptmt_639">Organisation Chart</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineOdd ">
+      <td class="dmtrig" id="dmtrig_640">
+	<a id="subitem_640"
+	  href="college-calendar.html"
+
+	  	
+	    ><span id="_ptmt_640">College Calendar</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineEven ">
+      <td class="dmtrig" id="dmtrig_6203">
+	<a id="subitem_6203"
+	  href="subject-combination.html"
+
+	  	
+	    ><span id="_ptmt_6203">Subject Combination</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineOdd ">
+      <td class="dmtrig" id="dmtrig_1904">
+	<a id="subitem_1904"
+	  href="admission-matters.html"
+
+	  	
+	    ><span id="_ptmt_1904">Admission Matters</span></a>      	 
+	  </td>
+    </tr>
+   
+   
+        <tr class="lineEven ">
+      <td class="dmtrig" id="dmtrig_2486">
+	<a id="subitem_2486"
+	  href="financial-assistance-scheme.html"
+
+	  	
+	    ><span id="_ptmt_2486">Financial Assistance Scheme</span></a>      	 
+	  </td>
+    </tr>
+   
+   
+  </table>
+</li>
+    <li id="PTID_3988" class="PTSN_jpjc-experience    "><a 
+    href="../jpjc-experience/total-curriculum-framework.html" 
+
+
+    class="sitemenu"        >JPJC&nbsp;Experience</a><table role="presentation" id="dropmenu_3988" class="dropmenu ">
+   
+        <tr class="lineOdd ">
+      <td class="dmtrig" id="dmtrig_3989">
+	<a id="subitem_3989"
+	  href="../jpjc-experience/total-curriculum-framework.html"
+
+	  	
+	    ><span id="_ptmt_3989">Total Curriculum Framework</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineEven ">
+      <td class="dmtrig" id="dmtrig_4019">
+	<a id="subitem_4019"
+	  href="../jpjc-experience/curriculum/humanities-n-the-arts.html"
+
+	  	
+	    ><span id="_ptmt_4019">Curriculum</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineOdd ">
+      <td class="dmtrig" id="dmtrig_3991">
+	<a id="subitem_3991"
+	  href="../jpjc-experience/co-curriculum.html"
+
+	  	
+	    ><span id="_ptmt_3991">Co-Curriculum</span></a>      	 
+	  </td>
+    </tr>
+  </table>
+</li>
+    <li id="PTID_2545" class="PTSN_life-@-jpjc    "><a 
+    href="../life-at-jpjc-1.html" 
+
+
+    class="sitemenu"        >Life&nbsp;@&nbsp;JPJC</a><table role="presentation" id="dropmenu_2545" class="dropmenu ">
+   
+        <tr class="lineEven ">
+      <td class="dmtrig" id="dmtrig_2546">
+	<a id="subitem_2546"
+	  href="../life-at-jpjc-1/2019-events.html"
+
+	  	
+	    ><span id="_ptmt_2546">2019 Events</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineOdd ">
+      <td class="dmtrig" id="dmtrig_4103">
+	<a id="subitem_4103"
+	  href="../life-at-jpjc-1/2020-events.html"
+
+	  	
+	    ><span id="_ptmt_4103">2020 Events</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineEven ">
+      <td class="dmtrig" id="dmtrig_6269">
+	<a id="subitem_6269"
+	  href="../life-at-jpjc-1/publications.html"
+
+	  	
+	    ><span id="_ptmt_6269">Publications</span></a>      	 
+	  </td>
+    </tr>
+  </table>
+</li>
+    <li id="PTID_4077" class="PTSN_general    "><a 
+    href="../general.html" 
+
+
+    class="sitemenu"        >General</a></li>
+    <li id="PTID_626" class="PTSN_partnerships    "><a 
+    href="../partnerships/college-advisory-board.html" 
+
+
+    class="sitemenu"        >Partnerships</a><table role="presentation" id="dropmenu_626" class="dropmenu ">
+   
+        <tr class="lineOdd ">
+      <td class="dmtrig" id="dmtrig_704">
+	<a id="subitem_704"
+	  href="../partnerships/college-advisory-board.html"
+
+	  	
+	    ><span id="_ptmt_704">College Advisory Board</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineEven ">
+      <td class="dmtrig" id="dmtrig_705">
+	<a id="subitem_705"
+	  href="../partnerships/parent-support-group.html"
+
+	  	
+	    ><span id="_ptmt_705">Parent Support Group</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineOdd ">
+      <td class="dmtrig" id="dmtrig_706">
+	<a id="subitem_706"
+	  href="../partnerships/jpjc-alumni.html"
+
+	  	
+	    ><span id="_ptmt_706">JPJC Alumni</span></a>      	 
+	  </td>
+    </tr>
+  </table>
+</li>
+  </ul>
+</div>
+  <div class="masthead2_area"></div>
+
+  <div class="content_area">
+    <div class="top"></div>
+    <div class="mid">
+            <div class="path_box">
+<a class='path' href='../index.html'>Home</a> &gt;
+<a class='path' href='../about-jpjc.html'>About JPJC</a> &gt;
+Subject Combination 
+</div>
+  
+       
+
+<div class="pagecontent_box">
+  <div class="tools_box">
+    </div>
+  
+    <h1 id="_ptoh_6203" class="ive_editable">Subject Combination</h1>
+      
+    
+    
+
+
+
+</div>
+
+
+      
+<div id="_ptoo_block_start" style="font-size:1px;border:1px solid transparent"></div>
+
+<div id="_ptoo_PTOID" class="pageblock_box " style="display:none">
+    <div id="_ptod_PTOID" class="ive_editable ive_ptod ive_content"></div>
+</div>
+
+  <div id="_ptoo_6204" class="pageblock_box " >
+    <div id="_ptod_6204" class="ive_editable ive_ptod ive_content"><div>The JC curriculum is a two-year course leading to the GCE 'A' Level Examination, designed for students who wish to seek admission to a university or a specialised institute of higher learning, locally or abroad.
+</div>
+<div><br>
+</div>
+<div>At JPJC, we provide a wide range of subject combinations to cater to students’ personal interests, abilities and future career choices.&nbsp; In addition, we are the only centre for Language Elective Programmes in both Chinese and Malay.&nbsp; Students are advised to choose a subject combination carefully that best suits their needs and aspirations.
+</div></div>
+</div>
+  <div id="_ptoo_6207" class="pageblock_box " >
+    <h2 id="_ptoh_6207" class="ive_editable ive_ptoh">2021 Subject Combinations</h2>
+    <div id="_ptod_6207" class="ive_editable ive_ptod ive_content"><p></p>
+<ol>
+<li><span>The following table shows the standard subject combination which most students will take :</span>
+</li>
+</ol>
+<div>
+<div align="center">
+<div>
+<div align="center">
+<table class="MsoNormalTable iveo_table ives_tab_simple3" border="1" cellspacing="0" cellpadding="0" style="border: none;">
+<tbody>
+<tr style="height: 34.4pt;">
+<td width="102"><p style="text-align: center;"><b><span>No. of</span></b></p><p style="text-align: center;"><b><span>Subjects</span></b></p>
+</td>
+<td width="192"><p style="text-align: center;"><b><span>Level</span></b></p>
+</td>
+<td width="99"><p style="text-align: center;"><b><span>No. of units per subject</span></b></p>
+</td>
+<td width="99"><p style="text-align: center;"><b><span>Total units</span></b></p>
+</td>
+</tr>
+<tr>
+<td width="102"><p style="text-align: center;"><span>3</span></p>
+</td>
+<td width="192"><p><span>H2 (content subject)</span><span></span></p>
+</td>
+<td width="99"><p style="text-align: center;"><span>2</span></p>
+</td>
+<td width="99"><p style="text-align: center;"><span>6</span></p>
+</td>
+</tr>
+<tr>
+<td width="102"><p style="text-align: center;"><span>1</span></p>
+</td>
+<td width="192"><p><span>H1 </span><span>(content subject)</span></p>
+</td>
+<td width="99"><p style="text-align: center;"><span>1</span></p>
+</td>
+<td width="99"><p style="text-align: center;"><span>1</span></p>
+</td>
+</tr>
+<tr>
+<td width="102"><p style="text-align: center;"><span>3</span></p>
+</td>
+<td width="192"><p><span>&nbsp;</span><span></span></p><p><span>H1</span><span> (compulsory)</span></p><p><span>&nbsp;</span></p><p><span>[General Paper, Project Work, Mother Tongue]</span></p><p></p>
+</td>
+<td width="99"><p style="text-align: center;"><span>1</span></p>
+</td>
+<td width="99"><p style="text-align: center;"><span>3</span></p>
+</td>
+</tr>
+<tr>
+<td width="102"><p align="right" style="text-align: right;"><span></span></p>
+</td>
+<td width="192"><p align="right" style="text-align: right;"><span></span></p>
+</td>
+<td width="99"><p style="text-align: center;"><span>Total</span><span></span></p>
+</td>
+<td width="99"><p style="text-align: center;"><span>10</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div><span><br>
+<ol>
+<li><span>&nbsp; &nbsp; &nbsp; General Paper, Project Work and Mother Tongue are compulsory H1 subjects.</span>
+</li>
+<li><span>&nbsp; &nbsp; &nbsp; At least one content subject either at the H1 or H2 level should be contrasting.</span>
+</li>
+<li><span>&nbsp; &nbsp; &nbsp; Students may be exempted from taking H1 Mother Tongue if they have obtained D7 or better in their Higher Mother Tongue at the ‘O’ level.</span>
+</li>
+<li><span>&nbsp; &nbsp; &nbsp; Students with L1R5 ≤ 11 (raw score) may be offered a 4 H2 subject combination.</span>
+</li>
+</ol></span><p></p></div>
+</div>
+  <div id="_ptoo_6208" class="pageblock_box " >
+    <div id="_ptod_6208" class="ive_editable ive_ptod ive_content"><h3 style="text-align: center;"><b><span style="">Subjects offered in 2021</span></b>&nbsp;<br><u><br></u></h3>
+<div align="center">
+<table class="MsoNormalTable iveo_table ives_tab_simple3" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td width="189" rowspan="7"><p align="center" style="text-align: center;"><b><span style="">MATHEMATICS &amp; SCIENCES</span></b></p>
+</td>
+<td width="213"><p><b><span style="">Subject</span></b></p>
+</td>
+<td width="64"><p align="center" style="text-align: center;"><b><span style="">H1</span></b></p>
+</td>
+<td width="64"><p align="center" style="text-align: center;"><b><span style="">H2</span></b></p>
+</td>
+<td width="64"><p align="center" style="text-align: center;"><b><span style="">H3*</span></b></p>
+</td>
+</tr>
+<tr>
+<td width="213"><p><span style="">Biology</span></p>
+</td>
+<td width="64"><p align="center" style="text-align: center;"><span>✔</span><span style=""></span></p>
+</td>
+<td width="64"><p align="center" style="text-align: center;"><span>✔</span><span style=""></span></p>
+</td>
+<td width="64"><p align="center" style="text-align: center;"><span>✔</span><sup><span style="">a</span></sup></p>
+</td>
+</tr>
+<tr>
+<td width="213"><p><span style="">Chemistry</span></p>
+</td>
+<td width="64"><p align="center" style="text-align: center;"><span>✔</span><span style=""></span></p>
+</td>
+<td width="64"><p align="center" style="text-align: center;"><span>✔</span><span style=""></span></p>
+</td>
+<td width="64"><p align="center" style="text-align: center;"><span>✔</span><sup><span style="">c</span></sup><span style=""></span></p>
+</td>
+</tr>
+<tr>
+<td width="213"><p><span style="">Computing</span></p>
+</td>
+<td width="64" style="background: rgb(208, 206, 206);"><p align="center" style="text-align: center;"><span style="">&nbsp;</span></p>
+</td>
+<td width="64"><p align="center" style="text-align: center;"><span>✔</span><span style=""></span></p>
+</td>
+<td width="64" style="background: rgb(208, 206, 206);"><p align="center" style="text-align: center;"><span style="">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td width="213"><p><span style="">Further Mathematics</span></p>
+</td>
+<td width="64" style="background: rgb(208, 206, 206);"><p align="center" style="text-align: center;"><span style="">&nbsp;</span></p>
+</td>
+<td width="64"><p align="center" style="text-align: center;"><span>✔</span><span style=""></span></p>
+</td>
+<td width="64" style="background: rgb(208, 206, 206);"><p align="center" style="text-align: center;"><span style="">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td width="213"><p><span style="">Mathematics</span></p>
+</td>
+<td width="64"><p align="center" style="text-align: center;"><span>✔</span><span style=""></span></p>
+</td>
+<td width="64"><p align="center" style="text-align: center;"><span>✔</span><span style=""></span></p>
+</td>
+<td width="64"><p align="center" style="text-align: center;"><span>✔</span><sup><span style="">c</span></sup><span style=""></span></p>
+</td>
+</tr>
+<tr>
+<td width="213"><p><span style="">Physics</span></p>
+</td>
+<td width="64"><p align="center" style="text-align: center;"><span>✔</span><span style=""></span></p>
+</td>
+<td width="64"><p align="center" style="text-align: center;"><span>✔</span><span style=""></span></p>
+</td>
+<td width="64"><p align="center" style="text-align: center;"><span>✔</span><sup><span style="">a</span></sup><span style=""></span></p>
+</td>
+</tr>
+<tr>
+<td width="189" rowspan="9"><p align="center" style="text-align: center;"><b><span style="">HUMANITIES &amp; THE ARTS</span></b></p>
+</td>
+<td width="213"><p><span style="">Art</span></p>
+</td>
+<td width="64"><p align="center" style="text-align: center;"><span>✔</span><span style=""></span></p>
+</td>
+<td width="64"><p align="center" style="text-align: center;"><span>✔</span><span style=""></span></p>
+</td>
+<td width="64" style="background: rgb(208, 206, 206);"><p align="center" style="text-align: center;"><span style="">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td width="213"><p><span style="">China Studies in Chinese</span></p>
+</td>
+<td width="64" style="background: rgb(208, 206, 206);"><p align="center" style="text-align: center;"><span style="">&nbsp;</span></p>
+</td>
+<td width="64"><p align="center" style="text-align: center;"><span>✔</span><span style=""></span></p>
+</td>
+<td width="64" style="background: rgb(208, 206, 206);"><p align="center" style="text-align: center;"><span style="">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td width="213"><p><span style="">China Studies in English</span></p>
+</td>
+<td width="64"><p align="center" style="text-align: center;"><span>✔</span><span style=""></span></p>
+</td>
+<td width="64"><p align="center" style="text-align: center;"><span>✔</span><span style=""></span></p>
+</td>
+<td width="64" style="background: rgb(208, 206, 206);"><p align="center" style="text-align: center;"><span style="">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td width="213"><p><span style="">Economics</span></p>
+</td>
+<td width="64"><p align="center" style="text-align: center;"><span>✔</span><span style=""></span></p>
+</td>
+<td width="64"><p align="center" style="text-align: center;"><span>✔</span><span style=""></span></p>
+</td>
+<td width="64"><p align="center" style="text-align: center;"><span>✔</span><sup><span style="">a</span></sup><span style=""></span></p>
+</td>
+</tr>
+<tr>
+<td width="213"><p><span style="">English Literature</span></p>
+</td>
+<td width="64"><p align="center" style="text-align: center;"><span>✔</span><span style=""></span></p>
+</td>
+<td width="64"><p align="center" style="text-align: center;"><span>✔</span><span style=""></span></p>
+</td>
+<td width="64" style="background: rgb(208, 206, 206);"><p align="center" style="text-align: center;"><span style="">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td width="213"><p><span style="">Geography</span></p>
+</td>
+<td width="64"><p align="center" style="text-align: center;"><span>✔</span><span style=""></span></p>
+</td>
+<td width="64"><p align="center" style="text-align: center;"><span>✔</span><span style=""></span></p>
+</td>
+<td width="64"><p align="center" style="text-align: center;"><span>✔</span><sup><span style="">a</span></sup><span style=""></span></p>
+</td>
+</tr>
+<tr>
+<td width="213"><p><span style="">History</span></p>
+</td>
+<td width="64"><p align="center" style="text-align: center;"><span>✔</span><s><span style=""></span></s></p>
+</td>
+<td width="64"><p align="center" style="text-align: center;"><span>✔</span><span style=""></span></p>
+</td>
+<td width="64"><p align="center" style="text-align: center;"><span>✔</span><sup><span style="">a</span></sup><span style=""></span></p>
+</td>
+</tr>
+<tr>
+<td width="213"><p><span style="">Mother Tongue Language &amp; Literature</span></p>
+</td>
+<td width="64" style="background: rgb(208, 206, 206);"><p align="center" style="text-align: center;"><span style="">&nbsp;</span></p>
+</td>
+<td width="64"><p align="center" style="text-align: center;"><span>✔</span><span style=""></span></p>
+</td>
+<td width="64"><p align="center" style="text-align: center;"><span>✔</span><sup><span style="">b/c</span></sup><span style=""></span></p>
+</td>
+</tr>
+<tr>
+<td width="213"><p><span style="">Translation</span></p>
+</td>
+<td width="64" style="background: rgb(208, 206, 206);"><p align="center" style="text-align: center;"><s><span style=""><span style="text-decoration-line: none;">&nbsp;</span></span></s></p>
+</td>
+<td width="64" style=""><p align="center" style="text-align: center;"><span>✔</span><span style=""></span></p>
+</td>
+<td width="64" style="background: rgb(208, 206, 206);"><p align="center" style="text-align: center;"><span style="">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td width="189" rowspan="3"><p align="center" style="text-align: center;"><b><span style="">KNOWLEDGE SKILLS</span></b></p>
+</td>
+<td width="213"><p><span style="">General Paper</span></p>
+</td>
+<td width="64"><p align="center" style="text-align: center;"><span>✔</span><span style=""></span></p>
+</td>
+<td width="64" style="background: rgb(208, 206, 206);"><p align="center" style="text-align: center;"><span style="">&nbsp;</span></p>
+</td>
+<td width="64" style="background: rgb(208, 206, 206);"><p align="center" style="text-align: center;"><span style="">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td width="213"><p><span style="">Mother Tongue</span></p>
+</td>
+<td width="64"><p align="center" style="text-align: center;"><span>✔</span><span style=""></span></p>
+</td>
+<td width="64" style="background: rgb(208, 206, 206);"><p align="center" style="text-align: center;"><span style="">&nbsp;</span></p>
+</td>
+<td width="64" style="background: rgb(208, 206, 206);"><p align="center" style="text-align: center;"><span style="">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td width="213"><p><span style="">Project Work</span></p>
+</td>
+<td width="64"><p align="center" style="text-align: center;"><span>✔</span><span style=""></span></p>
+</td>
+<td width="64" style="background: rgb(208, 206, 206);"><p align="center" style="text-align: center;"><span style="">&nbsp;</span></p>
+</td>
+<td width="64" style="background: rgb(208, 206, 206);"><p align="center" style="text-align: center;"><span style="">&nbsp;</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div><p><span style="">&nbsp;</span></p><p style="text-align: justify;"><b><span>Note:</span></b></p><p style="text-align: justify;"><span style="">* Students may be offered a H3 subject in the following areas if they have done well in their overall examinations at the end of JC 1, including a high ‘A’ grade in the particular subject at the H2 level.</span></p><sup><span lang="EN-US" style="">a</span></sup><span lang="EN-US" style=""> &nbsp;University-taught H3 programmes&nbsp;(NUS, NTU and SMU)<br><sup>b</sup> &nbsp;Extended, in-depth research&nbsp;(HSSR)<br><sup>c</sup>&nbsp;&nbsp;MOE-Cambridge H3</span><span></span><p align="center"><b><span></span></b></p><p></p></div>
+</div>
+  <div id="_ptoo_6209" class="pageblock_box " >
+    <div id="_ptod_6209" class="ive_editable ive_ptod ive_content"><h3 style="text-align: center;"><b><span>Subject Combinations in Science Course<br><br></span></b></h3>
+<table class="MsoNormalTable iveo_table ives_tab_simple3" border="1" cellspacing="0" cellpadding="0" align="left" width="642" style="border: none; width: 100%;">
+<thead>
+<tr>
+	
+<td width="420" colspan="4"><p align="center" style="text-align: center;"><b><span>H2 Subjects</span></b></p>
+</td>
+	
+<td width="222"><p align="center" style="text-align: center;"><b><span>Possible H1 Subjects</span></b></p>
+</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td width="108"><p align="center" style="text-align: center;"><span>*Mathematics</span></p>
+</td>
+<td width="108"><p align="center" style="text-align: center;"><span>Chemistry</span></p>
+</td>
+<td width="114"><p align="center" style="text-align: center;"><span>Biology/</span></p><p align="center" style="text-align: center;"><span>Physics</span></p>
+</td>
+<td width="90"><p align="center" style="text-align: center;"><span>Economics</span></p>
+</td>
+<td width="222" style="background-color: rgb(191, 191, 191);"><p align="center" style="text-align: center;"><span>&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td width="108"><p align="center" style="text-align: center;"><sup><span>#</span></sup><span>Mathematics</span></p>
+</td>
+<td width="108"><p align="center" style="text-align: center;"><span>Chemistry</span></p>
+</td>
+<td width="114">
+	<p align="center" style="text-align: center;"><span>Biology/</span></p>
+	<p align="center" style="text-align: center;"><span>Physics</span></p>
+</td>
+<td width="90" style="background-color: rgb(191, 191, 191);"><p align="center" style="text-align: center;"><span>&nbsp;</span></p>
+</td>
+<td width="222"><p align="center" style="text-align: center;"><span>Economics, Geography, History, Literature, China Studies in English, Art</span></p>
+</td>
+</tr>
+<tr>
+<td width="108"><p align="center" style="text-align: center;"><span>Mathematics</span></p>
+</td>
+<td width="108"><p align="center" style="text-align: center;"><span>Chemistry/ Physics</span></p>
+</td>
+<td width="114"><p align="center" style="">&nbsp;</p><p align="center" style=""><span style="">Economics</span></p><p align="center" style=""><span style="">&nbsp;</span></p>
+</td>
+<td width="90" style="background-color: rgb(191, 191, 191);"><p align="center" style="text-align: center;"><span>&nbsp;</span></p>
+</td>
+<td width="222"><p align="center" style="text-align: center;"><span>Biology, Physics/Chemistry, Geography, History, Literature, China Studies in English, Art</span></p>
+</td>
+</tr>
+<tr>
+<td width="108"><p align="center" style="text-align: center;"><span>Mathematics</span></p>
+</td>
+<td width="108"><p align="center" style="text-align: center;"><span>Chemistry/ Physics</span></p>
+</td>
+<td width="114"><p align="center" style=""><span style="">Mother Tongue Language &amp; Literature</span><span style=""></span></p>
+</td>
+<td width="90" style="background-color: rgb(191, 191, 191);"><p align="center" style="text-align: center;"><span>&nbsp;</span></p>
+</td>
+<td width="222"><p align="center" style="text-align: center;"><span>Biology, Physics/Chemistry, Economics, Geography, History, Literature, China Studies in English, Art</span></p>
+</td>
+</tr>
+<tr>
+<td width="108"><p align="center" style="text-align: center;"><span>Mathematics</span></p>
+</td>
+<td width="108"><p align="center" style="text-align: center;"><span>Chemistry/ Physics</span></p>
+</td>
+<td width="114"><p align="center" style=""><span style="">China Studies in Chinese</span></p>
+</td>
+<td width="90" style="background-color: rgb(191, 191, 191);"><p align="center" style="text-align: center;"><span>&nbsp;</span></p>
+</td>
+<td width="222"><p align="center" style="text-align: center;"><span>Biology, Physics/Chemistry , Economics, Geography, History, Literature, Art</span></p>
+</td>
+</tr>
+<tr>
+<td width="108"><p align="center" style="text-align: center;"><span>Mathematics</span></p>
+</td>
+<td width="108"><p align="center" style="text-align: center;"><span>Chemistry/ Physics</span></p>
+</td>
+<td width="114"><p align="center" style=""><span style="">Art<sup>@</sup></span></p>
+</td>
+<td width="90" style="background-color: rgb(191, 191, 191);"><p align="center" style="text-align: center;"><span>&nbsp;</span></p>
+</td>
+<td width="222"><p align="center" style="text-align: center;"><span>Biology, Physics/Chemistry , Economics, Geography, History, Literature, China Studies in English</span></p>
+</td>
+</tr>
+<tr>
+<td width="108"><p align="center" style="text-align: center;"><span>Mathematics</span></p>
+</td>
+<td width="108"><p align="center" style="text-align: center;"><span>Chemistry/ Physics</span></p>
+</td>
+<td width="114"><p align="center" style=""><span style="">Translation<sup>@&nbsp;</sup></span><sup><span style=""></span></sup></p>
+</td>
+<td width="90" style="background-color: rgb(191, 191, 191);"><p align="center" style="text-align: center;"><span>&nbsp;</span></p>
+</td>
+<td width="222"><p align="center" style="text-align: center;"><span>Biology, Physics/Chemistry , Economics, Geography, History, Literature, Art</span></p>
+</td>
+</tr>
+<tr>
+<td width="108"><p align="center" style="text-align: center;"><span>Mathematics</span></p>
+</td>
+<td width="108"><p align="center" style="text-align: center;"><span>Chemistry/ Physics</span></p>
+</td>
+<td width="114"><p align="center" style=""><span style="">Computing</span></p>
+</td>
+<td width="90" style="background-color: rgb(191, 191, 191);"><p align="center" style="text-align: center;"><span>&nbsp;</span></p>
+</td>
+<td width="222"><p align="center" style="text-align: center;"><span>Economics, Geography, History, Literature, China Studies in English, Art</span></p>
+</td>
+</tr>
+<tr>
+<td width="108"><p align="center" style="text-align: center;"><span>^</span><span>Mathematics</span></p>
+</td>
+<td width="108"><p align="center" style="text-align: center;"><span>Further Mathematics<sup>@</sup></span></p>
+</td>
+<td width="114"><p align="center" style=""><span style="">Computing/ Physics</span></p>
+</td>
+<td width="90" style="background-color: rgb(191, 191, 191);"><p align="center" style="text-align: center;"><span>&nbsp;</span></p>
+</td>
+<td width="222"><p align="center" style="text-align: center;"><span>Economics</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><span>&nbsp;</span></p>
+<p><span>*&nbsp;</span><span>Students opting a 4 H2 subject combination should meet all of the following requisites:</span></p>
+<p></p>
+<ul>
+<ul>
+<ul>
+<li><span style=""><span>&nbsp;</span></span><span style="">L1R5 ≤ 11 (raw score),<u>&nbsp;AND</u></span>
+</li>
+<li><span style="">Distinction in Additional Mathematics, <u>AND</u></span>
+</li>
+<li><span style="">At least B3 in the relevant pure Science subjects.</span>
+</li>
+</ul>
+</ul>
+</ul>
+<p></p>
+<p><br></p>
+<p><span># For Students with Science (Chemistry/Biology), Science (Physics/Chemistry), Science (Physics/Biology), who are opting to do the subject combination of either H2 Mathematics, H2 Chemistry, H2 Biology OR H2 Mathematics, Chemistry, Physics, it is preferred that students should obtain</span></p>
+<p></p>
+<ul>
+<ul>
+<ul>
+<li><span style="">Distinction in the Combined Science with the two relevant Science disciplines, OR</span>
+</li>
+<li>a pass in the revelant Pure Science and Combined Science
+</li>
+</ul>
+</ul>
+</ul>
+<p><span>^ For Students opting to do the H2 Mathematics, H2 Further Mathematics and H2 Physics subject combination, it is preferred that they should have obtained at least B3 in Pure Physics.</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>@ Students opting to do H2 Art/ H2 Further Mathematics/ H2 Translation are required to sit and pass the selection test.</span></p></div>
+</div>
+  <div id="_ptoo_6210" class="pageblock_box " >
+    <div id="_ptod_6210" class="ive_editable ive_ptod ive_content"><h3 style="text-align: center;"><b><span>Subject Combinations in Arts Course</span></b></h3>
+<p><span>&nbsp;</span></p>
+<div align="center">
+<table class="MsoNormalTable iveo_table ives_tab_simple3" border="1" cellspacing="0" cellpadding="0" width="660" style="border: none;">
+<thead>
+<tr>
+<td width="426" nowrap="" colspan="4"><p align="center" style="text-align: center;"><b><span>H2 Subjects</span></b></p>
+</td>
+<td width="234"><p align="center" style="text-align: center;"><b><span>Possible H1 Subjects</span></b></p>
+</td>
+</tr></thead>
+<tbody>
+<tr style="height: 49.45pt;">
+<td width="96"><p align="center" style="text-align: center;"><span>* Economics</span></p>
+</td>
+<td width="108"><p align="center" style="text-align: center;"><span>Mathematics</span></p>
+</td>
+<td width="114"><p align="center" style="text-align: center;"><span>Literature&nbsp;</span></p>
+</td>
+<td width="108"><p align="center" style="text-align: center;"><span>Geography/ History/</span></p><p align="center" style="text-align: center;"><span>China Studies in English</span></p>
+</td>
+<td width="234" style="background-color: rgb(191, 191, 191);"><p align="center" style="text-align: center;"><span>&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td width="96"><p align="center" style="text-align: center;"><span>Economics</span></p>
+</td>
+<td width="108"><p align="center" style="text-align: center;"><span>Mathematics&nbsp;</span></p>
+</td>
+<td width="114"><p align="center" style="text-align: center;"><span>Geography/&nbsp;&nbsp;History/ Literature</span></p>
+</td>
+<td width="108" style="background-color: rgb(191, 191, 191);"><p align="center" style="text-align: center;"><span>&nbsp;</span><span></span></p>
+</td>
+<td width="234"><p align="center" style="text-align: center;"><span>Biology, Chemistry, Physics, History/Geography/ Literature, China Studies in English, Art</span></p>
+</td>
+</tr>
+<tr>
+<td width="96"><p align="center" style="text-align: center;"><span>Economics&nbsp;</span></p>
+</td>
+<td width="108"><p align="center" style="text-align: center;"><span>Mathematics</span></p>
+</td>
+<td width="114"><p align="center" style="text-align: center;"><span>China Studies in English/ China Studies in Chinese</span></p>
+</td>
+<td width="108" style="background-color: rgb(191, 191, 191);"><p align="center" style="text-align: center;"><span>&nbsp;</span><span></span></p>
+</td>
+<td width="234"><p align="center" style="text-align: center;"><span>Biology, Chemistry, Physics, Geography, History, Literature, Art</span></p>
+</td>
+</tr>
+<tr>
+<td width="96"><p align="center" style="text-align: center;"><span>Economics</span></p>
+</td>
+<td width="108"><p align="center" style="text-align: center;"><span>Mathematics&nbsp;</span></p>
+</td>
+<td width="114"><p align="center" style="text-align: center;"><span>Mother Tongue Language &amp; Literature</span><span>/ Art<sup>@</sup></span></p>
+</td>
+<td width="108" style="background-color: rgb(191, 191, 191);"><p align="center" style="text-align: center;"><span>&nbsp;</span></p>
+</td>
+<td width="234"><p align="center" style="text-align: center;"><span>Biology, Chemistry, Physics, Geography, History, Literature, China Studies in English, Art</span></p>
+</td>
+</tr>
+<tr>
+<td width="96"><p align="center" style="text-align: center;"><span>Economics</span></p>
+</td>
+<td width="108"><p align="center" style="text-align: center;"><span>Geography/ History/ Literature</span></p>
+</td>
+<td width="114"><p align="center" style="text-align: center;"><span>China Studies in English/ Literature/ Art<sup>@&nbsp;</sup>/&nbsp;Mother Tongue Language &amp; Literature</span></p>
+</td>
+<td width="108" style="background-color: rgb(191, 191, 191);"><p align="center" style="text-align: center;"><span>&nbsp;</span></p>
+</td>
+<td width="234"><p align="center" style="text-align: center;"><span>Mathematics</span></p>
+</td>
+</tr>
+<tr>
+<td width="96"><p align="center" style="text-align: center;"><span>Economics</span></p>
+</td>
+<td width="108"><p align="center" style="text-align: center;"><span>Mother Tongue Language &amp; Literature</span><span></span></p>
+</td>
+<td width="114"><p align="center" style="text-align: center;"><span>China Studies in English/ China Studies in Chinese</span></p>
+</td>
+<td width="108" style="background-color: rgb(191, 191, 191);"><p align="center" style="text-align: center;"><span>&nbsp;</span><span></span></p>
+</td>
+<td width="234"><p align="center" style="text-align: center;"><span>Mathematics</span></p>
+</td>
+</tr>
+<tr>
+<td width="96"><p align="center" style="text-align: center;"><span>Economics</span></p>
+</td>
+<td width="108"><p align="center" style="text-align: center;"><span>Translation<sup>@</sup></span></p>
+</td>
+<td width="114"><p align="center" style="text-align: center;"><span>History/ Geography/ Literature/ China Studies in English/ Chinese&nbsp;Language &amp; Literature</span></p>
+</td>
+<td width="108" style="background-color: rgb(191, 191, 191);"><p align="center" style="text-align: center;"><span>&nbsp;</span><span></span></p>
+</td>
+<td width="234"><p align="center" style="text-align: center;"><span>Mathematics</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p align="center"><b><span>&nbsp;</span></b></p>
+<p align="center"><b><span>&nbsp;</span></b></p>
+<p><span>* Students opting a 4 H2 subject combination should meet all of the following requisites:</span></p>
+<ul>
+<ul>
+<ul>
+<li><span>L1R5 ≤ 11 (raw score),</span><u>&nbsp;AND</u>
+</li>
+<li><font><span>Distinction in Addtional Mathematics</span></font><span>&nbsp;</span>
+</li>
+</ul>
+</ul>
+</ul>
+<p><span>@ Students opting to do H2 Art/ H2 Translation are required to sit and pass the selection test.</span></p>
+<p><br></p>
+<p><b><u><span>Note:</span></u></b></p>
+<ol start="1" type="1">
+<li><span>A subject cannot be taken at both H2 and H1 levels.</span>
+</li>
+<li>The College may be unable to offer certain subject combinations due to low demand or time-tabling constraints.
+</li>
+</ol>
+<br></div>
+</div>
+  <div id="_ptoo_6211" class="pageblock_box " >
+    <h2 id="_ptoh_6211" class="ive_editable ive_ptoh">Subject Combinations for Language Elective Programmes</h2>
+    <div id="_ptod_6211" class="ive_editable ive_ptod ive_content"><h3 style="text-align: center;"><b><span>Chinese Language Elective Programme (CLEP)*</span></b><b style="background-color: initial; text-align: left;">&nbsp;<br><br></b></h3>
+<div align="center">
+  
+<table class="MsoNormalTable iveo_table ives_tab_simple3" border="1" cellspacing="0" cellpadding="0" width="600" style="width: 450pt; border: none;">
+<tbody>
+<tr>      
+	
+<td width="377" nowrap="" colspan="4">
+		<p align="center" style="text-align: center;">
+			<b>
+				<span>H2 Subjects</span>
+			</b>
+		</p>       
+	
+</td>
+					
+	
+<td width="223">
+		<p align="center" style="text-align: center;">
+			<b>
+				<span>Possible H1 Subjects</span>
+			</b>
+		</p>        
+	
+</td>
+</tr>
+      
+<tr>
+<td width="600" colspan="5" style="background: rgb(191, 191, 191);">
+          <p align="center" style="text-align: center;">
+            <b>
+              <span>SCIENCE COURSE
+              </span>
+            </b>
+            <b>
+              <span>
+              </span>
+            </b>
+          </p>
+        
+</td>
+      
+</tr>
+      
+<tr>
+        
+<td width="100">
+          <p align="center" style="text-align: center;">
+            <span>Chinese Language &amp; Literature
+            </span>
+          </p>
+        
+</td>
+        
+<td width="98">
+          <p align="center" style="text-align: center;">
+            <span>Mathematics
+            </span>
+          </p>
+        
+</td>
+        
+<td width="124">
+          <p align="center" style="text-align: center;">
+            <span>Chemistry
+            </span>
+          </p>
+        
+</td>
+        
+<td width="56" style="background: rgb(191, 191, 191);">
+          <p align="center" style="text-align: center;">
+            <span>&nbsp;
+            </span>
+          </p>
+        
+</td>
+        
+<td width="223">
+          <p align="center" style="text-align: center;">
+            <span>Biology, Physics, Economics, Geography, History, Literature, China Studies in English, Art,
+            </span>
+          </p>
+        
+</td>
+      
+</tr>
+      
+<tr>
+        
+<td width="100">
+          <p align="center" style="text-align: center;">
+            <span>Chinese Language &amp; Literature
+            </span>
+          </p>
+        
+</td>
+        
+<td width="98">
+          <p align="center" style="text-align: center;">
+            <span>Mathematics
+            </span>
+          </p>
+        
+</td>
+        
+<td width="124">
+          <p align="center" style="text-align: center;">
+            <span>Physics
+            </span>
+          </p>
+        
+</td>
+        
+<td width="56" style="background: rgb(191, 191, 191);">
+          <p align="center" style="text-align: center;">
+            <span>&nbsp;
+            </span>
+          </p>
+        
+</td>
+        
+<td width="223">
+          <p align="center" style="text-align: center;">
+            <span>Biology, Chemistry, Economics, Geography, History, Literature, China Studies in English, Art,
+            </span>
+          </p>
+        
+</td>
+      
+</tr>
+      
+<tr>
+        
+<td width="600" colspan="5" style="background: rgb(191, 191, 191);">
+          <p align="center" style="text-align: center; line-height: 18.4px;">
+            <b>
+              <span>ARTS COURSE
+              </span>
+            </b>
+          </p>
+        
+</td>
+      
+</tr>
+      
+<tr>
+        
+<td width="100">
+          <p align="center" style="text-align: center;">
+            <span>Chinese Language &amp; Literature
+            </span>
+          </p>
+        
+</td>
+        
+<td width="98">
+          <p align="center" style="text-align: center;">
+            <span>Economics
+            </span>
+          </p>
+        
+</td>
+        
+<td width="124">
+          <p align="center" style="text-align: center;">
+            <span>Mathematics
+            </span>
+          </p>
+        
+</td>
+        
+<td width="56" style="background: rgb(191, 191, 191);">
+          <p align="center" style="text-align: center;">
+            <span>&nbsp;
+            </span>
+          </p>
+        
+</td>
+        
+<td width="223">
+          <p align="center" style="text-align: center;">
+            <span>Biology, Chemistry, Physics, Geography, History, Literature, China Studies in English, Art
+            </span>
+          </p>
+        
+</td>
+      
+</tr>
+      
+<tr>
+        
+<td width="100">
+          <p align="center" style="text-align: center;">
+            <span>Chinese Language &amp; Literature
+            </span>
+          </p>
+        
+</td>
+        
+<td width="98">
+          <p align="center" style="text-align: center;">
+            <span>Economics
+            </span>
+          </p>
+        
+</td>
+        
+<td width="124">
+          <p align="center" style="text-align: center;">
+            <span>China Studies in English/ China Studies in Chinese/ Translation / History/ Geography/ Literature
+            </span>
+          </p>
+        
+</td>
+        
+<td width="56" style="background: rgb(191, 191, 191);">
+          <p align="center" style="text-align: center;">
+            <span>&nbsp;
+            </span>
+          </p>
+        
+</td>
+        
+<td width="223">
+          <p align="center" style="text-align: center;">
+            <span>Mathematics
+            </span>
+          </p>
+        
+</td>
+      
+</tr>
+    
+</tbody>
+  
+</table>
+</div>
+<p>
+  <span>&nbsp;
+  </span>
+  <span>&nbsp;
+  </span>
+</p>
+<p><span>Students opting to offer the CLEP programme must obtain</span></p>
+<p></p>
+<ul>
+<ul>
+<ul>
+<li><span>At least A2 in Chinese, OR</span>
+</li>
+<li><span>B3 in Higher Chinese, OR</span>
+</li>
+<li><span>B4 in Higher Chinese with B3 in Chinese Literature or equivalent.</span>
+</li>
+</ul>
+</ul>
+</ul><p></p></div>
+</div>
+  <div id="_ptoo_6215" class="pageblock_box " >
+    <div id="_ptod_6215" class="ive_editable ive_ptod ive_content"><h3 style="text-align: center;"><b><span>Malay Language Elective Programme (MLEP)<br><br></span></b></h3>
+<div align="center" style="font-size: medium;">
+<table class="MsoNormalTable iveo_table ives_tab_simple3" border="1" cellspacing="0" cellpadding="0" width="600" style="width: 450pt; border: none;">
+<tbody>
+<tr>
+	
+<td width="375" nowrap="" colspan="5"><p align="center" style="text-align: center;"><b><span>H2 Subjects</span></b></p>
+</td>
+	
+<td width="225"><p align="center" style="text-align: center;"><b><span>Possible H1 Subjects</span></b></p>
+</td>
+</tr>
+<tr>
+<td width="600" colspan="6" style="background: rgb(191, 191, 191);"><p align="center" style="text-align: center;"><b><span>SCIENCE COURSE</span></b><b><span></span></b></p>
+</td>
+</tr>
+<tr>
+<td width="102"><p align="center" style="text-align: center;"><span>Malay Language &amp; Literature</span><span></span></p>
+</td>
+<td width="106"><p align="center" style="text-align: center;"><span>Mathematics</span></p>
+</td>
+<td width="116"><p align="center" style="text-align: center;"><span>Chemistry</span></p>
+</td>
+<td width="51"><p align="center" style="text-align: center;"><span>&nbsp;</span><span></span></p>
+</td>
+<td width="226" colspan="2"><p align="center" style="text-align: center;"><span>Biology, Physics, Economics, Geography, History, Literature, China Studies in English, Art</span></p>
+</td>
+</tr>
+<tr>
+<td width="102"><p align="center" style="text-align: center;"><span>Malay Language &amp; Literature</span><span></span></p>
+</td>
+<td width="106"><p align="center" style="text-align: center;"><span>Mathematics</span></p>
+</td>
+<td width="116"><p align="center" style="text-align: center;"><span>Physics</span></p>
+</td>
+<td width="51"><p align="center" style="text-align: center;"><span>&nbsp;</span></p>
+</td>
+<td width="226" colspan="2"><p align="center" style="text-align: center;"><span>Biology, Chemistry, Economics, Geography, History, Literature, China Studies in English, Art</span></p>
+</td>
+</tr>
+<tr>
+<td width="600" colspan="6" style="background: rgb(191, 191, 191);"><p align="center" style="text-align: center;"><b><span>ARTS COURSE</span></b><b><span></span></b></p>
+</td>
+</tr>
+<tr>
+<td width="102"><p align="center" style="text-align: center;"><span>Malay Language &amp; Literature</span><span></span></p>
+</td>
+<td width="106"><p align="center" style="text-align: center;"><span>Economics</span></p>
+</td>
+<td width="116"><p align="center" style="text-align: center;"><span>Mathematics</span></p>
+</td>
+<td width="51"><p align="center" style="text-align: center;"><span>&nbsp;</span></p>
+</td>
+<td width="226" colspan="2"><p align="center" style="text-align: center;"><span>Biology, Physics, Chemistry, Geography, History, Literature, China Studies in English, Art</span></p>
+</td>
+</tr>
+<tr>
+<td width="102"><p align="center" style="text-align: center;"><span>Malay Language &amp; Literature</span><span></span></p>
+</td>
+<td width="106"><p align="center" style="text-align: center;"><span>Economics</span></p>
+</td>
+<td width="116"><p align="center" style="text-align: center;"><span>Geography/ History/ Literature/ China Studies in English</span></p>
+</td>
+<td width="51"><p align="center" style="text-align: center;"><span>&nbsp;</span></p>
+</td>
+<td width="226" colspan="2"><p align="center" style="text-align: center;"><span>Mathematics</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div><p><span>&nbsp;</span></p><p><span>Students opting to offer the MLEP programme must obtain</span></p><p>
+</p>
+<ul>
+<ul>
+<ul>
+<li><span>At least A2 in Malay Language, OR</span>
+</li>
+<li><span>B3 in Higher Malay, OR</span>
+</li>
+<li><span>B4 in Higher Malay with B3 in Malay Literature or equivalent.&nbsp;</span></li>
+</ul>
+</ul>
+</ul></div>
+</div>
+          </div>
+    <div class="bottom"></div>
+  </div>
+
+  <div class="sidebar_area">
+    <div class="top"></div>
+    <div class="mid">
+        <div class="sidebar0_box"><div id="_ptosb0_6203" class="ive_content"></div></div>
+      
+
+
+
+
+
+
+
+
+
+
+
+      	<div class="subpages_box">
+    <ul>
+     
+        
+  <li id="_ptsp_638" >
+    <a href="principals-message.html">Principal&#039;s Message</a>  </li>
+       
+        
+  <li id="_ptsp_2698" >
+    <a href="college-identity.html">College Identity</a>  </li>
+       
+        
+  <li id="_ptsp_639" >
+    <a href="organisation-chart.html">Organisation Chart</a>  </li>
+       
+        
+  <li id="_ptsp_640" >
+    <a href="college-calendar.html">College Calendar</a>  </li>
+      
+    <!-- myself -->
+        <li id="_ptsp_6203"><b>Subject Combination</b></li>
+      
+  <!-- subpages -->
+  <ul class="mysubpages_">
+      </ul>
+  <!-- end subpages -->
+
+       
+        
+  <li id="_ptsp_1904" >
+    <a href="admission-matters.html">Admission Matters</a>  </li>
+       
+           
+        
+  <li id="_ptsp_2486" >
+    <a href="financial-assistance-scheme.html">Financial Assistance Scheme</a>  </li>
+       
+           
+            </ul>
+  
+</div>
+              <div class="sidebar1_box"><div id="_ptosb1_6203" class="ive_content"></div></div>
+    </div>
+    <div class="bottom"></div>
+  </div>
+
+  <div class="footer_area"> 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+  <div class="copyright">
+		© 2020 Jurong Pioneer Junior College.&nbsp;<span>All Rights Reserved.</span>		
+  </div>
+  <div class="links">
+		<ul>
+		<li><a href="https://www.tech.gov.sg/report_vulnerability" target="_blank">Report Vulnerability</a></li>
+		<li><a href="../contact-us/contact-us.html" target="">Contact Us</a></li>
+		</ul>
+  </div>	
+</footer></div>
+
+</div>
+</div>
+  </div>
+</div>
+<!-- pagetree/a1/default_view.html -->
+</div>
+
+
+
+</body>
+
+<!-- Mirrored from jpjc.moe.edu.sg/about-jpjc/subject-combination by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 Nov 2020 10:14:08 GMT -->
+</html>
