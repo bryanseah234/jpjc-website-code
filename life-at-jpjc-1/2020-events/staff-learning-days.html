@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+
+<!-- Mirrored from jpjc.moe.edu.sg/life-at-jpjc-1/2020-events/staff-learning-days by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 Nov 2020 12:53:41 GMT -->
+<head>
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+<title>Staff Learning Days</title>
+
+<link rel="shortcut icon" href="../../qql/slot/u152/nstyle/favicon1.png"/>
+
+ 
+ 
+
+<link rel="stylesheet" type="text/css" href="../../skin/qql/base.css">
+<link rel="stylesheet" type="text/css" href="../../rs/css/ct-factor.css">
+
+<link rel="stylesheet" type="text/css" id="main_css" href="../../qql/style/152_002/main.css?1597405381"> 
+
+<script type="text/javascript" src="../../site/ctx/js/menu.js"></script>
+<script type="text/javascript" src="../../site/ctx/jquery/jquery.js"></script>
+<script type="text/javascript" src="../../site/ctx/jquery/easing.js"></script>
+<script type="text/javascript" src="../../site/ctx/jquery/ctjq.js"></script>
+<link rel="stylesheet" type="text/css" href="../../site/ctx/jquery/ctjq.css">
+
+
+<script type="text/javascript">
+function get_idnum(a){ return parseInt(a.substr(a.lastIndexOf("_")+1,20)); }
+</script>
+
+
+<link rel="stylesheet" type="text/css" href="../../skin/qql/menu.css">
+
+
+<script>
+// non-admin vars
+if (typeof ive_settings=='undefined') {
+  ive_settings={};
+  ive_settings.ptid=4356;
+  ive_settings.url={
+    _head: '/cos/o.x?c=/qql/',
+    skin_path:'/skin/qql/' 
+  };
+  ive_settings.user={ fname: '', _id: '' , email:''};
+}
+</script>
+
+<!-- server extra head -->
+
+<!-- site extra head -->
+<meta name="viewport" content="width=device-width" />
+<script src="../../../assets.wogaa.sg/scripts/wogaa.js"></script>
+<script type="text/javascript">
+$(function(){		
+  $(".sidebar_area").insertAfter($(".content_area .mid:first"));
+	
+	if ($(".subpages_box UL UL.mysubpages_").length>0) {
+		var prev = $(".subpages_box UL UL.mysubpages_").prev();
+		$(prev).append($(".subpages_box UL UL.mysubpages_"));
+	}
+	
+  if ((!$("BODY").hasClass("pagelevel-1")) && ($(".path_box").length>0)) {
+		var pb = $(".path_box").html().split("&gt;");    
+    if (pb.length>0) {
+      var newpb = "<span>"+pb[0]+"</span>";
+      for (var i=1; i<pb.length; i++) {
+        newpb = newpb + "> <span>"+pb[i]+"</span>";          
+      }
+			$(".path_box").html(newpb);
+    }
+		$(".content_area > .top").append($(".path_box"));
+		
+		var par = pb[1];
+		if (pb.length>2) {
+			par = pb[pb.length-2];				
+		}
+			
+		$(".masthead2_area").html('<span class="subtitle">'+par+'</span><span class="leftt"></span><span class="rightt"></span>');
+		$(".masthead2_area .subtitle").html($(".subtitle").text());		
+		
+		if ($(".pagecontent_box H1").length>0) {
+			$(".content_area > .top").append("<h1>"+$(".pagecontent_box H1:first").text()+"</h1>");
+		}
+	} else {
+		$(".sidebar_area").remove();		
+	}
+	
+  $("#menu").click(function(){
+    $("#netcontent").toggleClass("show");
+    return false;
+  });  
+	
+	$("#search").click(function(){
+    $("#netcontent").toggleClass("showsearch");
+    return false;
+  });  
+	
+  $(".sitemenu_area a.sitemenu").each(function(){
+		if ($(this).closest("LI").find("table.dropmenu").length>0) {
+			$(this).closest("LI").addClass("hasdm");
+		}
+  });
+  	
+  $(".sitemenu_area a.sitemenu").on("click", function(){
+    var par = $(this).closest("LI");
+    if ($(par).find("table.dropmenu").length>0) {
+      if ((!$(par).hasClass("active")) && ($("#netcontent").hasClass("show"))) {
+        $(".sitemenu_area LI").removeClass("active");
+				$(par).addClass("active");
+				
+				$(".main_area").addClass("showdropmenu");
+        return false;
+      }
+    }
+  });
+	
+});
+
+$.fn.is_on_screen = function(){
+  var win = $(window);
+  var viewport = {
+    top : win.scrollTop()-100,
+	  left : win.scrollLeft()
+  };
+  viewport.right = viewport.left + win.width();
+	viewport.bottom = viewport.top + win.height();
+
+	var bounds = this.offset();
+	bounds.right = bounds.left + this.outerWidth();
+	bounds.bottom = bounds.top + this.outerHeight();
+
+	return (!(viewport.right < bounds.left || viewport.left > bounds.right || viewport.bottom < bounds.top || viewport.top > bounds.bottom));
+};
+</script>
+<!-- page extra head -->
+ 
+<!-- END all extra head -->
+
+<script>
+
+if (typeof(coto)=='undefined') coto={ ive: { } };
+if (!coto.ive.Controller) coto.ive.Controller = function() { };
+
+coto.ive.Controller.prototype.build=function(dom,opts){
+  if (typeof(dom)=='function') return this.build_func=dom;
+  this.dom=dom;
+  if (!(this.options=$(this.dom).data('widget_options'))) this.options={ };
+  if (!(this.idata=$(this.dom).data('idata'))) this.idata={ };
+  this.idata.controller=this;
+  this.build_func.call(this,opts);
+  $(dom).data('widget_options',this.options);
+  $(dom).data('idata',this.idata);
+};
+coto.controllers={ }; // controllers list
+function ive_controller(wtype) {
+  return coto.controllers[wtype]||(coto.controllers[wtype]=new coto.ive.Controller());
+}
+
+ive_tunings={ };
+function ive_tuning(cat) { return ive_tunings[cat]||(ive_tunings[cat]={ }); }
+
+// ----- DROPMENU -----
+$(function() {
+
+
+
+
+
+
+
+  // old menu.js
+  $('.sitemenu_area ul.sitemenu li, .dropmenu a').bind('mouseover mouseleave',function(ev) {
+    var menuid='dropmenu_'+get_idnum(this.id),$menu=$('#'+menuid);
+    var isenter=(ev.type=='mouseover'||ev.type=='mouseenter');
+    ctmenu[isenter?'show':'hide'](menuid,this,$menu.hasClass('drop_right_')?'right':'bottom');
+  });
+});
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="PTP499 PTP2545 PTP4103 pagelevel-4" >
+
+<div id="netcontent"><div id="lo_whole" class="layout-default">
+  <div id="lo_panel">
+    <div id="lo_main"><div class="main_area">
+
+  <div class="masthead_area"><header>
+  <a id="logo" href="../../index.html">Jurong Pioneer Junior College
+  </a>
+  <div id="search">Search
+  </div>	
+  <div id="menu">
+    <button type="button" class="hamburger">
+      <span class="hamb-top">
+      </span>
+      <span class="hamb-middle">
+      </span>
+      <span class="hamb-bottom">
+      </span>
+    </button>	
+  </div>
+</header>
+<div class="searchbox">
+  <form method="post" action="https://jpjc.moe.edu.sg/others/search&amp;func=search">
+    <input type="text" id="search_str" name="search_str" value="" placeholder="Search...">			
+  </form>
+</div> 	
+</div>
+<div class="sitemenu_area"><ul class="sitemenu">
+    <li id="PTID_499" class="PTSN_home first-item   "><a 
+    href="../../index.html" 
+
+
+    class="sitemenu"        >Home</a></li>
+    <li id="PTID_595" class="PTSN_about-jpjc    "><a 
+    href="../../about-jpjc.html" 
+
+
+    class="sitemenu"        >About&nbsp;JPJC</a><table role="presentation" id="dropmenu_595" class="dropmenu ">
+   
+        <tr class="lineEven ">
+      <td class="dmtrig" id="dmtrig_638">
+	<a id="subitem_638"
+	  href="../../about-jpjc/principals-message.html"
+
+	  	
+	    ><span id="_ptmt_638">Principal&#039;s Message</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineOdd ">
+      <td class="dmtrig" id="dmtrig_2698">
+	<a id="subitem_2698"
+	  href="../../about-jpjc/college-identity.html"
+
+	  	
+	    ><span id="_ptmt_2698">College Identity</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineEven ">
+      <td class="dmtrig" id="dmtrig_639">
+	<a id="subitem_639"
+	  href="../../about-jpjc/organisation-chart.html"
+
+	  	
+	    ><span id="_ptmt_639">Organisation Chart</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineOdd ">
+      <td class="dmtrig" id="dmtrig_640">
+	<a id="subitem_640"
+	  href="../../about-jpjc/college-calendar.html"
+
+	  	
+	    ><span id="_ptmt_640">College Calendar</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineEven ">
+      <td class="dmtrig" id="dmtrig_6203">
+	<a id="subitem_6203"
+	  href="../../about-jpjc/subject-combination.html"
+
+	  	
+	    ><span id="_ptmt_6203">Subject Combination</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineOdd ">
+      <td class="dmtrig" id="dmtrig_1904">
+	<a id="subitem_1904"
+	  href="../../about-jpjc/admission-matters.html"
+
+	  	
+	    ><span id="_ptmt_1904">Admission Matters</span></a>      	 
+	  </td>
+    </tr>
+   
+   
+        <tr class="lineEven ">
+      <td class="dmtrig" id="dmtrig_2486">
+	<a id="subitem_2486"
+	  href="../../about-jpjc/financial-assistance-scheme.html"
+
+	  	
+	    ><span id="_ptmt_2486">Financial Assistance Scheme</span></a>      	 
+	  </td>
+    </tr>
+   
+   
+  </table>
+</li>
+    <li id="PTID_3988" class="PTSN_jpjc-experience    "><a 
+    href="../../jpjc-experience/total-curriculum-framework.html" 
+
+
+    class="sitemenu"        >JPJC&nbsp;Experience</a><table role="presentation" id="dropmenu_3988" class="dropmenu ">
+   
+        <tr class="lineOdd ">
+      <td class="dmtrig" id="dmtrig_3989">
+	<a id="subitem_3989"
+	  href="../../jpjc-experience/total-curriculum-framework.html"
+
+	  	
+	    ><span id="_ptmt_3989">Total Curriculum Framework</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineEven ">
+      <td class="dmtrig" id="dmtrig_4019">
+	<a id="subitem_4019"
+	  href="../../jpjc-experience/curriculum/humanities-n-the-arts.html"
+
+	  	
+	    ><span id="_ptmt_4019">Curriculum</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineOdd ">
+      <td class="dmtrig" id="dmtrig_3991">
+	<a id="subitem_3991"
+	  href="../../jpjc-experience/co-curriculum.html"
+
+	  	
+	    ><span id="_ptmt_3991">Co-Curriculum</span></a>      	 
+	  </td>
+    </tr>
+  </table>
+</li>
+    <li id="PTID_2545" class="PTSN_life-@-jpjc  focus  "><a 
+    href="../../life-at-jpjc-1.html" 
+
+
+    class="sitemenu sitemenulit"        >Life&nbsp;@&nbsp;JPJC</a><table role="presentation" id="dropmenu_2545" class="dropmenu ">
+   
+        <tr class="lineEven ">
+      <td class="dmtrig" id="dmtrig_2546">
+	<a id="subitem_2546"
+	  href="../2019-events.html"
+
+	  	
+	    ><span id="_ptmt_2546">2019 Events</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineOdd ">
+      <td class="dmtrig" id="dmtrig_4103">
+	<a id="subitem_4103"
+	  href="../2020-events.html"
+
+	  	
+	    ><span id="_ptmt_4103">2020 Events</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineEven ">
+      <td class="dmtrig" id="dmtrig_6269">
+	<a id="subitem_6269"
+	  href="../publications.html"
+
+	  	
+	    ><span id="_ptmt_6269">Publications</span></a>      	 
+	  </td>
+    </tr>
+  </table>
+</li>
+    <li id="PTID_4077" class="PTSN_general    "><a 
+    href="../../general.html" 
+
+
+    class="sitemenu"        >General</a></li>
+    <li id="PTID_626" class="PTSN_partnerships    "><a 
+    href="../../partnerships/college-advisory-board.html" 
+
+
+    class="sitemenu"        >Partnerships</a><table role="presentation" id="dropmenu_626" class="dropmenu ">
+   
+        <tr class="lineOdd ">
+      <td class="dmtrig" id="dmtrig_704">
+	<a id="subitem_704"
+	  href="../../partnerships/college-advisory-board.html"
+
+	  	
+	    ><span id="_ptmt_704">College Advisory Board</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineEven ">
+      <td class="dmtrig" id="dmtrig_705">
+	<a id="subitem_705"
+	  href="../../partnerships/parent-support-group.html"
+
+	  	
+	    ><span id="_ptmt_705">Parent Support Group</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineOdd ">
+      <td class="dmtrig" id="dmtrig_706">
+	<a id="subitem_706"
+	  href="../../partnerships/jpjc-alumni.html"
+
+	  	
+	    ><span id="_ptmt_706">JPJC Alumni</span></a>      	 
+	  </td>
+    </tr>
+  </table>
+</li>
+  </ul>
+</div>
+  <div class="masthead2_area"></div>
+
+  <div class="content_area">
+    <div class="top"></div>
+    <div class="mid">
+            <div class="path_box">
+<a class='path' href='../../index.html'>Home</a> &gt;
+<a class='path' href='../../life-at-jpjc-1.html'>Life @ JPJC</a> &gt;
+<a class='path' href='../2020-events.html'>2020 Events</a> &gt;
+Staff Learning Days 
+</div>
+  
+       
+
+<div class="pagecontent_box">
+  <div class="tools_box">
+    </div>
+  
+    <h1 id="_ptoh_4356" class="ive_editable">Staff Learning Days</h1>
+      
+    
+        <div class='description ive_editable ive_ptod ive_content' id='_ptod_4356'><p class="" style="text-align: justify;"><span lang="EN-SG" class="">Staff Learning Days – when teachers gain
+insights into current trends!</span></p>
+
+<p class="" style="text-align: justify;"><span style="background-color: initial;"><br></span></p><p class="" style="text-align: justify;"><span style="background-color: initial;">Each year, time is set aside to update
+staff on latest pedagogies and allow them time to reflect on how these updates
+can be incorporated into their daily teaching routines. The first session for
+2020 was held on February 11 and 12. This year, the learning focused on two key
+areas of Skills Future for Educators – Supporting students with Special
+Educational Needs (SEN) and Differentiated Instruction (DI). These two areas
+were selected to sensitise teachers to the evolving and diverse learning needs
+of our students.</span></p>
+
+<p class="" style="text-align: justify;"><span lang="EN-SG" class="">&nbsp;</span></p>
+
+<p class="" style="text-align: justify;"><span lang="EN-SG" class="">The first workshop, conducted by Ms. Clare Yip, W2 Cluster
+Educational Psychologist, and Ms. Lourdes Maria, Senior AED (LBS) focussed on
+Supporting High-Functioning students with Autism Spectrum Disorder (ASD).
+Teachers learned more about ASD students through theories, sharing of
+experiences by the trainers and discussion of case studies. At the end of the
+session, teachers were equipped with the relevant knowledge, teaching
+approaches and strategies to support and manage SEN students in their classes
+and CCAs. </span></p>
+
+<p class="" style="text-align: justify;"><span lang="EN-SG" class="">&nbsp;</span></p>
+
+<p class="" style="text-align: justify;"><span lang="EN-SG" class="">On the second day, the workshop on DI aimed to familiarise teachers
+with the principles and strategies of DI and the use of formative assessment to
+support differentiated approaches. The workshop was planned and delivered by a
+team of teacher leaders – Mr. Lester Lim (Lead Teacher, History), Mdm. Lim Meow
+Ang (Senior Teacher, Maths) and Mdm. Lin Kui Fong (Senior Teacher, General
+Paper). Complementing the team, Ms. Tang Swee Noi, an adjunct lecturer from
+NIE, was invited to the college to share her experiences and expertise in DI.
+She also guided teachers in creating differentiated lessons during the last
+part of the workshop.</span></p>
+
+<p class="" style="text-align: justify;"><span lang="EN-SG" class="">&nbsp;</span></p>
+
+<p class="" style="text-align: justify;"><span lang="EN-SG" class="">All in all, it was a fruitful two days that the teachers spent at
+the Staff Learning Days 2020. Staff deepened their knowledge about the
+respective areas covered and took away insights that would enhance their
+teaching. </span></p>
+
+<p class="" style="text-align: justify;"><span lang="EN-SG" class="">&nbsp;</span></p><p class="" style="text-align: justify;"><span lang="EN-SG" class=""><img src="../../qql/slot/u152/Life%40JPJC/2020/Staff%20Learning%20Day/SLD1.jpg" hspace="2" alt="SLD1.jpg" class="ive_eobj_center" style="text-align: center; "><span style="font-size:11.0pt;line-height:107%;
+font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:PMingLiU-ExtB;
+mso-ansi-language:EN-US;mso-fareast-language:ZH-CN;mso-bidi-language:TA"></span></span></p><div style="text-align: center;"><span style="background-color: initial;">Ms
+Clare Yip, Educational Psychologist for W2 Cluster, sharing her knowledge and
+experiences on supporting high-functioning ASD students with our teachers.</span><br></div><p></p><p class="" style="text-align: justify;"><span lang="EN-SG" class=""><br></span></p><p class="" style="text-align: justify;"><span lang="EN-SG" class=""><img src="../../qql/slot/u152/Life%40JPJC/2020/Staff%20Learning%20Day/SLD2.jpg" hspace="2" alt="SLD2.jpg" class="ive_eobj_center"></span></p><p class=""><span lang="EN-SG" class=""></span></p><p class="MsoNormal" style="text-align: center;"><span style="background-color: initial;">Teachers engaged in discussion of authentic case studies
+using the frameworks and tools introduced during the session.</span></p><p class="MsoNormal" style="text-align: center;">&nbsp;<o:p></o:p></p><p class="" style="text-align: justify;"><span lang="EN-SG" class=""><img src="../../qql/slot/u152/Life%40JPJC/2020/Staff%20Learning%20Day/SLD3.jpg" hspace="2" alt="SLD3.jpg" class="ive_eobj_center"></span></p><p class="MsoNormal"><o:p></o:p></p><p class=""><span lang="EN-SG" class=""></span></p><p class="" style="text-align: justify;"><span lang="EN-SG" class=""></span></p><p class="" style="text-align: center;">Mr Subash presenting the points of discussion from his group
+sharing.</p><p class="" style="text-align: justify;"><span lang="EN-SG" class=""><br></span></p><p class="" style="text-align: justify;"><span lang="EN-SG" class=""><img src="../../qql/slot/u152/Life%40JPJC/2020/Staff%20Learning%20Day/SLD4.jpg" hspace="2" alt="SLD4.jpg" class="ive_eobj_center"><span style="font-size:11.0pt;line-height:107%;
+font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:PMingLiU-ExtB;
+mso-ansi-language:EN-US;mso-fareast-language:ZH-CN;mso-bidi-language:TA"></span></span></p><div style="text-align: center;"><span style="background-color: initial;">Students
+for the day! Teachers listening to instructions from Mr Lester Lim, lead
+facilitator for the workshop on Differentiated Instruction.</span></div><p></p><p class="" style="text-align: center;"><span lang="EN-SG" class=""><br></span></p><p class="" style="text-align: justify;"><span lang="EN-SG" class=""><img src="../../qql/slot/u152/Life%40JPJC/2020/Staff%20Learning%20Day/SLD5.jpg" hspace="2" alt="SLD5.jpg" class="ive_eobj_center"></span></p><p class="MsoNormal"><o:p></o:p></p><p class=""><span lang="EN-SG" class=""></span></p><p class="" style="text-align: justify;"><span lang="EN-SG" class=""></span></p><p class="" style="text-align: center;">Teachers in deep discussion on using differentiated teaching
+and learning approaches.</p><p class="" style="text-align: center;"><span lang="EN-SG" class=""><br></span></p><p class="" style="text-align: justify;"><span lang="EN-SG" class=""><img src="../../qql/slot/u152/Life%40JPJC/2020/Staff%20Learning%20Day/SLD6.jpg" hspace="2" alt="SLD6.jpg" class="ive_eobj_center"></span></p><p class="MsoNormal" style="text-align: center;"><span style="background-color: initial;">Teachers engaging in active discussion on Differentiated
+Instruction strategies.</span>&nbsp;</p><p class="MsoNormal"><span lang="EN-SG"></span></p></div>
+  
+
+
+
+</div>
+
+
+      
+<div id="_ptoo_block_start" style="font-size:1px;border:1px solid transparent"></div>
+
+<div id="_ptoo_PTOID" class="pageblock_box " style="display:none">
+    <div id="_ptod_PTOID" class="ive_editable ive_ptod ive_content"></div>
+</div>
+
+          </div>
+    <div class="bottom"></div>
+  </div>
+
+  <div class="sidebar_area">
+    <div class="top"></div>
+    <div class="mid">
+        <div class="sidebar0_box"><div id="_ptosb0_4356" class="ive_content"></div></div>
+      
+
+
+
+
+
+
+
+
+
+
+
+      	<div class="subpages_box">
+  
+  <!-- subpages -->
+  <ul class="mysubpages_">
+      </ul>
+  <!-- end subpages -->
+
+  
+</div>
+              <div class="sidebar1_box"><div id="_ptosb1_4356" class="ive_content"></div></div>
+    </div>
+    <div class="bottom"></div>
+  </div>
+
+  <div class="footer_area"> 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+  <div class="copyright">
+		© 2020 Jurong Pioneer Junior College.&nbsp;<span>All Rights Reserved.</span>		
+  </div>
+  <div class="links">
+		<ul>
+		<li><a href="https://www.tech.gov.sg/report_vulnerability" target="_blank">Report Vulnerability</a></li>
+		<li><a href="../../contact-us/contact-us.html" target="">Contact Us</a></li>
+		</ul>
+  </div>	
+</footer></div>
+
+</div>
+</div>
+  </div>
+</div>
+<!-- pagetree/a1/default_view.html -->
+</div>
+
+
+
+</body>
+
+<!-- Mirrored from jpjc.moe.edu.sg/life-at-jpjc-1/2020-events/staff-learning-days by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 Nov 2020 12:53:42 GMT -->
+</html>

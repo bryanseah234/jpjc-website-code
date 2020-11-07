@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+
+<!-- Mirrored from jpjc.moe.edu.sg/life-at-jpjc-1/2020-events/jc2-farewell-assembly-2020 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 Nov 2020 12:53:30 GMT -->
+<head>
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+<title>JC2
+Farewell Assembly 2020</title>
+
+<link rel="shortcut icon" href="../../qql/slot/u152/nstyle/favicon1.png"/>
+
+ 
+ 
+
+<link rel="stylesheet" type="text/css" href="../../skin/qql/base.css">
+<link rel="stylesheet" type="text/css" href="../../rs/css/ct-factor.css">
+
+<link rel="stylesheet" type="text/css" id="main_css" href="../../qql/style/152_002/main.css?1597405381"> 
+
+<script type="text/javascript" src="../../site/ctx/js/menu.js"></script>
+<script type="text/javascript" src="../../site/ctx/jquery/jquery.js"></script>
+<script type="text/javascript" src="../../site/ctx/jquery/easing.js"></script>
+<script type="text/javascript" src="../../site/ctx/jquery/ctjq.js"></script>
+<link rel="stylesheet" type="text/css" href="../../site/ctx/jquery/ctjq.css">
+
+
+<script type="text/javascript">
+function get_idnum(a){ return parseInt(a.substr(a.lastIndexOf("_")+1,20)); }
+</script>
+
+
+<link rel="stylesheet" type="text/css" href="../../skin/qql/menu.css">
+
+
+<script>
+// non-admin vars
+if (typeof ive_settings=='undefined') {
+  ive_settings={};
+  ive_settings.ptid=6261;
+  ive_settings.url={
+    _head: '/cos/o.x?c=/qql/',
+    skin_path:'/skin/qql/' 
+  };
+  ive_settings.user={ fname: '', _id: '' , email:''};
+}
+</script>
+
+<!-- server extra head -->
+
+<!-- site extra head -->
+<meta name="viewport" content="width=device-width" />
+<script src="../../../assets.wogaa.sg/scripts/wogaa.js"></script>
+<script type="text/javascript">
+$(function(){		
+  $(".sidebar_area").insertAfter($(".content_area .mid:first"));
+	
+	if ($(".subpages_box UL UL.mysubpages_").length>0) {
+		var prev = $(".subpages_box UL UL.mysubpages_").prev();
+		$(prev).append($(".subpages_box UL UL.mysubpages_"));
+	}
+	
+  if ((!$("BODY").hasClass("pagelevel-1")) && ($(".path_box").length>0)) {
+		var pb = $(".path_box").html().split("&gt;");    
+    if (pb.length>0) {
+      var newpb = "<span>"+pb[0]+"</span>";
+      for (var i=1; i<pb.length; i++) {
+        newpb = newpb + "> <span>"+pb[i]+"</span>";          
+      }
+			$(".path_box").html(newpb);
+    }
+		$(".content_area > .top").append($(".path_box"));
+		
+		var par = pb[1];
+		if (pb.length>2) {
+			par = pb[pb.length-2];				
+		}
+			
+		$(".masthead2_area").html('<span class="subtitle">'+par+'</span><span class="leftt"></span><span class="rightt"></span>');
+		$(".masthead2_area .subtitle").html($(".subtitle").text());		
+		
+		if ($(".pagecontent_box H1").length>0) {
+			$(".content_area > .top").append("<h1>"+$(".pagecontent_box H1:first").text()+"</h1>");
+		}
+	} else {
+		$(".sidebar_area").remove();		
+	}
+	
+  $("#menu").click(function(){
+    $("#netcontent").toggleClass("show");
+    return false;
+  });  
+	
+	$("#search").click(function(){
+    $("#netcontent").toggleClass("showsearch");
+    return false;
+  });  
+	
+  $(".sitemenu_area a.sitemenu").each(function(){
+		if ($(this).closest("LI").find("table.dropmenu").length>0) {
+			$(this).closest("LI").addClass("hasdm");
+		}
+  });
+  	
+  $(".sitemenu_area a.sitemenu").on("click", function(){
+    var par = $(this).closest("LI");
+    if ($(par).find("table.dropmenu").length>0) {
+      if ((!$(par).hasClass("active")) && ($("#netcontent").hasClass("show"))) {
+        $(".sitemenu_area LI").removeClass("active");
+				$(par).addClass("active");
+				
+				$(".main_area").addClass("showdropmenu");
+        return false;
+      }
+    }
+  });
+	
+});
+
+$.fn.is_on_screen = function(){
+  var win = $(window);
+  var viewport = {
+    top : win.scrollTop()-100,
+	  left : win.scrollLeft()
+  };
+  viewport.right = viewport.left + win.width();
+	viewport.bottom = viewport.top + win.height();
+
+	var bounds = this.offset();
+	bounds.right = bounds.left + this.outerWidth();
+	bounds.bottom = bounds.top + this.outerHeight();
+
+	return (!(viewport.right < bounds.left || viewport.left > bounds.right || viewport.bottom < bounds.top || viewport.top > bounds.bottom));
+};
+</script>
+<!-- page extra head -->
+ 
+<!-- END all extra head -->
+
+<script>
+
+if (typeof(coto)=='undefined') coto={ ive: { } };
+if (!coto.ive.Controller) coto.ive.Controller = function() { };
+
+coto.ive.Controller.prototype.build=function(dom,opts){
+  if (typeof(dom)=='function') return this.build_func=dom;
+  this.dom=dom;
+  if (!(this.options=$(this.dom).data('widget_options'))) this.options={ };
+  if (!(this.idata=$(this.dom).data('idata'))) this.idata={ };
+  this.idata.controller=this;
+  this.build_func.call(this,opts);
+  $(dom).data('widget_options',this.options);
+  $(dom).data('idata',this.idata);
+};
+coto.controllers={ }; // controllers list
+function ive_controller(wtype) {
+  return coto.controllers[wtype]||(coto.controllers[wtype]=new coto.ive.Controller());
+}
+
+ive_tunings={ };
+function ive_tuning(cat) { return ive_tunings[cat]||(ive_tunings[cat]={ }); }
+
+// ----- DROPMENU -----
+$(function() {
+
+
+
+
+
+
+
+  // old menu.js
+  $('.sitemenu_area ul.sitemenu li, .dropmenu a').bind('mouseover mouseleave',function(ev) {
+    var menuid='dropmenu_'+get_idnum(this.id),$menu=$('#'+menuid);
+    var isenter=(ev.type=='mouseover'||ev.type=='mouseenter');
+    ctmenu[isenter?'show':'hide'](menuid,this,$menu.hasClass('drop_right_')?'right':'bottom');
+  });
+});
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="PTP499 PTP2545 PTP4103 pagelevel-4" >
+
+<div id="netcontent"><div id="lo_whole" class="layout-default">
+  <div id="lo_panel">
+    <div id="lo_main"><div class="main_area">
+
+  <div class="masthead_area"><header>
+  <a id="logo" href="../../index.html">Jurong Pioneer Junior College
+  </a>
+  <div id="search">Search
+  </div>	
+  <div id="menu">
+    <button type="button" class="hamburger">
+      <span class="hamb-top">
+      </span>
+      <span class="hamb-middle">
+      </span>
+      <span class="hamb-bottom">
+      </span>
+    </button>	
+  </div>
+</header>
+<div class="searchbox">
+  <form method="post" action="https://jpjc.moe.edu.sg/others/search&amp;func=search">
+    <input type="text" id="search_str" name="search_str" value="" placeholder="Search...">			
+  </form>
+</div> 	
+</div>
+<div class="sitemenu_area"><ul class="sitemenu">
+    <li id="PTID_499" class="PTSN_home first-item   "><a 
+    href="../../index.html" 
+
+
+    class="sitemenu"        >Home</a></li>
+    <li id="PTID_595" class="PTSN_about-jpjc    "><a 
+    href="../../about-jpjc.html" 
+
+
+    class="sitemenu"        >About&nbsp;JPJC</a><table role="presentation" id="dropmenu_595" class="dropmenu ">
+   
+        <tr class="lineEven ">
+      <td class="dmtrig" id="dmtrig_638">
+	<a id="subitem_638"
+	  href="../../about-jpjc/principals-message.html"
+
+	  	
+	    ><span id="_ptmt_638">Principal&#039;s Message</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineOdd ">
+      <td class="dmtrig" id="dmtrig_2698">
+	<a id="subitem_2698"
+	  href="../../about-jpjc/college-identity.html"
+
+	  	
+	    ><span id="_ptmt_2698">College Identity</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineEven ">
+      <td class="dmtrig" id="dmtrig_639">
+	<a id="subitem_639"
+	  href="../../about-jpjc/organisation-chart.html"
+
+	  	
+	    ><span id="_ptmt_639">Organisation Chart</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineOdd ">
+      <td class="dmtrig" id="dmtrig_640">
+	<a id="subitem_640"
+	  href="../../about-jpjc/college-calendar.html"
+
+	  	
+	    ><span id="_ptmt_640">College Calendar</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineEven ">
+      <td class="dmtrig" id="dmtrig_6203">
+	<a id="subitem_6203"
+	  href="../../about-jpjc/subject-combination.html"
+
+	  	
+	    ><span id="_ptmt_6203">Subject Combination</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineOdd ">
+      <td class="dmtrig" id="dmtrig_1904">
+	<a id="subitem_1904"
+	  href="../../about-jpjc/admission-matters.html"
+
+	  	
+	    ><span id="_ptmt_1904">Admission Matters</span></a>      	 
+	  </td>
+    </tr>
+   
+   
+        <tr class="lineEven ">
+      <td class="dmtrig" id="dmtrig_2486">
+	<a id="subitem_2486"
+	  href="../../about-jpjc/financial-assistance-scheme.html"
+
+	  	
+	    ><span id="_ptmt_2486">Financial Assistance Scheme</span></a>      	 
+	  </td>
+    </tr>
+   
+   
+  </table>
+</li>
+    <li id="PTID_3988" class="PTSN_jpjc-experience    "><a 
+    href="../../jpjc-experience/total-curriculum-framework.html" 
+
+
+    class="sitemenu"        >JPJC&nbsp;Experience</a><table role="presentation" id="dropmenu_3988" class="dropmenu ">
+   
+        <tr class="lineOdd ">
+      <td class="dmtrig" id="dmtrig_3989">
+	<a id="subitem_3989"
+	  href="../../jpjc-experience/total-curriculum-framework.html"
+
+	  	
+	    ><span id="_ptmt_3989">Total Curriculum Framework</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineEven ">
+      <td class="dmtrig" id="dmtrig_4019">
+	<a id="subitem_4019"
+	  href="../../jpjc-experience/curriculum/humanities-n-the-arts.html"
+
+	  	
+	    ><span id="_ptmt_4019">Curriculum</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineOdd ">
+      <td class="dmtrig" id="dmtrig_3991">
+	<a id="subitem_3991"
+	  href="../../jpjc-experience/co-curriculum.html"
+
+	  	
+	    ><span id="_ptmt_3991">Co-Curriculum</span></a>      	 
+	  </td>
+    </tr>
+  </table>
+</li>
+    <li id="PTID_2545" class="PTSN_life-@-jpjc  focus  "><a 
+    href="../../life-at-jpjc-1.html" 
+
+
+    class="sitemenu sitemenulit"        >Life&nbsp;@&nbsp;JPJC</a><table role="presentation" id="dropmenu_2545" class="dropmenu ">
+   
+        <tr class="lineEven ">
+      <td class="dmtrig" id="dmtrig_2546">
+	<a id="subitem_2546"
+	  href="../2019-events.html"
+
+	  	
+	    ><span id="_ptmt_2546">2019 Events</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineOdd ">
+      <td class="dmtrig" id="dmtrig_4103">
+	<a id="subitem_4103"
+	  href="../2020-events.html"
+
+	  	
+	    ><span id="_ptmt_4103">2020 Events</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineEven ">
+      <td class="dmtrig" id="dmtrig_6269">
+	<a id="subitem_6269"
+	  href="../publications.html"
+
+	  	
+	    ><span id="_ptmt_6269">Publications</span></a>      	 
+	  </td>
+    </tr>
+  </table>
+</li>
+    <li id="PTID_4077" class="PTSN_general    "><a 
+    href="../../general.html" 
+
+
+    class="sitemenu"        >General</a></li>
+    <li id="PTID_626" class="PTSN_partnerships    "><a 
+    href="../../partnerships/college-advisory-board.html" 
+
+
+    class="sitemenu"        >Partnerships</a><table role="presentation" id="dropmenu_626" class="dropmenu ">
+   
+        <tr class="lineOdd ">
+      <td class="dmtrig" id="dmtrig_704">
+	<a id="subitem_704"
+	  href="../../partnerships/college-advisory-board.html"
+
+	  	
+	    ><span id="_ptmt_704">College Advisory Board</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineEven ">
+      <td class="dmtrig" id="dmtrig_705">
+	<a id="subitem_705"
+	  href="../../partnerships/parent-support-group.html"
+
+	  	
+	    ><span id="_ptmt_705">Parent Support Group</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineOdd ">
+      <td class="dmtrig" id="dmtrig_706">
+	<a id="subitem_706"
+	  href="../../partnerships/jpjc-alumni.html"
+
+	  	
+	    ><span id="_ptmt_706">JPJC Alumni</span></a>      	 
+	  </td>
+    </tr>
+  </table>
+</li>
+  </ul>
+</div>
+  <div class="masthead2_area"></div>
+
+  <div class="content_area">
+    <div class="top"></div>
+    <div class="mid">
+            <div class="path_box">
+<a class='path' href='../../index.html'>Home</a> &gt;
+<a class='path' href='../../life-at-jpjc-1.html'>Life @ JPJC</a> &gt;
+<a class='path' href='../2020-events.html'>2020 Events</a> &gt;
+JC2
+Farewell Assembly 2020 
+</div>
+  
+       
+
+<div class="pagecontent_box">
+  <div class="tools_box">
+    </div>
+  
+    <h1 id="_ptoh_6261" class="ive_editable">JC2
+Farewell Assembly 2020</h1>
+      
+    
+        <div class='description ive_editable ive_ptod ive_content' id='_ptod_6261'><p class="" style="text-align: justify;"><span class="">On October
+9, Jurong Pioneer Junior College (JPJC) held its annual JC2 Farewell Assembly for
+the Class of 2020. This annual affair marked a significant milestone in the
+cohort’s JC journey. Even as the event marked the last official day of school
+for the Class of 2020, it also celebrated their accomplishments, growth and
+wonderful memories throughout their two years in the college. In the light of
+the COVID-19 pandemic and the need for Safe Management Measures, the Farewell Assembly
+was held predominantly via virtual conferencing. Nevertheless, it was no less
+significant and poignant, as such a format still allowed for the entire cohort
+to participate in a coordinated programme.</span></p><p class="" style="text-align: justify;"><span class="" style="background-color: initial;"><br></span></p><p class="" style="text-align: justify;"><span class="" style="background-color: initial;">The event commenced
+with an opening address by our Principal, Dr Hang Kim Hoo, who shared with the
+Class of 2020 an insightful message based on the best-selling book ‘</span><span class="" style="background-color: initial;">Who Moved My Cheese?’ by Spencer Johnson. <span class="">In
+his parting words to the cohort, Dr Hang urged students to learn how to adapt
+quickly in order to survive and thrive in a world that is constantly in flux. Following
+Dr Hang’s address, a poignant photo montage of the cohort’s journey took them
+down memory lane, with highlights from their experiences at Orientation and
+various other college events such as Chinese New Year Celebration, Total
+Defence Day and House Bonding Day 2019.&nbsp; After
+listening to the wise words from a sharing by our very own JPJC alumni (Mr
+Kenneth Sng from the Class of 2010), </span>Mr Dennis
+Lee and Ms Valerie Tan cheered the cohort on in a song item, “Count on Me”. <span class="">Each class then proceeded to craft their graduation mo</span>rtar boards from scratch. This was a well-loved highlight
+of the Farewell Assembly, as students bonded over this craft activity and
+shared both laughter and a good time. In yet another popular segment, the
+cohort witnessed their teachers from all Departments convey their well wishes
+in light-hearted and spirited performances that had been recorded prior to the
+event. The School Leaders (SLs) and teachers also performed in a pre-recorded
+item, “You Raise Me Up” showcasing the SLs’ musical talents and our teachers’ support
+for the cohort in their final lap towards the A-Level examination.&nbsp;</span></p><p class="" style="text-align: justify;"><span style="background-color: initial;"><br></span></p><p class="" style="text-align: justify;"><span style="background-color: initial;">In a meaningful conclusion to the event, the cohort
+identity logo - painstakingly crafted and comprising the thumbprints of all students
+from the Class of 2020 - was printed on EZLink cards and presented to the
+students as a graduation memento. The Farewell Assembly ended on a high note
+with the singing of the college anthem and presentation of gifts by the Student
+Council and Parents’ Support Group. It was indeed a Farewell Assembly to
+remember, one made special and even more cherished in the light of current
+circumstances.</span></p><p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="background-color: initial; font-family: Arial, sans-serif; font-size: 11pt;"><br></span></p><span style="line-height: 107%; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><img src="../../qql/slot/u152/Life%40JPJC/JC2%20farewell%20assembly%202020/Our%20JC2%20students%20tossing%20their%20own%20mortar%20boards%20in%20glee%20to%20mark%20their%20graduation.jpg" hspace="2" alt="Our JC2 students tossing their own mortar boards in glee to mark their graduation.jpg" class="ive_eobj_center"><div style="text-align: center;"><span style="background-color: initial;">Our JC2 students tossing their own mortar boards in glee to mark their graduation</span></div><br><img src="../../qql/slot/u152/Life%40JPJC/JC2%20farewell%20assembly%202020/Our%20JC2%20students%20watching%20the%20prerecorded%20Farewell%20Assembly%20programme%20in%20their%20respective%20classrooms.jpg" hspace="2" alt="Our JC2 students watching the prerecorded Farewell Assembly programme in their respective classrooms.jpg" class="ive_eobj_center"><div style="text-align: center;"><span style="background-color: initial;">Our JC2 students watching the prerecorded Farewell Assembly programme in their respective classrooms</span></div><div style="text-align: center;"></div><br><img src="../../qql/slot/u152/Life%40JPJC/JC2%20farewell%20assembly%202020/Our%20School%20Leaders%20and%20various%20teachers%20in%20the%20prerecorded%20item%20You%20Raise%20Me%20Up.jpg" hspace="2" alt="Our School Leaders and various teachers in the prerecorded item You Raise Me Up.jpg" class="ive_eobj_center"><div style="text-align: center;"><span style="background-color: initial;">Our School Leaders and various teachers in the prerecorded item You Raise Me Up</span></div><br><br><img src="../../qql/slot/u152/Life%40JPJC/JC2%20farewell%20assembly%202020/The%20Class%20of%202020%20cohort%20identity%20logo%20art%20installation%20outside%20the%20college%20Hall.jpg" hspace="2" alt="The Class of 2020 cohort identity logo art installation outside the college Hall.jpg" class="ive_eobj_center"><div style="text-align: center;"><span style="background-color: initial;">The Class of 2020 cohort identity logo art installation outside the college Hall</span></div><br><br></span><span style="font-size: 11pt; line-height: 107%; font-family: Arial, sans-serif; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"></span><span style="font-size: 11pt; line-height: 107%; font-family: Arial, sans-serif; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"></span></div>
+  
+
+
+
+</div>
+
+
+      
+<div id="_ptoo_block_start" style="font-size:1px;border:1px solid transparent"></div>
+
+<div id="_ptoo_PTOID" class="pageblock_box " style="display:none">
+    <div id="_ptod_PTOID" class="ive_editable ive_ptod ive_content"></div>
+</div>
+
+          </div>
+    <div class="bottom"></div>
+  </div>
+
+  <div class="sidebar_area">
+    <div class="top"></div>
+    <div class="mid">
+        <div class="sidebar0_box"><div id="_ptosb0_6261" class="ive_content"></div></div>
+      
+
+
+
+
+
+
+
+
+
+
+
+      	<div class="subpages_box">
+  
+  <!-- subpages -->
+  <ul class="mysubpages_">
+      </ul>
+  <!-- end subpages -->
+
+  
+</div>
+              <div class="sidebar1_box"><div id="_ptosb1_6261" class="ive_content"></div></div>
+    </div>
+    <div class="bottom"></div>
+  </div>
+
+  <div class="footer_area"> 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+  <div class="copyright">
+		© 2020 Jurong Pioneer Junior College.&nbsp;<span>All Rights Reserved.</span>		
+  </div>
+  <div class="links">
+		<ul>
+		<li><a href="https://www.tech.gov.sg/report_vulnerability" target="_blank">Report Vulnerability</a></li>
+		<li><a href="../../contact-us/contact-us.html" target="">Contact Us</a></li>
+		</ul>
+  </div>	
+</footer></div>
+
+</div>
+</div>
+  </div>
+</div>
+<!-- pagetree/a1/default_view.html -->
+</div>
+
+
+
+</body>
+
+<!-- Mirrored from jpjc.moe.edu.sg/life-at-jpjc-1/2020-events/jc2-farewell-assembly-2020 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 Nov 2020 12:53:30 GMT -->
+</html>

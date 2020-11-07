@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+
+<!-- Mirrored from jpjc.moe.edu.sg/life-at-jpjc-1/2019-events/mother-tongue-fortnight-2019 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 Nov 2020 12:53:05 GMT -->
+<head>
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+<title>Mother Tongue Fortnight 2019</title>
+
+<link rel="shortcut icon" href="../../qql/slot/u152/nstyle/favicon1.png"/>
+
+ 
+ 
+
+<link rel="stylesheet" type="text/css" href="../../skin/qql/base.css">
+<link rel="stylesheet" type="text/css" href="../../rs/css/ct-factor.css">
+
+<link rel="stylesheet" type="text/css" id="main_css" href="../../qql/style/152_002/main.css?1597405381"> 
+
+<script type="text/javascript" src="../../site/ctx/js/menu.js"></script>
+<script type="text/javascript" src="../../site/ctx/jquery/jquery.js"></script>
+<script type="text/javascript" src="../../site/ctx/jquery/easing.js"></script>
+<script type="text/javascript" src="../../site/ctx/jquery/ctjq.js"></script>
+<link rel="stylesheet" type="text/css" href="../../site/ctx/jquery/ctjq.css">
+
+
+<script type="text/javascript">
+function get_idnum(a){ return parseInt(a.substr(a.lastIndexOf("_")+1,20)); }
+</script>
+
+
+<link rel="stylesheet" type="text/css" href="../../skin/qql/menu.css">
+
+
+<script>
+// non-admin vars
+if (typeof ive_settings=='undefined') {
+  ive_settings={};
+  ive_settings.ptid=2654;
+  ive_settings.url={
+    _head: '/cos/o.x?c=/qql/',
+    skin_path:'/skin/qql/' 
+  };
+  ive_settings.user={ fname: '', _id: '' , email:''};
+}
+</script>
+
+<!-- server extra head -->
+
+<!-- site extra head -->
+<meta name="viewport" content="width=device-width" />
+<script src="../../../assets.wogaa.sg/scripts/wogaa.js"></script>
+<script type="text/javascript">
+$(function(){		
+  $(".sidebar_area").insertAfter($(".content_area .mid:first"));
+	
+	if ($(".subpages_box UL UL.mysubpages_").length>0) {
+		var prev = $(".subpages_box UL UL.mysubpages_").prev();
+		$(prev).append($(".subpages_box UL UL.mysubpages_"));
+	}
+	
+  if ((!$("BODY").hasClass("pagelevel-1")) && ($(".path_box").length>0)) {
+		var pb = $(".path_box").html().split("&gt;");    
+    if (pb.length>0) {
+      var newpb = "<span>"+pb[0]+"</span>";
+      for (var i=1; i<pb.length; i++) {
+        newpb = newpb + "> <span>"+pb[i]+"</span>";          
+      }
+			$(".path_box").html(newpb);
+    }
+		$(".content_area > .top").append($(".path_box"));
+		
+		var par = pb[1];
+		if (pb.length>2) {
+			par = pb[pb.length-2];				
+		}
+			
+		$(".masthead2_area").html('<span class="subtitle">'+par+'</span><span class="leftt"></span><span class="rightt"></span>');
+		$(".masthead2_area .subtitle").html($(".subtitle").text());		
+		
+		if ($(".pagecontent_box H1").length>0) {
+			$(".content_area > .top").append("<h1>"+$(".pagecontent_box H1:first").text()+"</h1>");
+		}
+	} else {
+		$(".sidebar_area").remove();		
+	}
+	
+  $("#menu").click(function(){
+    $("#netcontent").toggleClass("show");
+    return false;
+  });  
+	
+	$("#search").click(function(){
+    $("#netcontent").toggleClass("showsearch");
+    return false;
+  });  
+	
+  $(".sitemenu_area a.sitemenu").each(function(){
+		if ($(this).closest("LI").find("table.dropmenu").length>0) {
+			$(this).closest("LI").addClass("hasdm");
+		}
+  });
+  	
+  $(".sitemenu_area a.sitemenu").on("click", function(){
+    var par = $(this).closest("LI");
+    if ($(par).find("table.dropmenu").length>0) {
+      if ((!$(par).hasClass("active")) && ($("#netcontent").hasClass("show"))) {
+        $(".sitemenu_area LI").removeClass("active");
+				$(par).addClass("active");
+				
+				$(".main_area").addClass("showdropmenu");
+        return false;
+      }
+    }
+  });
+	
+});
+
+$.fn.is_on_screen = function(){
+  var win = $(window);
+  var viewport = {
+    top : win.scrollTop()-100,
+	  left : win.scrollLeft()
+  };
+  viewport.right = viewport.left + win.width();
+	viewport.bottom = viewport.top + win.height();
+
+	var bounds = this.offset();
+	bounds.right = bounds.left + this.outerWidth();
+	bounds.bottom = bounds.top + this.outerHeight();
+
+	return (!(viewport.right < bounds.left || viewport.left > bounds.right || viewport.bottom < bounds.top || viewport.top > bounds.bottom));
+};
+</script>
+<!-- page extra head -->
+ 
+<!-- END all extra head -->
+
+<script>
+
+if (typeof(coto)=='undefined') coto={ ive: { } };
+if (!coto.ive.Controller) coto.ive.Controller = function() { };
+
+coto.ive.Controller.prototype.build=function(dom,opts){
+  if (typeof(dom)=='function') return this.build_func=dom;
+  this.dom=dom;
+  if (!(this.options=$(this.dom).data('widget_options'))) this.options={ };
+  if (!(this.idata=$(this.dom).data('idata'))) this.idata={ };
+  this.idata.controller=this;
+  this.build_func.call(this,opts);
+  $(dom).data('widget_options',this.options);
+  $(dom).data('idata',this.idata);
+};
+coto.controllers={ }; // controllers list
+function ive_controller(wtype) {
+  return coto.controllers[wtype]||(coto.controllers[wtype]=new coto.ive.Controller());
+}
+
+ive_tunings={ };
+function ive_tuning(cat) { return ive_tunings[cat]||(ive_tunings[cat]={ }); }
+
+// ----- DROPMENU -----
+$(function() {
+
+
+
+
+
+
+
+  // old menu.js
+  $('.sitemenu_area ul.sitemenu li, .dropmenu a').bind('mouseover mouseleave',function(ev) {
+    var menuid='dropmenu_'+get_idnum(this.id),$menu=$('#'+menuid);
+    var isenter=(ev.type=='mouseover'||ev.type=='mouseenter');
+    ctmenu[isenter?'show':'hide'](menuid,this,$menu.hasClass('drop_right_')?'right':'bottom');
+  });
+});
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="PTP499 PTP2545 PTP2546 pagelevel-4" >
+
+<div id="netcontent"><div id="lo_whole" class="layout-default">
+  <div id="lo_panel">
+    <div id="lo_main"><div class="main_area">
+
+  <div class="masthead_area"><header>
+  <a id="logo" href="../../index.html">Jurong Pioneer Junior College
+  </a>
+  <div id="search">Search
+  </div>	
+  <div id="menu">
+    <button type="button" class="hamburger">
+      <span class="hamb-top">
+      </span>
+      <span class="hamb-middle">
+      </span>
+      <span class="hamb-bottom">
+      </span>
+    </button>	
+  </div>
+</header>
+<div class="searchbox">
+  <form method="post" action="https://jpjc.moe.edu.sg/others/search&amp;func=search">
+    <input type="text" id="search_str" name="search_str" value="" placeholder="Search...">			
+  </form>
+</div> 	
+</div>
+<div class="sitemenu_area"><ul class="sitemenu">
+    <li id="PTID_499" class="PTSN_home first-item   "><a 
+    href="../../index.html" 
+
+
+    class="sitemenu"        >Home</a></li>
+    <li id="PTID_595" class="PTSN_about-jpjc    "><a 
+    href="../../about-jpjc.html" 
+
+
+    class="sitemenu"        >About&nbsp;JPJC</a><table role="presentation" id="dropmenu_595" class="dropmenu ">
+   
+        <tr class="lineEven ">
+      <td class="dmtrig" id="dmtrig_638">
+	<a id="subitem_638"
+	  href="../../about-jpjc/principals-message.html"
+
+	  	
+	    ><span id="_ptmt_638">Principal&#039;s Message</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineOdd ">
+      <td class="dmtrig" id="dmtrig_2698">
+	<a id="subitem_2698"
+	  href="../../about-jpjc/college-identity.html"
+
+	  	
+	    ><span id="_ptmt_2698">College Identity</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineEven ">
+      <td class="dmtrig" id="dmtrig_639">
+	<a id="subitem_639"
+	  href="../../about-jpjc/organisation-chart.html"
+
+	  	
+	    ><span id="_ptmt_639">Organisation Chart</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineOdd ">
+      <td class="dmtrig" id="dmtrig_640">
+	<a id="subitem_640"
+	  href="../../about-jpjc/college-calendar.html"
+
+	  	
+	    ><span id="_ptmt_640">College Calendar</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineEven ">
+      <td class="dmtrig" id="dmtrig_6203">
+	<a id="subitem_6203"
+	  href="../../about-jpjc/subject-combination.html"
+
+	  	
+	    ><span id="_ptmt_6203">Subject Combination</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineOdd ">
+      <td class="dmtrig" id="dmtrig_1904">
+	<a id="subitem_1904"
+	  href="../../about-jpjc/admission-matters.html"
+
+	  	
+	    ><span id="_ptmt_1904">Admission Matters</span></a>      	 
+	  </td>
+    </tr>
+   
+   
+        <tr class="lineEven ">
+      <td class="dmtrig" id="dmtrig_2486">
+	<a id="subitem_2486"
+	  href="../../about-jpjc/financial-assistance-scheme.html"
+
+	  	
+	    ><span id="_ptmt_2486">Financial Assistance Scheme</span></a>      	 
+	  </td>
+    </tr>
+   
+   
+  </table>
+</li>
+    <li id="PTID_3988" class="PTSN_jpjc-experience    "><a 
+    href="../../jpjc-experience/total-curriculum-framework.html" 
+
+
+    class="sitemenu"        >JPJC&nbsp;Experience</a><table role="presentation" id="dropmenu_3988" class="dropmenu ">
+   
+        <tr class="lineOdd ">
+      <td class="dmtrig" id="dmtrig_3989">
+	<a id="subitem_3989"
+	  href="../../jpjc-experience/total-curriculum-framework.html"
+
+	  	
+	    ><span id="_ptmt_3989">Total Curriculum Framework</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineEven ">
+      <td class="dmtrig" id="dmtrig_4019">
+	<a id="subitem_4019"
+	  href="../../jpjc-experience/curriculum/humanities-n-the-arts.html"
+
+	  	
+	    ><span id="_ptmt_4019">Curriculum</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineOdd ">
+      <td class="dmtrig" id="dmtrig_3991">
+	<a id="subitem_3991"
+	  href="../../jpjc-experience/co-curriculum.html"
+
+	  	
+	    ><span id="_ptmt_3991">Co-Curriculum</span></a>      	 
+	  </td>
+    </tr>
+  </table>
+</li>
+    <li id="PTID_2545" class="PTSN_life-@-jpjc  focus  "><a 
+    href="../../life-at-jpjc-1.html" 
+
+
+    class="sitemenu sitemenulit"        >Life&nbsp;@&nbsp;JPJC</a><table role="presentation" id="dropmenu_2545" class="dropmenu ">
+   
+        <tr class="lineEven ">
+      <td class="dmtrig" id="dmtrig_2546">
+	<a id="subitem_2546"
+	  href="../2019-events.html"
+
+	  	
+	    ><span id="_ptmt_2546">2019 Events</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineOdd ">
+      <td class="dmtrig" id="dmtrig_4103">
+	<a id="subitem_4103"
+	  href="../2020-events.html"
+
+	  	
+	    ><span id="_ptmt_4103">2020 Events</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineEven ">
+      <td class="dmtrig" id="dmtrig_6269">
+	<a id="subitem_6269"
+	  href="../publications.html"
+
+	  	
+	    ><span id="_ptmt_6269">Publications</span></a>      	 
+	  </td>
+    </tr>
+  </table>
+</li>
+    <li id="PTID_4077" class="PTSN_general    "><a 
+    href="../../general.html" 
+
+
+    class="sitemenu"        >General</a></li>
+    <li id="PTID_626" class="PTSN_partnerships    "><a 
+    href="../../partnerships/college-advisory-board.html" 
+
+
+    class="sitemenu"        >Partnerships</a><table role="presentation" id="dropmenu_626" class="dropmenu ">
+   
+        <tr class="lineOdd ">
+      <td class="dmtrig" id="dmtrig_704">
+	<a id="subitem_704"
+	  href="../../partnerships/college-advisory-board.html"
+
+	  	
+	    ><span id="_ptmt_704">College Advisory Board</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineEven ">
+      <td class="dmtrig" id="dmtrig_705">
+	<a id="subitem_705"
+	  href="../../partnerships/parent-support-group.html"
+
+	  	
+	    ><span id="_ptmt_705">Parent Support Group</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineOdd ">
+      <td class="dmtrig" id="dmtrig_706">
+	<a id="subitem_706"
+	  href="../../partnerships/jpjc-alumni.html"
+
+	  	
+	    ><span id="_ptmt_706">JPJC Alumni</span></a>      	 
+	  </td>
+    </tr>
+  </table>
+</li>
+  </ul>
+</div>
+  <div class="masthead2_area"></div>
+
+  <div class="content_area">
+    <div class="top"></div>
+    <div class="mid">
+            <div class="path_box">
+<a class='path' href='../../index.html'>Home</a> &gt;
+<a class='path' href='../../life-at-jpjc-1.html'>Life @ JPJC</a> &gt;
+<a class='path' href='../2019-events.html'>2019 Events</a> &gt;
+Mother Tongue Fortnight 2019 
+</div>
+  
+       
+
+<div class="pagecontent_box">
+  <div class="tools_box">
+    </div>
+  
+    <h1 id="_ptoh_2654" class="ive_editable">Mother Tongue Fortnight 2019</h1>
+      
+    
+        <div class='description ive_editable ive_ptod ive_content' id='_ptod_2654'><p class="" style="text-align: justify;"><span lang="EN-SG" class="">The Mother Tongue Department organised the inaugural Mother Tongue
+Fortnight this year between 8 April 2019 and 18 April 2019. The objective of
+the Mother Tongue Fortnight was t</span><span lang="EN-SG" class="">o</span><span class=""> enable students to
+learn and use the Mother Tongue languages in exciting and engaging ways. The
+three units – Chinese Language (CL), Malay Language (ML) and Tamil Language
+(TL) units in the department organised a series of workshops and competitions
+to enthuse students in their learning of the Mother Tongue languages.<br><br></span></p><p class=""><span class=""><img src="../../qql/slot/u152/Life%40JPJC/Mother%20Tongue%20Fortnight%202019/MTF1.jpg" hspace="2" width="100%" alt="MTF1.jpg" class="ive_eobj_center" style="text-align: justify; width: 759px; height: 506px;"></span></p><p class="MsoNormal" align="center" style="margin-top:3.0pt;margin-right:0in;
+margin-bottom:3.0pt;margin-left:0in;text-align:center"><span style="mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:black;mso-ansi-language:EN-US"><o:p></o:p></span></p><p class=""><span class=""></span></p><p class=""><span class=""></span></p><p class="" align="center"><span class=""><font size="2">JPJC Principal, Dr Hang,
+officially opening the Mother Tongue Fortnight.<br><br></font></span></p><p class="" align="center"><span class=""></span></p><p class="MsoNormal" style="margin-top:3.0pt;margin-right:0in;margin-bottom:3.0pt;
+margin-left:0in;text-align:justify;text-justify:inter-ideograph"><span lang="EN-SG"><span style="background-color: initial; font-size: 1em; text-align: left;">The CL unit organised a Xinyao Music Appreciation Session for
+students taking Chinese as their Mother Tongue. Local singers belted out pop
+songs written by Singaporeans which include songs from the 1980’s as well as
+songs written by last year winners in the National Schools Xinyao Singing and Song
+writing Competition.Over 400 students also participated in concurrent hands-on
+workshop such as fan painting, opera mask painting, and diabolo. Students also
+had a chance to participate in a Chinese riddle game which was open to all JC1
+and JC2 students taking Chinese as the Mother Tongue. Around 250 JC1 students
+attended a training session to learn the language skills required to solve the
+riddle and 133 won prizes. Besides these exciting workshops and games, H2CLL
+students also had the opportunity to have a go at song-writing guided by
+experienced local song writers. They underwent four training sessions to
+provide them writing skills and background on song-writing. &nbsp;3 students with best work won prizes.</span></span></p><p class="MsoNormal" style="margin-top:3.0pt;margin-right:0in;margin-bottom:3.0pt;
+margin-left:0in;text-align:justify;text-justify:inter-ideograph"><span lang="EN-SG"><span style="background-color: initial; font-size: 1em; text-align: left;"><br></span></span></p><p class="MsoNormal" style="margin-top:3.0pt;margin-right:0in;margin-bottom:3.0pt;
+margin-left:0in;text-align:justify;text-justify:inter-ideograph"><span lang="EN-SG"><img src="../../qql/slot/u152/Life%40JPJC/Mother%20Tongue%20Fortnight%202019/MTF2.jpg" hspace="2" width="100%" alt="MTF2.jpg" class="ive_eobj_center" style="width: 765px; height: 478px;"></span></p><p class="MsoNormal" align="center" style="margin-top:3.0pt;margin-right:0in;
+margin-bottom:3.0pt;margin-left:0in;text-align:center"><span lang="EN-SG"><o:p></o:p></span></p><p class=""><span lang="EN-SG" class=""></span></p><p class="MsoNormal" style="margin-top:3.0pt;margin-right:0in;margin-bottom:3.0pt;
+margin-left:0in;text-align:justify;text-justify:inter-ideograph"><span lang="EN-SG"></span></p><p class="" align="center"><span lang="EN-SG" class="">Above:
+Students engaged in the Xinyao Music Appreciation performances.&nbsp;</span></p><p class="" align="center"><span lang="EN-SG" class="">Below: Fan
+painting and Opera Mask painting workshops held for students.</span></p><p class="" align="center"><span lang="EN-SG" class=""></span></p><table class="ives_tab_kosong ive_eobj_center" style="width: 787.5px; height: 273px;"><tbody><tr><th style="width: 372px;"><img src="../../qql/slot/u152/Life%40JPJC/Mother%20Tongue%20Fortnight%202019/MTF3.jpg" hspace="2" alt="MTF3.jpg" class="ive_eobj_right" style="width: 367px; height: 262px;"></th><th style="width: 415px;"><img src="../../qql/slot/u152/Life%40JPJC/Mother%20Tongue%20Fortnight%202019/MTF4.jpg" hspace="2" alt="MTF4.jpg" class="ive_eobj_center" style="width: 413px; height: 261px;"></th></tr></tbody></table><p></p><p class=""><span lang="EN-SG" class=""></span></p><p class="MsoNormal" style="margin-top:3.0pt;margin-right:0in;margin-bottom:3.0pt;
+margin-left:0in;text-align:justify;text-justify:inter-ideograph"><span style="background-color: initial; font-size: 1em; text-align: left;">For the Malay Language (ML) unit, a wide range of activities were
+conducted which include Creative Writing (Malay poems) and Pulut Kuning Cake
+Decoration Competitions. The competitions were open to all JC1 H1ML and H2MLL
+students. The Creative Writing Competition sought to uncover literary talents
+among students and encourage them to deepen their understanding on Malay
+language and literature, and appreciate Malay poems.&nbsp; Three students were
+awarded prizes for the Creative Writing Competition. Meanwhile, a Pulut Kuning
+Cake Decoration Competition was also organised to encourage students to
+understand Malay gastronomy - the Pulut Kuning, which is a traditional dish
+which has significant function in Malay community. The top three winners of the
+competition were awarded vouchers for their creativity and effort. Overall,
+these activities provided authentic opportunities for all JC1 H1ML and H2MLL
+students to use their Mother Tongue Language and experience the Malay culture
+and heritage.</span></p><p class="MsoNormal" style="margin-top:3.0pt;margin-right:0in;margin-bottom:3.0pt;
+margin-left:0in;text-align:justify;text-justify:inter-ideograph"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;color:black;mso-ansi-language:
+EN-US">&nbsp;<o:p></o:p></span></p><p class="MsoNormal" style="margin-top:3.0pt;margin-right:0in;margin-bottom:3.0pt;
+margin-left:0in;text-align:justify;text-justify:inter-ideograph"><span lang="EN-SG"><img src="../../qql/slot/u152/Life%40JPJC/Mother%20Tongue%20Fortnight%202019/MTF5.jpg" hspace="2" width="100%" alt="MTF5.jpg" class="ive_eobj_center" style="width: 741px; height: 412px;"></span></p><p class="" style="text-align: center;"><span class="">Above: A display of the
+winning entries of the Creative Writing Competition.&nbsp;</span></p><p class="" style="text-align: center;"><span class="">Below: Students decorating
+their Pulut Kuning.</span></p><p class="" style="text-align: center;"><span class=""><img src="../../qql/slot/u152/Life%40JPJC/Mother%20Tongue%20Fortnight%202019/MTF6.jpg" hspace="2" width="100%" alt="MTF6.jpg" class="ive_eobj_center" style="width: 771px; height: 512px;"></span></p><p class="" style="text-align: justify;"><span lang="EN-SG" class="">The Tamil Language (TL) Unit organised a series of events as part of
+the Mother Tongue Fortnight activities to introduce to students the forgotten
+rich heritage, the cultural and traditional experiences of their ancient eating
+habits. All J1H1 students were involved in the programme. Besides presenting
+Powerpoint slides, students were introduced to the varying Indian herbs where
+they viewed, smelt and felt the different samples displayed. They were also
+given a quiz to test their understanding of the different herbs. A sample of
+banana leaf with dishes that include different tastes were also displayed. Through
+this programme, students did appreciate the experience of the ancient eating
+habit on banana leaves and the use of herbs in Indian food preparation and thus
+would be able to share this knowledge with their families and siblings. An essay
+and poetry writing competition was also held as part of the Mother Tongue
+Fortnight activities.</span></p><p class=""><span class=""><img src="../../qql/slot/u152/Life%40JPJC/Mother%20Tongue%20Fortnight%202019/MTF7.jpg" hspace="2" width="100%" alt="MTF7.jpg" class="ive_eobj_center" style="width: 762px; height: 508px;"></span></p><p class=""><span class=""></span></p><p class="MsoNormal" align="center" style="margin-top:3.0pt;margin-right:0in;
+margin-bottom:3.0pt;margin-left:0in;text-align:center"><span lang="EN-SG"><span style="background-color: initial; font-size: 1em; text-align: left;">Students
+looking a sample of dishes on a banana leaf and the traditional</span>&nbsp;</span></p><p class="MsoNormal" align="center" style="margin-top:3.0pt;margin-right:0in;
+margin-bottom:3.0pt;margin-left:0in;text-align:center"><span lang="EN-SG"><br></span></p><p class="MsoNormal" style="margin-top:3.0pt;margin-right:0in;margin-bottom:3.0pt;
+margin-left:0in;text-align:justify;text-justify:inter-ideograph"><span style="mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:black;mso-ansi-language:EN-US"><o:p></o:p></span></p></div>
+  
+
+
+
+</div>
+
+
+      
+<div id="_ptoo_block_start" style="font-size:1px;border:1px solid transparent"></div>
+
+<div id="_ptoo_PTOID" class="pageblock_box " style="display:none">
+    <div id="_ptod_PTOID" class="ive_editable ive_ptod ive_content"></div>
+</div>
+
+          </div>
+    <div class="bottom"></div>
+  </div>
+
+  <div class="sidebar_area">
+    <div class="top"></div>
+    <div class="mid">
+        <div class="sidebar0_box"><div id="_ptosb0_2654" class="ive_content"></div></div>
+      
+
+
+
+
+
+
+
+
+
+
+
+      	<div class="subpages_box">
+    <ul>
+     
+        
+  <li id="_ptsp_4166" >
+    <a href="jpjc-student-selected-for-singapore-combined-schools-u18-squad.html">JPJC Student Selected for Singapore Combined Schools U18 Squad  </a>  </li>
+       
+        
+  <li id="_ptsp_4153" >
+    <a href="humanities-interest-programme.html">Humanities Interest Programme</a>  </li>
+       
+        
+  <li id="_ptsp_4167" >
+    <a href="mother-tongue-languages-chinese-language-cultural-immersion-trip.html">Mother Tongue Languages (Chinese Language) Cultural Immersion Trip</a>  </li>
+       
+        
+  <li id="_ptsp_4107" >
+    <a href="a-star-science-award-jc.html">A*STAR Science Award (JC)</a>  </li>
+       
+        
+  <li id="_ptsp_4108" >
+    <a href="renaming-of-houses.html">Renaming of Houses</a>  </li>
+       
+        
+  <li id="_ptsp_4109" >
+    <a href="farewell-assembly-2019.html">Farewell Assembly 2019</a>  </li>
+       
+        
+  <li id="_ptsp_4105" >
+    <a href="teachers-day-dinner.html">Teachers’ Day Dinner</a>  </li>
+       
+        
+  <li id="_ptsp_3081" >
+    <a href="literature-symposium.html">Literature Symposium</a>  </li>
+       
+        
+  <li id="_ptsp_4106" >
+    <a href="aogs-eos-geoscience-challenge-2019.html">AOGS-EOS Geoscience Challenge 2019</a>  </li>
+       
+        
+  <li id="_ptsp_3082" >
+    <a href="jc2-sg-perspectives-engagement-session-2019.html">JC2 SG Perspectives Engagement Session 2019</a>  </li>
+       
+        
+  <li id="_ptsp_3083" >
+    <a href="jpjc-stem-day.html">JPJC STEM Day</a>  </li>
+       
+        
+  <li id="_ptsp_2971" >
+    <a href="jpjc-maths-and-science-challenge-2019.html">JPJC Maths and Science Challenge 2019</a>  </li>
+       
+        
+  <li id="_ptsp_2974" >
+    <a href="past-vs-present-homecoming-games-2019.html">Past vs. Present Homecoming Games 2019</a>  </li>
+       
+        
+  <li id="_ptsp_2970" >
+    <a href="jurong-spring-family-day-walk-2019.html">Jurong Spring Family Day Walk 2019</a>  </li>
+       
+        
+  <li id="_ptsp_2972" >
+    <a href="world-scholar-s-cup-beijing-global-round-2019.html">World Scholar’s Cup Beijing Global Round 2019 </a>  </li>
+       
+        
+  <li id="_ptsp_2973" >
+    <a href="leadership-training-camp-at-yuhua.html">Leadership Training Camp @ Yuhua</a>  </li>
+       
+        
+  <li id="_ptsp_2975" >
+    <a href="leadership-training-camp-at-keat-hong.html">Leadership Training Camp @ Keat Hong</a>  </li>
+       
+        
+  <li id="_ptsp_2653" >
+    <a href="mlep-graduation-showcase-2019.html">MLEP Graduation Showcase 2019</a>  </li>
+      
+    <!-- myself -->
+        <li id="_ptsp_2654"><b>Mother Tongue Fortnight 2019</b></li>
+      
+  <!-- subpages -->
+  <ul class="mysubpages_">
+      </ul>
+  <!-- end subpages -->
+
+       
+        
+  <li id="_ptsp_2597" >
+    <a href="mlep-translation-workshop-conducted-by-berita-mediacorp.html">MLEP Translation Workshop Conducted by Berita Mediacorp</a>  </li>
+       
+        
+  <li id="_ptsp_2625" >
+    <a href="service-learning-festival.html">Service Learning Festival</a>  </li>
+       
+        
+  <li id="_ptsp_2626" >
+    <a href="jpjc-parent-support-group-psg-get-to-know-session.html">JPJC Parent Support Group (PSG) Get-To-Know Session</a>  </li>
+       
+        
+  <li id="_ptsp_2599" >
+    <a href="the-jp-spotlight.html">The JP Spotlight</a>  </li>
+       
+           
+        
+  <li id="_ptsp_2600" >
+    <a href="wsc-2019-regional-round.html">WSC 2019 Regional Round</a>  </li>
+       
+        
+  <li id="_ptsp_2655" >
+    <a href="national-olympiad-in-informatics.html">National Olympiad in Informatics</a>  </li>
+       
+        
+  <li id="_ptsp_2656" >
+    <a href="national-coding-championship-2019.html">National Coding Championship 2019</a>  </li>
+       
+        
+  <li id="_ptsp_2547" >
+    <a href="annual-road-run-2019.html">Annual Road Run 2019</a>  </li>
+       
+        
+  <li id="_ptsp_2558" >
+    <a href="koishikawa-visits-jpjc-2019.html">Koishikawa Visits JPJC 2019</a>  </li>
+       
+        
+  <li id="_ptsp_2555" >
+    <a href="cca-discovery-day-2019.html">CCA Discovery Day 2019</a>  </li>
+       
+        
+  <li id="_ptsp_2556" >
+    <a href="chinese-new-year-celebration-2019.html">Chinese New Year celebration 2019</a>  </li>
+       
+        
+  <li id="_ptsp_2548" >
+    <a href="open-house-2019.html">Open House 2019</a>  </li>
+       
+        
+  <li id="_ptsp_2557" >
+    <a href="the-singapore-chemistry-olympiad.html">The Singapore Chemistry Olympiad</a>  </li>
+        </ul>
+  
+</div>
+              <div class="sidebar1_box"><div id="_ptosb1_2654" class="ive_content"></div></div>
+    </div>
+    <div class="bottom"></div>
+  </div>
+
+  <div class="footer_area"> 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+  <div class="copyright">
+		© 2020 Jurong Pioneer Junior College.&nbsp;<span>All Rights Reserved.</span>		
+  </div>
+  <div class="links">
+		<ul>
+		<li><a href="https://www.tech.gov.sg/report_vulnerability" target="_blank">Report Vulnerability</a></li>
+		<li><a href="../../contact-us/contact-us.html" target="">Contact Us</a></li>
+		</ul>
+  </div>	
+</footer></div>
+
+</div>
+</div>
+  </div>
+</div>
+<!-- pagetree/a1/default_view.html -->
+</div>
+
+
+
+</body>
+
+<!-- Mirrored from jpjc.moe.edu.sg/life-at-jpjc-1/2019-events/mother-tongue-fortnight-2019 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 Nov 2020 12:53:07 GMT -->
+</html>
