@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+
+<!-- Mirrored from jpjc.moe.edu.sg/partnerships/jpjc-alumni by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 Nov 2020 10:14:29 GMT -->
+<head>
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+<title>JPJC Alumni</title>
+
+<link rel="shortcut icon" href="../qql/slot/u152/nstyle/favicon1.png"/>
+
+ 
+ 
+
+<link rel="stylesheet" type="text/css" href="../skin/qql/base.css">
+<link rel="stylesheet" type="text/css" href="../rs/css/ct-factor.css">
+
+<link rel="stylesheet" type="text/css" id="main_css" href="../qql/style/152_002/main.css?1597405381"> 
+
+<script type="text/javascript" src="../site/ctx/js/menu.js"></script>
+<script type="text/javascript" src="../site/ctx/jquery/jquery.js"></script>
+<script type="text/javascript" src="../site/ctx/jquery/easing.js"></script>
+<script type="text/javascript" src="../site/ctx/jquery/ctjq.js"></script>
+<link rel="stylesheet" type="text/css" href="../site/ctx/jquery/ctjq.css">
+
+
+<script type="text/javascript">
+function get_idnum(a){ return parseInt(a.substr(a.lastIndexOf("_")+1,20)); }
+</script>
+
+
+<link rel="stylesheet" type="text/css" href="../skin/qql/menu.css">
+
+
+<script>
+// non-admin vars
+if (typeof ive_settings=='undefined') {
+  ive_settings={};
+  ive_settings.ptid=706;
+  ive_settings.url={
+    _head: '/cos/o.x?c=/qql/',
+    skin_path:'/skin/qql/' 
+  };
+  ive_settings.user={ fname: '', _id: '' , email:''};
+}
+</script>
+
+<!-- server extra head -->
+
+<!-- site extra head -->
+<meta name="viewport" content="width=device-width" />
+<script src="../../assets.wogaa.sg/scripts/wogaa.js"></script>
+<script type="text/javascript">
+$(function(){		
+  $(".sidebar_area").insertAfter($(".content_area .mid:first"));
+	
+	if ($(".subpages_box UL UL.mysubpages_").length>0) {
+		var prev = $(".subpages_box UL UL.mysubpages_").prev();
+		$(prev).append($(".subpages_box UL UL.mysubpages_"));
+	}
+	
+  if ((!$("BODY").hasClass("pagelevel-1")) && ($(".path_box").length>0)) {
+		var pb = $(".path_box").html().split("&gt;");    
+    if (pb.length>0) {
+      var newpb = "<span>"+pb[0]+"</span>";
+      for (var i=1; i<pb.length; i++) {
+        newpb = newpb + "> <span>"+pb[i]+"</span>";          
+      }
+			$(".path_box").html(newpb);
+    }
+		$(".content_area > .top").append($(".path_box"));
+		
+		var par = pb[1];
+		if (pb.length>2) {
+			par = pb[pb.length-2];				
+		}
+			
+		$(".masthead2_area").html('<span class="subtitle">'+par+'</span><span class="leftt"></span><span class="rightt"></span>');
+		$(".masthead2_area .subtitle").html($(".subtitle").text());		
+		
+		if ($(".pagecontent_box H1").length>0) {
+			$(".content_area > .top").append("<h1>"+$(".pagecontent_box H1:first").text()+"</h1>");
+		}
+	} else {
+		$(".sidebar_area").remove();		
+	}
+	
+  $("#menu").click(function(){
+    $("#netcontent").toggleClass("show");
+    return false;
+  });  
+	
+	$("#search").click(function(){
+    $("#netcontent").toggleClass("showsearch");
+    return false;
+  });  
+	
+  $(".sitemenu_area a.sitemenu").each(function(){
+		if ($(this).closest("LI").find("table.dropmenu").length>0) {
+			$(this).closest("LI").addClass("hasdm");
+		}
+  });
+  	
+  $(".sitemenu_area a.sitemenu").on("click", function(){
+    var par = $(this).closest("LI");
+    if ($(par).find("table.dropmenu").length>0) {
+      if ((!$(par).hasClass("active")) && ($("#netcontent").hasClass("show"))) {
+        $(".sitemenu_area LI").removeClass("active");
+				$(par).addClass("active");
+				
+				$(".main_area").addClass("showdropmenu");
+        return false;
+      }
+    }
+  });
+	
+});
+
+$.fn.is_on_screen = function(){
+  var win = $(window);
+  var viewport = {
+    top : win.scrollTop()-100,
+	  left : win.scrollLeft()
+  };
+  viewport.right = viewport.left + win.width();
+	viewport.bottom = viewport.top + win.height();
+
+	var bounds = this.offset();
+	bounds.right = bounds.left + this.outerWidth();
+	bounds.bottom = bounds.top + this.outerHeight();
+
+	return (!(viewport.right < bounds.left || viewport.left > bounds.right || viewport.bottom < bounds.top || viewport.top > bounds.bottom));
+};
+</script>
+<!-- page extra head -->
+ 
+<!-- END all extra head -->
+
+<script>
+
+if (typeof(coto)=='undefined') coto={ ive: { } };
+if (!coto.ive.Controller) coto.ive.Controller = function() { };
+
+coto.ive.Controller.prototype.build=function(dom,opts){
+  if (typeof(dom)=='function') return this.build_func=dom;
+  this.dom=dom;
+  if (!(this.options=$(this.dom).data('widget_options'))) this.options={ };
+  if (!(this.idata=$(this.dom).data('idata'))) this.idata={ };
+  this.idata.controller=this;
+  this.build_func.call(this,opts);
+  $(dom).data('widget_options',this.options);
+  $(dom).data('idata',this.idata);
+};
+coto.controllers={ }; // controllers list
+function ive_controller(wtype) {
+  return coto.controllers[wtype]||(coto.controllers[wtype]=new coto.ive.Controller());
+}
+
+ive_tunings={ };
+function ive_tuning(cat) { return ive_tunings[cat]||(ive_tunings[cat]={ }); }
+
+// ----- DROPMENU -----
+$(function() {
+
+
+
+
+
+
+
+  // old menu.js
+  $('.sitemenu_area ul.sitemenu li, .dropmenu a').bind('mouseover mouseleave',function(ev) {
+    var menuid='dropmenu_'+get_idnum(this.id),$menu=$('#'+menuid);
+    var isenter=(ev.type=='mouseover'||ev.type=='mouseenter');
+    ctmenu[isenter?'show':'hide'](menuid,this,$menu.hasClass('drop_right_')?'right':'bottom');
+  });
+});
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="PTP499 PTP626 pagelevel-3" >
+
+<div id="netcontent"><div id="lo_whole" class="layout-default">
+  <div id="lo_panel">
+    <div id="lo_main"><div class="main_area">
+
+  <div class="masthead_area"><header>
+  <a id="logo" href="../index.html">Jurong Pioneer Junior College
+  </a>
+  <div id="search">Search
+  </div>	
+  <div id="menu">
+    <button type="button" class="hamburger">
+      <span class="hamb-top">
+      </span>
+      <span class="hamb-middle">
+      </span>
+      <span class="hamb-bottom">
+      </span>
+    </button>	
+  </div>
+</header>
+<div class="searchbox">
+  <form method="post" action="https://jpjc.moe.edu.sg/others/search&amp;func=search">
+    <input type="text" id="search_str" name="search_str" value="" placeholder="Search...">			
+  </form>
+</div> 	
+</div>
+<div class="sitemenu_area"><ul class="sitemenu">
+    <li id="PTID_499" class="PTSN_home first-item   "><a 
+    href="../index.html" 
+
+
+    class="sitemenu"        >Home</a></li>
+    <li id="PTID_595" class="PTSN_about-jpjc    "><a 
+    href="../about-jpjc.html" 
+
+
+    class="sitemenu"        >About&nbsp;JPJC</a><table role="presentation" id="dropmenu_595" class="dropmenu ">
+   
+        <tr class="lineEven ">
+      <td class="dmtrig" id="dmtrig_638">
+	<a id="subitem_638"
+	  href="../about-jpjc/principals-message.html"
+
+	  	
+	    ><span id="_ptmt_638">Principal&#039;s Message</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineOdd ">
+      <td class="dmtrig" id="dmtrig_2698">
+	<a id="subitem_2698"
+	  href="../about-jpjc/college-identity.html"
+
+	  	
+	    ><span id="_ptmt_2698">College Identity</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineEven ">
+      <td class="dmtrig" id="dmtrig_639">
+	<a id="subitem_639"
+	  href="../about-jpjc/organisation-chart.html"
+
+	  	
+	    ><span id="_ptmt_639">Organisation Chart</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineOdd ">
+      <td class="dmtrig" id="dmtrig_640">
+	<a id="subitem_640"
+	  href="../about-jpjc/college-calendar.html"
+
+	  	
+	    ><span id="_ptmt_640">College Calendar</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineEven ">
+      <td class="dmtrig" id="dmtrig_6203">
+	<a id="subitem_6203"
+	  href="../about-jpjc/subject-combination.html"
+
+	  	
+	    ><span id="_ptmt_6203">Subject Combination</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineOdd ">
+      <td class="dmtrig" id="dmtrig_1904">
+	<a id="subitem_1904"
+	  href="../about-jpjc/admission-matters.html"
+
+	  	
+	    ><span id="_ptmt_1904">Admission Matters</span></a>      	 
+	  </td>
+    </tr>
+   
+   
+        <tr class="lineEven ">
+      <td class="dmtrig" id="dmtrig_2486">
+	<a id="subitem_2486"
+	  href="../about-jpjc/financial-assistance-scheme.html"
+
+	  	
+	    ><span id="_ptmt_2486">Financial Assistance Scheme</span></a>      	 
+	  </td>
+    </tr>
+   
+   
+  </table>
+</li>
+    <li id="PTID_3988" class="PTSN_jpjc-experience    "><a 
+    href="../jpjc-experience/total-curriculum-framework.html" 
+
+
+    class="sitemenu"        >JPJC&nbsp;Experience</a><table role="presentation" id="dropmenu_3988" class="dropmenu ">
+   
+        <tr class="lineOdd ">
+      <td class="dmtrig" id="dmtrig_3989">
+	<a id="subitem_3989"
+	  href="../jpjc-experience/total-curriculum-framework.html"
+
+	  	
+	    ><span id="_ptmt_3989">Total Curriculum Framework</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineEven ">
+      <td class="dmtrig" id="dmtrig_4019">
+	<a id="subitem_4019"
+	  href="../jpjc-experience/curriculum/humanities-n-the-arts.html"
+
+	  	
+	    ><span id="_ptmt_4019">Curriculum</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineOdd ">
+      <td class="dmtrig" id="dmtrig_3991">
+	<a id="subitem_3991"
+	  href="../jpjc-experience/co-curriculum.html"
+
+	  	
+	    ><span id="_ptmt_3991">Co-Curriculum</span></a>      	 
+	  </td>
+    </tr>
+  </table>
+</li>
+    <li id="PTID_2545" class="PTSN_life-@-jpjc    "><a 
+    href="../life-at-jpjc-1.html" 
+
+
+    class="sitemenu"        >Life&nbsp;@&nbsp;JPJC</a><table role="presentation" id="dropmenu_2545" class="dropmenu ">
+   
+        <tr class="lineEven ">
+      <td class="dmtrig" id="dmtrig_2546">
+	<a id="subitem_2546"
+	  href="../life-at-jpjc-1/2019-events.html"
+
+	  	
+	    ><span id="_ptmt_2546">2019 Events</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineOdd ">
+      <td class="dmtrig" id="dmtrig_4103">
+	<a id="subitem_4103"
+	  href="../life-at-jpjc-1/2020-events.html"
+
+	  	
+	    ><span id="_ptmt_4103">2020 Events</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineEven ">
+      <td class="dmtrig" id="dmtrig_6269">
+	<a id="subitem_6269"
+	  href="../life-at-jpjc-1/publications.html"
+
+	  	
+	    ><span id="_ptmt_6269">Publications</span></a>      	 
+	  </td>
+    </tr>
+  </table>
+</li>
+    <li id="PTID_4077" class="PTSN_general    "><a 
+    href="../general.html" 
+
+
+    class="sitemenu"        >General</a></li>
+    <li id="PTID_626" class="PTSN_partnerships  focus  "><a 
+    href="college-advisory-board.html" 
+
+
+    class="sitemenu sitemenulit"        >Partnerships</a><table role="presentation" id="dropmenu_626" class="dropmenu ">
+   
+        <tr class="lineOdd ">
+      <td class="dmtrig" id="dmtrig_704">
+	<a id="subitem_704"
+	  href="college-advisory-board.html"
+
+	  	
+	    ><span id="_ptmt_704">College Advisory Board</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineEven ">
+      <td class="dmtrig" id="dmtrig_705">
+	<a id="subitem_705"
+	  href="parent-support-group.html"
+
+	  	
+	    ><span id="_ptmt_705">Parent Support Group</span></a>      	 
+	  </td>
+    </tr>
+   
+        <tr class="lineOdd ">
+      <td class="dmtrig" id="dmtrig_706">
+	<a id="subitem_706"
+	  href="jpjc-alumni.html"
+
+	  	
+	    ><span id="_ptmt_706">JPJC Alumni</span></a>      	 
+	  </td>
+    </tr>
+  </table>
+</li>
+  </ul>
+</div>
+  <div class="masthead2_area"></div>
+
+  <div class="content_area">
+    <div class="top"></div>
+    <div class="mid">
+            <div class="path_box">
+<a class='path' href='../index.html'>Home</a> &gt;
+Partnerships &gt;
+JPJC Alumni 
+</div>
+  
+       
+
+<div class="pagecontent_box">
+  <div class="tools_box">
+    </div>
+  
+    <h1 id="_ptoh_706" class="ive_editable">JPJC Alumni</h1>
+      
+    
+        <div class='description ive_editable ive_ptod ive_content' id='_ptod_706'><p class="" style="text-align: justify;"><span class="">The declining birth rate in Singapore and a corresponding decline in students entering post-secondary institutions has led to the merger of Jurong Junior College and Pioneer Junior College. This is to ensure that each JC can continue to provide a wide range of learning programmes and experiences for its students. The newly merged college was named Jurong Pioneer Junior College in 2018 to build upon the identities and strengths of both colleges. The alumni of both colleges will come together, working in partnership with the college to&nbsp;</span><span class="">support the learning as well as development of our students.</span><span class=""></span></p><p class="" style="text-align: justify;"><br></p><p class="" style="text-align: justify;"><b class=""><u class=""><span class="">Reconnect with us</span></u></b></p><p class="" style="text-align: justify;"><span class="">For JJ and PJ alumni who wishes to reconnect with their ex-college mates and teachers, please refer to the following social media platform:</span><span class=""></span></p><p class="" style="text-align: justify;"><span class="">Jurong Junior College: https://www.facebook.com/JJAlumni/</span><span class=""></span></p><p class="" style="text-align: justify;"><span class="">Pioneer Junior College: https://www.facebook.com/PioneerAlumniCircle/</span><span class=""></span></p><p class="" style="text-align: justify;"><span class="">The college will be making announcements regarding the formation of JPJC Alumni soon, please watch this space.</span><span class=""></span></p><p class="" style="text-align: justify;"><span class=""><br></span></p><p class="" style="text-align: justify;"><b class=""><u class=""><span class="">Contributions</span></u></b><b class=""><u class=""><span class=""></span></u></b></p><p class="" style="text-align: justify;"><span class="">Many of JJ and PJ alumni, given their rich experience gained from varsity life and work experiences, would be a valuable resource to the college. Alumni can contribute in a great variety of ways, for example:</span><span class=""></span></p><ul type="disc" class=""><ul><li class="" style="text-align: justify;"><b class="">Further Education and Career Guidance:&nbsp;</b><span class="">Providing advice regarding university education and career guidance in terms of providing Industries Insights / Work Attachment Opportunities / Learning Journeys to corporations for our students.</span></li><li class="" style="text-align: justify;"><b class="">Volunteering Opportunities:&nbsp;</b><span class="">Creating platforms for our students to organise VIA-related programmes so as to play a part to contribute to the community.</span></li><li class="" style="text-align: justify;"><b class="">Speaker’s Series:&nbsp;</b><span class="">Establishing networks, through sharing of life experiences to motivate our students and providing further education and career guidance.</span></li></ul></ul><p class="" style="text-align: justify;"><span class="">Please contact Ms Low Mei Xiu at&nbsp;</span><span class=""><a href="mailto:mei_xiu_low@moe.edu.sg" class="">mei_xiu_low@moe.edu.sg</a></span><span class="">&nbsp;if you wish to contribute to JPJC.</span></p></div>
+  
+
+
+
+</div>
+
+
+      
+<div id="_ptoo_block_start" style="font-size:1px;border:1px solid transparent"></div>
+
+<div id="_ptoo_PTOID" class="pageblock_box " style="display:none">
+    <div id="_ptod_PTOID" class="ive_editable ive_ptod ive_content"></div>
+</div>
+
+  <div id="_ptoo_4055" class="pageblock_box " >
+    <h2 id="_ptoh_4055" class="ive_editable ive_ptoh">Past Activities</h2>
+    <div id="_ptod_4055" class="ive_editable ive_ptod ive_content"><div style="text-align: justify;"><span style="font-weight: 700; text-decoration-line: underline;"><br></span></div><u class="" style="background-color: initial; font-size: 1em;"><div style="text-align: justify;"><u class="" style="background-color: initial; font-size: 1em;"><span class=""><b>Alumni Breakfast Series</b></span></u></div></u><p class="" style="text-align: justify; line-height: 22.4px;"><span class="">The Alumni Breakfast Series is conducted on selected Thursday morning, it provides a platform for established alumni from a wide variety of fields to share their career and life experiences with their juniors. Students are able to benefit greatly through these networking sessions, which allowed for more personal and candid conversations. Alumni’s stories of resilience and triumph have resonated with the students. Participants of Alumni Breakfast Series then go on to share these insights with the rest of the college during morning assembly so as benefit the rest of the cohort.</span><span class=""></span></p><p class="" style="text-align: justify; line-height: 22.4px;"><span class="">In 2018, we were privileged to have alumni from various disciplines including research and academia, marine insurance, cloud computing, designing and marketing who give back to their alma mater and generously share their experiences with their juniors. We are honoured to have had the following alumni grace this series:-.<br><br></span><span class=""></span></p><p class="" style="line-height: 22.4px;"></p><ol><ol><li><span class="">Lim Yee Hwee (Scientist at Institute of Chemical and Engineering Services)</span></li><li><span class="">Lay-Hui Lim (</span><span class="">Head of Marine &amp; Art Asia</span><span class="">&nbsp;at Helvetia Swiss)Part</span></li><li><span class="">Vincent Choy (</span><span class="">Cloud Consultant for Office365 at&nbsp;</span><span class="">Fedelis Sdn Bhd)<br></span></li><li><span class="">Randy Chen (Principal at Zarch Collaboratives)</span></li><li><span class="">Ang Jun Ting (Business Owner of Hai Sia Seafood) and Melvin Sim (Head of Marketing &amp; Communications of Hai Sia Seafood)</span></li></ol></ol><span class=""><br class=""></span><span class=""></span><p></p><p class="" style="line-height: 22.4px; text-align: center;"><img src="../qql/slot/u152/Partnerships/Allumni/Allumni_JPJC_1.jpg" hspace="2" alt="Allumni_JPJC_1.jpg" class="ive_eobj_center"><font size="2">Dr Lim Yee Hwee talking to a group of students after her sharing session<br></font><br></p><p class="" style="line-height: 22.4px;"></p><p class="" style="line-height: 22.4px; text-align: center;"><b class=""><img src="../qql/slot/u152/Partnerships/Allumni/Allumni_JPJC_2.jpg" hspace="2" alt="Allumni_JPJC_2.jpg" class="ive_eobj_center" style="width: 600px; height: 478px;"></b><font size="2">Question and Answer session with Ms Lay-Hui Lim<br></font><b class=""><br></b></p><p class="" align="center" style="line-height: 22.4px;"><img src="../qql/slot/u152/Partnerships/Allumni/Allumni_JPJC_3.jpg" hspace="2" alt="Allumni_JPJC_3.jpg" class="ive_eobj_center" style="background-color: initial; text-align: left;"></p><div style="text-align: center;"><span style="background-color: initial;"><font size="2">Mr Randy talking to a group of student during breakfast time<br><br></font></span></div><p class="" style="line-height: 22.4px;"><span class=""></span><img src="../qql/slot/u152/Partnerships/Allumni/Allumni_JPJC_4.jpg" hspace="2" alt="Allumni_JPJC_4.jpg" class="ive_eobj_center" style="text-align: center;"></p><div style="text-align: center;"><span style="background-color: initial;"><font size="2">Group photo with Mr Ang Jun Ting and Mr Melvin Sim to conclude the session.</font></span></div></div>
+</div>
+  <div id="_ptoo_4056" class="pageblock_box " >
+    <h2 id="_ptoh_4056" class="ive_editable ive_ptoh">Homecoming Events</h2>
+    <div id="_ptod_4056" class="ive_editable ive_ptod ive_content"><p class="" style="line-height: 22.4px;"></p><span class=""><div style="text-align: justify;"><div style="text-align: center;"><span style="background-color: initial;">Over the past few years, we have welcomed home many batches of alumni, together with their loved ones for various home-coming events held in both colleges. Many who turned up brought their yearbooks and old photos along and managed to reconnect with ex- college mates and teachers, recounting the good old days spent in the college campus. Couples who had first met in the college were also reminiscing their love stories that had blossomed. Early birds received commemorative photo holders which they could fill with memories made that day while others purchase other memorabilia. Photo booths with different thematic backdrops were set up around the college for all to take a nice memento back home. It was a truly heart-warming moment for all who were present. It was indeed heartening to receive such massive show of support for the events!</span></div><span style="background-color: initial;"><br></span></div></span><span class=""></span><p class="" style="line-height: 22.4px;"></p><p class="" align="center" style="line-height: 22.4px;"></p><img src="../qql/slot/u152/Partnerships/Allumni/Allumni_JPJC_5.jpg" hspace="2" alt="Allumni_JPJC_5.jpg" class="ive_eobj_center" style="text-align: center; "><div style="text-align: center;"><span style="background-color: initial;"><font size="2">Group photo of alumni from the 1980s at the concourse area</font></span></div><p class="" style="line-height: 22.4px;"></p><p class="" style="line-height: 22.4px; text-align: center;"><b class=""><img src="../qql/slot/u152/Partnerships/Allumni/Allumni_JPJC_6.jpg" hspace="2" alt="Allumni_JPJC_6.jpg" class="ive_eobj_center"></b><font size="2">Curtain Call: Our Final Homecoming</font></p><p class="" align="center" style="line-height: 22.4px;"><img src="../qql/slot/u152/Partnerships/Allumni/Allumni_JPJC_7.jpg" hspace="2" alt="Allumni_JPJC_7.jpg" class="ive_eobj_center" style="width: 497px; height: 331px;"><font size="2">Class of 1982 Reunion Lunch</font><br></p></div>
+</div>
+  <div id="_ptoo_4057" class="pageblock_box " >
+    <h2 id="_ptoh_4057" class="ive_editable ive_ptoh">Past VS Present</h2>
+    <div id="_ptod_4057" class="ive_editable ive_ptod ive_content"><p class="" style="text-align: center; line-height: 22.4px;"><span style="background-color: initial; font-size: 1em;">The college also takes pride in the organising of Past VS Present, a line-up of sports pitting alumni against current students. Each year approximately 300 alumni and current students bonded through sports and games in this annual sports meet.</span><br></p><p class="" style="line-height: 22.4px;"><span class=""></span></p><p class="" style="text-align: center; line-height: 22.4px;"><span class="">With the large variety of games on offer, including Touch Rugby, Basketball, Badminton, Captain’s Ball, Floorball, Futsal, Netball, Ultimate Frisbee and Volleyball, there was something for everyone as ex-students from past batches forged strong ties with their juniors and enjoyed a day of reminiscence.</span><span class=""></span></p><p class="" style="line-height: 22.4px;"><span class=""></span></p><p class="" style="line-height: 22.4px;"></p><p class="" style="line-height: 22.4px; text-align: center;"><b class=""><img src="../qql/slot/u152/Partnerships/Allumni/Allumni_JPJC_8.jpg" hspace="2" alt="Allumni_JPJC_8.jpg" class="ive_eobj_center"></b><font size="2">A group of alumni and students playing Captain’s Ball</font><b class=""><br></b></p><p align="center" class="" style="line-height: 22.4px;"><b class=""><img src="../qql/slot/u152/Partnerships/Allumni/Allumni_JPJC_9.jpg" hspace="2" alt="Allumni_JPJC_9.jpg" class="ive_eobj_center"></b><font size="2"> Alumni and students playing Frisbee</font><b class=""><br></b></p><p align="center" class="" style="line-height: 22.4px;"><img src="../qql/slot/u152/Partnerships/Allumni/Allumni_JPJC_10.jpg" hspace="2" alt="Allumni_JPJC_10.jpg" class="ive_eobj_center" style="background-color: initial;"></p><div style="text-align: center;"><span style="background-color: initial;"><font size="2">Badminton session at the Hall</font></span></div></div>
+</div>
+  <div id="_ptoo_4058" class="pageblock_box " >
+    <h2 id="_ptoh_4058" class="ive_editable ive_ptoh">Alumni Spotlight</h2>
+    <div id="_ptod_4058" class="ive_editable ive_ptod ive_content"><p class="" style="line-height: 22.4px;"><u class="" style="background-color: initial; font-size: 1em;"><span class=""><b>Public Service</b></span></u><br></p><p class="" style="line-height: 22.4px;"><span class=""><b>Mr Ang Hin Kee<br></b></span><span style="background-color: initial; font-size: 1em;">Member of Parliament for the Ang Mo Kio Group Representation Constituency</span></p><p class="" style="line-height: 22.4px;"><span class="" style="background-color: initial; font-size: 1em;"><b>Mr Pritam Singh<br></b></span><span class="" style="background-color: initial; font-size: 1em;">Member of Parliament for&nbsp;</span><span class="" style="background-color: initial; font-size: 1em;">Aljunied Group Representation Constituency</span></p><p class="" style="line-height: 22.4px;"><span class=""></span></p><p class="" style="line-height: 22.4px;"><b class="" style="background-color: initial; font-size: 1em;">Mr Tung Siew Hoong<br></b><span style="background-color: initial; font-size: 1em;">Managing Director (Fixed Income) at Government Investment Corporation</span></p><p class="" style="line-height: 22.4px;"><span class=""></span></p><p class="" style="line-height: 22.4px;"><b class="" style="background-color: initial; font-size: 1em;">Prof Pey Kin Leong<br></b><span style="background-color: initial; font-size: 1em;">Associate Provost, Undergraduate Studies &amp; SUTD Academy&nbsp;</span></p><p class="" style="line-height: 22.4px;"><span class=""></span></p><p class="" style="line-height: 22.4px;"><b class="" style="background-color: initial; font-size: 1em;">Ms Tricia Seow<br></b><span style="background-color: initial; font-size: 1em;">Senior Lecturer at National Institute of Education</span></p><p class="" style="line-height: 22.4px;"><span class=""></span></p><p class="" style="line-height: 22.4px;"><b class="" style="background-color: initial; font-size: 1em;">Mr Koh Hong Wee<br></b><span style="background-color: initial; font-size: 1em;">Senior Lecturer at Singapore Polytechnic</span></p><p class="" style="line-height: 22.4px;"><span class=""></span></p><p class="" style="line-height: 22.4px;"><b class="" style="background-color: initial; font-size: 1em;">Nr Ng Swee Hoe<br></b><span style="background-color: initial; font-size: 1em;">F-16 Fighter Pilot at Republic of Singapore Air Force</span></p><p class="" style="line-height: 22.4px;"><span class=""></span></p><p class="" style="line-height: 22.4px;"><u class=""><span class=""><b><br></b></span></u></p><p class="" style="line-height: 22.4px;"><u class=""><span class=""><b>Business, Banking and Finance</b></span></u><u class=""><span class=""></span></u></p><p class="" style="line-height: 22.4px;"><b class="">Ms Carmen Lee (Class of 1982)<br></b><span style="background-color: initial; font-size: 1em;">Head of Research at OCBC Investment Research</span></p><p class="" style="line-height: 22.4px;"><span class=""></span></p><p class="" style="line-height: 22.4px;"><br></p><p class="" style="line-height: 22.4px;"><u class=""><span class=""><b>Law</b></span></u><u class=""><span class=""></span></u></p><p class="" style="line-height: 22.4px;"><span class=""><b>Mr Tan Chong Huat<u><br></u></b></span><span style="background-color: initial; font-size: 1em;">Senior Partner and founding member of RHTLAW Taylor Wessing</span></p><p class="" style="line-height: 22.4px;"><b class="" style="background-color: initial; font-size: 1em;">Mr Noh Bin Abd Hamid<br></b><span style="background-color: initial; font-size: 1em;">Lawyer at Just Law LLC</span></p><p class="" style="line-height: 22.4px;"><b class="" style="background-color: initial; font-size: 1em;">Mr Ian Ong<br></b><span style="background-color: initial; font-size: 1em;">Lawyer at Allen &amp; Overy</span></p><p class="" style="line-height: 22.4px;"><u class="" style="background-color: initial; font-size: 1em;"><span class=""><br></span></u></p><p class="" style="line-height: 22.4px;"><u class="" style="background-color: initial; font-size: 1em;"><span class=""><b>STEM-related field</b></span></u><br></p><p class="" style="line-height: 22.4px;"><span class=""><b>Dr Lim Yee Hwee<br></b></span><span style="background-color: initial; font-size: 1em;">Scientist at Institute of Chemical and Engineering Sciences, A*Star<br></span><span style="background-color: initial; font-size: 1em;">Adjunct Assistant Professor at NTU Lee Kong Chian School of Medicine</span></p><p class="" style="line-height: 22.4px;"><span class=""></span></p><p class="" style="line-height: 22.4px;"><b class="" style="background-color: initial; font-size: 1em;">Mr Daniel Tay<br></b><span style="background-color: initial; font-size: 1em;">Head of Industry Development Group at A*Star</span></p><p class="" style="line-height: 22.4px;"><span class=""></span></p><p class="" style="line-height: 22.4px;"><b class="" style="background-color: initial; font-size: 1em;">Dr Vincent Choy<br></b><span style="background-color: initial; font-size: 1em;">Cloud Consultant for Microsoft Cloud Technology</span></p><p class="" style="line-height: 22.4px;"><span class=""></span></p><p class="" style="line-height: 22.4px;"><b class="" style="background-color: initial; font-size: 1em;">Dr Goh Han Lin<br></b><span style="background-color: initial; font-size: 1em;">Artificial Intelligence Research Scientist at Apple Inc</span></p><p class="" style="line-height: 22.4px;"><span class=""></span></p><p class="" style="line-height: 22.4px;"><br></p><p class="" style="line-height: 22.4px;"><u class=""><span class=""><b>Logistics</b></span></u><u class=""><span class=""></span></u></p><p class="" style="line-height: 22.4px;"><b class="" style="background-color: initial; font-size: 1em;">Mr Dean Tan<br></b><span style="background-color: initial; font-size: 1em;">Deputy Director (logistics) at JTC Corporation</span></p><p class="" style="line-height: 22.4px;"><br></p><p class="" style="line-height: 22.4px;"><u class=""><span class=""><b>Arts, Music and Media</b></span></u><u class=""><span class=""></span></u></p><p class="" style="line-height: 22.4px;"><b class="" style="background-color: initial; font-size: 1em;">Mr Desmond Tan<br></b><span style="background-color: initial; font-size: 1em;">Artist at MediaCorp<br></span><span style="background-color: initial; font-size: 1em;">Best Actor at 24</span><sup class="" style="background-color: initial;">th</sup><span style="background-color: initial; font-size: 1em;">&nbsp;Star Awards Ceremony (2018)</span></p><p class="" style="line-height: 22.4px;"><span class=""></span></p><p class="" style="line-height: 22.4px;"><b class="" style="background-color: initial; font-size: 1em;">Mr Chen Jiaming<br></b><span class="" style="background-color: initial; font-size: 1em;">A</span><span class="" style="background-color: initial; font-size: 1em;">cclaimed songwriter&nbsp;and music producer</span></p><p class="" style="line-height: 22.4px;"><b class="" style="background-color: initial; font-size: 1em;">Mr Cai Yiren<br></b><span style="background-color: initial; font-size: 1em;">Founder of TCR Music Station</span></p><p class="" style="line-height: 22.4px;"><span class=""></span></p><p class="" style="line-height: 22.4px;"><b class="" style="background-color: initial; font-size: 1em;">Ms Lim Sheau Wian<br></b><span style="background-color: initial; font-size: 1em;">President of Mus’Art Wind Orchestra&nbsp;</span></p><p class="" style="line-height: 22.4px;"><u class="" style="background-color: initial; font-size: 1em;"><span class=""><br></span></u></p><p class="" style="line-height: 22.4px;"><u class="" style="background-color: initial; font-size: 1em;"><span class=""><b>Business and Entreprenuers</b></span></u><br></p><p class="" style="line-height: 22.4px;"><span class=""><b>Mr Shafie Shamsuddin<br></b></span><span style="background-color: initial; font-size: 1em;">President and Chief Executive Officer at PT Trans Retail Indonesia</span></p><p class="" style="line-height: 22.4px;"><span class=""></span></p><p class="" style="line-height: 22.4px;"><span class="" style="background-color: initial; font-size: 1em;"><b>Mr Roderick Chia<br></b></span><span style="background-color: initial; font-size: 1em;">Founder of rodVENTURE</span></p><p class="" style="line-height: 22.4px;"><span class=""></span></p><p class="" style="line-height: 22.4px;"><span class="" style="background-color: initial; font-size: 1em;"><b>Mr Loo Cheng Chuan &amp; Ms Lee Bee Yee<br></b></span><span style="background-color: initial; font-size: 1em;">Founders of Premiummall</span></p><p class="" style="line-height: 22.4px;"><span class=""></span></p><p class="" style="line-height: 22.4px;"><span class="">&nbsp;</span><span class="" style="background-color: initial; font-size: 1em;"><b>Mr Zhou Wenhan Santhe Militiya<br></b></span><span style="background-color: initial; font-size: 1em;">CEO Smart Walkie Talkie<br></span><span style="background-color: initial; font-size: 1em;">Co-founder of 2359 Media</span></p><p class="" style="line-height: 22.4px;"><span class="" style="background-color: initial; font-size: 1em;"><b>Mr Gary Ong &amp; Mr Johnathan Wong<br></b></span><span style="background-color: initial; font-size: 1em;">Founders of Mr Gentleman and 51 Label</span></p><p class="" style="line-height: 22.4px;"><span class="" style="background-color: initial; font-size: 1em;"><b>Mr Wille Goh<br></b></span><span style="background-color: initial; font-size: 1em;">Founder and Director of Gymkraft</span></p><p class="" style="line-height: 22.4px;"><br></p><p class="" style="line-height: 22.4px;"><u class=""><span class=""><b>Soldier of the Year</b></span></u></p><p class="" style="line-height: 22.4px;"><span class=""><b>Mr Issac Tan Jun Song<br></b></span><span style="background-color: initial; font-size: 1em;">Army NSF of the Year Award (2017)</span></p><p class="" style="line-height: 22.4px;"><span class="">&nbsp;</span></p><p class="" style="line-height: 22.4px;"><u class=""><span class=""><b>Scholarship Holders</b></span></u></p><p class="" style="line-height: 22.4px;"><span class=""><b>Ms Natasha Ann Lum<br></b></span><span style="background-color: initial; font-size: 1em;">President’s Scholar</span></p><p class="" style="line-height: 22.4px;"><b class="" style="background-color: initial; font-size: 1em;">Mr Gary Wong<br></b><span style="background-color: initial; font-size: 1em;">Recipient of Public Service Commission Scholarship (Open)</span></p><p class="" style="line-height: 22.4px;"><span class="" style="background-color: initial; font-size: 1em;"><b>Ms Jacinth Chia<br></b></span><span style="background-color: initial; font-size: 1em;">Recipient of Public Service Commission Scholarship (Local)</span></p><p class="" style="line-height: 22.4px;"><b class="" style="background-color: initial; font-size: 1em;">Mr Kok Khew Fai<br></b><b style="background-color: initial; font-size: 1em;">Bryan Leong</b></p><p class="" style="line-height: 22.4px;"><span style="background-color: initial; font-size: 1em;">Recipient of SAF Merit Scholarship (Overseas)</span></p><p class="" style="line-height: 22.4px;"><b class="" style="background-color: initial; font-size: 1em;">Mr Gan Wei Liang<br></b><span style="background-color: initial; font-size: 1em;">Recipient of A*STAR Undergraduate Scholarship (Overseas)</span></p><p class="" style="line-height: 22.4px;"><b class="" style="background-color: initial; font-size: 1em;">Mr Victor Wan Teng Wei<br></b><span class="" style="background-color: initial; font-size: 1em;"><b>Benedict Koo Wei Sheng<br></b></span><span style="background-color: initial; font-size: 1em;">Recipient of SPRING Executive Development Scholarship (Local)</span></p><p class="" style="line-height: 22.4px;"><b class="" style="background-color: initial; font-size: 1em;">Mr Edwin Ong Jit Guan<br></b><span class="" style="background-color: initial; font-size: 1em;"><b>Mr Toh Yong Sheng<br></b></span><span style="background-color: initial; font-size: 1em;">Recipient of Singapore-Industry Scholarship (Local)</span></p><p class="" style="line-height: 22.4px;"><span class="" style="background-color: initial; font-size: 1em;"><b>Mr Wang Ji Chen<br></b></span><span style="background-color: initial; font-size: 1em;">Recipient of&nbsp;</span><span class="" style="background-color: initial; font-size: 1em;">BCA-Arup Built Environment Undergraduate Scholarship</span></p><p class="" style="line-height: 22.4px;"><b class="" style="background-color: initial; font-size: 1em;">Ms Jaslyn Tan Jia Min<br></b><span class="" style="background-color: initial; font-size: 1em;"><b>Ms Chan Lai Teng<br></b></span><span style="background-color: initial; font-size: 1em;">Recipient of Healthcare Merit Award (Local)</span></p><p class="" style="line-height: 22.4px;"><b class="" style="background-color: initial; font-size: 1em;">Ms Tan Li Pei<br></b><b class="" style="background-color: initial; font-size: 1em;">Aw Yang Jie Ling<br></b><b class="" style="background-color: initial; font-size: 1em;">Ms Esther Tan Yu Bing<br></b><b class="" style="background-color: initial; font-size: 1em;">Ms Francina Ranjitha Fernando<br></b><b class="" style="background-color: initial; font-size: 1em;">Mr Lin Kui Bin<br></b><span class="" style="background-color: initial; font-size: 1em;"><b>Ms Yee Jie Ying<br></b></span><span style="background-color: initial; font-size: 1em;">Recipient of MOE Teaching Award (Local)</span></p></div>
+</div>
+          </div>
+    <div class="bottom"></div>
+  </div>
+
+  <div class="sidebar_area">
+    <div class="top"></div>
+    <div class="mid">
+        <div class="sidebar0_box"><div id="_ptosb0_706" class="ive_content"></div></div>
+      
+
+
+
+
+
+
+
+
+
+
+
+      	<div class="subpages_box">
+    <ul>
+     
+        
+  <li id="_ptsp_704" >
+    <a href="college-advisory-board.html">College Advisory Board</a>  </li>
+       
+        
+  <li id="_ptsp_705" >
+    <a href="parent-support-group.html">Parent Support Group</a>  </li>
+      
+    <!-- myself -->
+        <li id="_ptsp_706"><b>JPJC Alumni</b></li>
+      
+  <!-- subpages -->
+  <ul class="mysubpages_">
+      </ul>
+  <!-- end subpages -->
+
+        </ul>
+  
+</div>
+              <div class="sidebar1_box"><div id="_ptosb1_706" class="ive_content"></div></div>
+    </div>
+    <div class="bottom"></div>
+  </div>
+
+  <div class="footer_area"> 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+  <div class="copyright">
+		© 2020 Jurong Pioneer Junior College.&nbsp;<span>All Rights Reserved.</span>		
+  </div>
+  <div class="links">
+		<ul>
+		<li><a href="https://www.tech.gov.sg/report_vulnerability" target="_blank">Report Vulnerability</a></li>
+		<li><a href="../contact-us/contact-us.html" target="">Contact Us</a></li>
+		</ul>
+  </div>	
+</footer></div>
+
+</div>
+</div>
+  </div>
+</div>
+<!-- pagetree/a1/default_view.html -->
+</div>
+
+
+
+</body>
+
+<!-- Mirrored from jpjc.moe.edu.sg/partnerships/jpjc-alumni by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 Nov 2020 10:14:31 GMT -->
+</html>
